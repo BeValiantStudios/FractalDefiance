@@ -18,83 +18,6 @@
 						"originalSource": "C:\\Users\\diego\\Desktop\\Personaje_Fuego_DS.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 512,
-						"duration": 1
-					},
-					{
-						"width": 60,
-						"height": 60,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 513,
-						"duration": 1
-					},
-					{
-						"width": 60,
-						"height": 60,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 514,
-						"duration": 1
-					},
-					{
-						"width": 60,
-						"height": 60,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 515,
-						"duration": 1
-					},
-					{
-						"width": 60,
-						"height": 60,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 516,
-						"duration": 1
-					},
-					{
-						"width": 60,
-						"height": 60,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 517,
-						"duration": 1
-					},
-					{
-						"width": 60,
-						"height": 60,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 518,
-						"duration": 1
-					},
-					{
-						"width": 60,
-						"height": 60,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
 						"imageSpriteId": 519,
 						"duration": 1
 					},
@@ -173,6 +96,83 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 526,
+						"duration": 1
+					},
+					{
+						"width": 60,
+						"height": 60,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 527,
+						"duration": 1
+					},
+					{
+						"width": 60,
+						"height": 60,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 528,
+						"duration": 1
+					},
+					{
+						"width": 60,
+						"height": 60,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 529,
+						"duration": 1
+					},
+					{
+						"width": 60,
+						"height": 60,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 530,
+						"duration": 1
+					},
+					{
+						"width": 60,
+						"height": 60,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 531,
+						"duration": 1
+					},
+					{
+						"width": 60,
+						"height": 60,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 532,
+						"duration": 1
+					},
+					{
+						"width": 60,
+						"height": 60,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 533,
 						"duration": 1
 					}
 				],
