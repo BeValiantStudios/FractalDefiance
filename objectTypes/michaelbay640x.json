@@ -1,0 +1,36 @@
+{
+	"name": "michaelbay640x",
+	"plugin-id": "Sprite",
+	"sid": 791964521178620,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 640,
+						"height": 400,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Desktop\\michael-bay-640x400.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 599,
+						"duration": 1
+					}
+				],
+				"sid": 839238860836665,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

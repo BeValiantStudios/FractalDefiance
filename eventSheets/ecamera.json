@@ -1,0 +1,241 @@
+{
+	"name": "eCamera",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 872208451029072
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object",
+					"objectClass": "Sprite5",
+					"sid": 816962828981178,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Camara",
+						"mode": "position-angle"
+					}
+				}
+			],
+			"sid": 440719570584330,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Players",
+					"sid": 294726900335274,
+					"parameters": {
+						"object": "Sprite5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Camara",
+					"sid": 364105002175917,
+					"parameters": {
+						"instance-variable": "SeguimientoCamara",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 861990601244570,
+			"disabled": true
+		},
+		{
+			"eventType": "group",
+			"disabled": true,
+			"title": "Seguimiento",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Camara",
+							"sid": 967290809453622,
+							"parameters": {
+								"instance-variable": "SeguimientoCamara",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 439592481933277,
+							"parameters": {
+								"group-name": "\"Seguimiento\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 875871731379592,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Camara",
+							"sid": 432100511343971,
+							"parameters": {
+								"instance-variable": "SeguimientoCamara",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 343961256511258,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Camara",
+							"sid": 664703196480920,
+							"parameters": {
+								"instance-variable": "SeguimientoCamara",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 288830133422601,
+							"parameters": {
+								"group-name": "\"Seguimiento\"",
+								"state": "activated"
+							}
+						}
+					],
+					"sid": 314789442357939,
+					"disabled": true
+				}
+			],
+			"sid": 105339761699348
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Camera/IA",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 640463389569535,
+							"parameters": {
+								"variable": "CamaraX",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 539735409040081,
+							"parameters": {
+								"variable": "CamaraY",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 770148394577139
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 324197064088547,
+							"parameters": {
+								"object": "Players"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 655366840282827,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Players",
+									"sid": 456084651046549,
+									"parameters": {
+										"instance-variable": "Active"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 937043079338729,
+									"parameters": {
+										"variable": "CamaraX",
+										"value": "Players.X/Players"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 848867626403976,
+									"parameters": {
+										"variable": "CamaraY",
+										"value": "Players.Y/Players"
+									}
+								}
+							],
+							"sid": 862474758023766
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Camara",
+							"sid": 115994991289919,
+							"parameters": {
+								"x": "CamaraX",
+								"y": "CamaraY"
+							}
+						}
+					],
+					"sid": 377562527335755
+				}
+			],
+			"sid": 936276036363788
+		}
+	],
+	"sid": 442166297377518
+}

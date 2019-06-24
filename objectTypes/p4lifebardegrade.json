@@ -1,0 +1,63 @@
+{
+	"name": "P4LifebarDegrade",
+	"plugin-id": "Sprite",
+	"sid": 958896179809881,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Degrade",
+			"type": "number",
+			"desc": "",
+			"sid": 330145919137231
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 256,
+						"originX": 0,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Desktop\\LifebarHalf.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 498,
+						"collisionPoly": {
+							"points": [
+								1,
+								0.5,
+								0.703125,
+								0.851563,
+								0.5,
+								0.933594,
+								0,
+								1,
+								0.726563,
+								0.5,
+								0,
+								0,
+								0.5,
+								0.0664063,
+								0.703125,
+								0.148438
+							]
+						},
+						"duration": 1
+					}
+				],
+				"sid": 251470900893054,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

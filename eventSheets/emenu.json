@@ -1,0 +1,862 @@
+{
+	"name": "eMenu",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Selector",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 609753133763176
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 303349035715058
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 504880337891754,
+					"parameters": {
+						"seconds": "2.2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 827425768222761,
+					"parameters": {
+						"variable": "Selector",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 470751645941671,
+					"parameters": {
+						"group-name": "\"Selector\"",
+						"state": "activated"
+					}
+				}
+			],
+			"sid": 629579203647029
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Selector",
+			"description": "",
+			"isActiveOnStart": false,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 966867392165634,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Exit"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "FadeOut",
+							"sid": 691245564045690,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 172721014010264,
+							"parameters": {
+								"group-name": "\"Selector\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 405321890036125,
+							"parameters": {
+								"seconds": "1.8"
+							}
+						},
+						{
+							"id": "close",
+							"objectClass": "Browser",
+							"sid": 550291957137491
+						}
+					],
+					"sid": 390567996026050
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 587384562182008,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "NewGame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "FadeOut",
+							"sid": 770279331057995,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 271124623666451,
+							"parameters": {
+								"group-name": "\"Selector\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 758104716969488,
+							"parameters": {
+								"seconds": "1.8"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 997426353028226,
+							"parameters": {
+								"layout": "Intro"
+							}
+						}
+					],
+					"sid": 470454510825962
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 233333130297008,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ContinueGame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "FadeOut",
+							"sid": 849903415586949,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 368998648637930,
+							"parameters": {
+								"group-name": "\"Selector\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 321933373408210,
+							"parameters": {
+								"seconds": "1.8"
+							}
+						},
+						{
+							"id": "load",
+							"objectClass": "System",
+							"sid": 135422333754840,
+							"parameters": {
+								"slot": "\"mysave\""
+							}
+						}
+					],
+					"sid": 688017225275417
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 307626227196842,
+							"parameters": {
+								"variable": "Selector",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Seleccion",
+							"sid": 414362653675021,
+							"parameters": {
+								"x": "132",
+								"y": "204"
+							}
+						}
+					],
+					"sid": 864792496733115
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 400155429099744,
+							"parameters": {
+								"variable": "Selector",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Seleccion",
+							"sid": 821801604814401,
+							"parameters": {
+								"x": "132",
+								"y": "239"
+							}
+						}
+					],
+					"sid": 411652815141685
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 574082506157995,
+							"parameters": {
+								"variable": "Selector",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Seleccion",
+							"sid": 803541214515617,
+							"parameters": {
+								"x": "132",
+								"y": "274"
+							}
+						}
+					],
+					"sid": 996717665239781
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 651147071272869,
+							"parameters": {
+								"variable": "Selector",
+								"comparison": 5,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 750921572610208,
+							"parameters": {
+								"variable": "Selector",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 683328178945112
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 401156500719472,
+							"parameters": {
+								"variable": "Selector",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 476188659661078,
+							"parameters": {
+								"variable": "Selector",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 359284340574250
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "kb",
+							"sid": 716155190986624,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 793494487258018,
+							"parameters": {
+								"variable": "Selector",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 528424337196473
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "kb",
+							"sid": 711585106603658,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 511875475413711,
+							"parameters": {
+								"variable": "Selector",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 790447620347703
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "gp",
+							"sid": 312422317557810,
+							"parameters": {
+								"gamepad": "0",
+								"button": "d-pad-up"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 998556500376046,
+							"parameters": {
+								"variable": "Selector",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 370290829008557,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "gp",
+							"sid": 292605205281141,
+							"parameters": {
+								"gamepad": "0",
+								"button": "d-pad-down"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 130822372744691,
+							"parameters": {
+								"variable": "Selector",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 223664256590725,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "kb",
+							"sid": 702734708155009,
+							"parameters": {
+								"key": 13
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 796400193928582,
+							"parameters": {
+								"variable": "Selector",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "FadeOut",
+							"sid": 659746052051280,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 103921696702235,
+							"parameters": {
+								"group-name": "\"Selector\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 985864429298010,
+							"parameters": {
+								"seconds": "1.8"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 436468964736864,
+							"parameters": {
+								"layout": "Intro"
+							}
+						}
+					],
+					"sid": 812496325261570
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "gp",
+							"sid": 664834842538459,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-a"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 637872513805855,
+							"parameters": {
+								"variable": "Selector",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "FadeOut",
+							"sid": 622765680235796,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 449983294788637,
+							"parameters": {
+								"group-name": "\"Selector\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 610354850235757,
+							"parameters": {
+								"seconds": "1.8"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 859087317386862,
+							"parameters": {
+								"layout": "Intro"
+							}
+						}
+					],
+					"sid": 425849187091806
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "kb",
+							"sid": 942354482968735,
+							"parameters": {
+								"key": 13
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 285116185242492,
+							"parameters": {
+								"variable": "Selector",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "FadeOut",
+							"sid": 911171260001358,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 945095884557155,
+							"parameters": {
+								"group-name": "\"Selector\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 747860108385845,
+							"parameters": {
+								"seconds": "1.8"
+							}
+						},
+						{
+							"id": "load",
+							"objectClass": "System",
+							"sid": 545830882264043,
+							"parameters": {
+								"slot": "\"mysave\""
+							}
+						}
+					],
+					"sid": 383105687394846
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "gp",
+							"sid": 294037308145401,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-a"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 338408366094651,
+							"parameters": {
+								"variable": "Selector",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "FadeOut",
+							"sid": 858073104137834,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 900478953877898,
+							"parameters": {
+								"group-name": "\"Selector\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 123628789820792,
+							"parameters": {
+								"seconds": "1.8"
+							}
+						},
+						{
+							"id": "load",
+							"objectClass": "System",
+							"sid": 858980242860466,
+							"parameters": {
+								"slot": "\"mysave\""
+							}
+						}
+					],
+					"sid": 160419397695430
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "kb",
+							"sid": 987239181177221,
+							"parameters": {
+								"key": 13
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 184215724936843,
+							"parameters": {
+								"variable": "Selector",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "FadeOut",
+							"sid": 489487333607929,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 889501992620970,
+							"parameters": {
+								"group-name": "\"Selector\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 548125494373142,
+							"parameters": {
+								"seconds": "1.8"
+							}
+						},
+						{
+							"id": "close",
+							"objectClass": "Browser",
+							"sid": 590452351611262
+						}
+					],
+					"sid": 867999778561386
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "gp",
+							"sid": 260141175003526,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-a"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 823793614267653,
+							"parameters": {
+								"variable": "Selector",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "FadeOut",
+							"sid": 824028973448087,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 627427837706825,
+							"parameters": {
+								"group-name": "\"Selector\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 878366003742117,
+							"parameters": {
+								"seconds": "1.8"
+							}
+						},
+						{
+							"id": "close",
+							"objectClass": "Browser",
+							"sid": 103953699905728
+						}
+					],
+					"sid": 287125942145214
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 221862734539591,
+							"parameters": {
+								"object": "NewGame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 775905374160683,
+							"parameters": {
+								"variable": "Selector",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 754445671036259
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 119341960131280,
+							"parameters": {
+								"object": "ContinueGame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 133871492221412,
+							"parameters": {
+								"variable": "Selector",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 998974656515656
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 868974766483377,
+							"parameters": {
+								"object": "Exit"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 777136416806436,
+							"parameters": {
+								"variable": "Selector",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 266019977861963
+				}
+			],
+			"sid": 111146127347998
+		}
+	],
+	"sid": 788299019173219
+}

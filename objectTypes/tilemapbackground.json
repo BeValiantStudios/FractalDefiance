@@ -1,0 +1,20 @@
+{
+	"name": "TilemapBackground",
+	"plugin-id": "Tilemap",
+	"sid": 798466306213579,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 288,
+		"height": 191,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\Users\\Lab403_6\\Desktop\\Tile map Fis 1.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 595
+	},
+	"tile-collision-polys": {}
+}

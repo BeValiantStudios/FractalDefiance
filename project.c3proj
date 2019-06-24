@@ -1,0 +1,538 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 14800,
+	"name": "New project",
+	"runtime": "c3",
+	"useWorker": false,
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Function",
+			"name": "Function",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Dictionary",
+			"name": "Dictionary",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "custom",
+			"name": "Custom",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "setcolor",
+			"name": "Set color",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "tint",
+			"name": "Tint",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		}
+	],
+	"uniqueId": "3sy6iiw7nd6ah",
+	"objectTypes": {
+		"items": [
+			"Camara",
+			"Sprite5",
+			"michaelbay640x",
+			"Sprite",
+			"asdad",
+			"Next",
+			"Text",
+			"NewGame",
+			"ContinueGame",
+			"Exit",
+			"FadeIn",
+			"FadeOut",
+			"Seleccion"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"kb",
+					"f",
+					"gp",
+					"Mouse",
+					"Audio",
+					"AJAX",
+					"Browser"
+				],
+				"subfolders": [],
+				"name": "Miscelaneos"
+			},
+			{
+				"items": [
+					"Player1",
+					"Player2",
+					"Player3",
+					"Player4"
+				],
+				"subfolders": [],
+				"name": "Players"
+			},
+			{
+				"items": [
+					"INPUT",
+					"AnimationText",
+					"TextBox",
+					"FPSCPU"
+				],
+				"subfolders": [],
+				"name": "HUD"
+			},
+			{
+				"items": [
+					"P1LifebarCache",
+					"P1LifebarCache2",
+					"P1LifebarHalf",
+					"P1LifebarHalf2",
+					"P2LifebarCache",
+					"P2LifebarCache2",
+					"P2LifebarHalf",
+					"P2LifebarHalf2",
+					"P3LifebarCache",
+					"P3LifebarCache2",
+					"P3LifebarHalf",
+					"P3LifebarHalf2",
+					"P4LifebarCache",
+					"P4LifebarCache2",
+					"P4LifebarHalf",
+					"P4LifebarHalf2",
+					"P1LifebarDegrade",
+					"P1LifebarDegrade2",
+					"P2LifebarDegrade",
+					"P2LifebarDegrade2",
+					"P3LifebarDegrade",
+					"P3LifebarDegrade2",
+					"P4LifebarDegrade",
+					"P4LifebarDegrade2"
+				],
+				"subfolders": [],
+				"name": "Lifebars"
+			},
+			{
+				"items": [
+					"PortraitP1",
+					"PortraitP2",
+					"PortraitP3",
+					"PortraitP4"
+				],
+				"subfolders": [],
+				"name": "Portraits"
+			},
+			{
+				"items": [
+					"CharacterID",
+					"CharacterInput",
+					"CharacterData"
+				],
+				"subfolders": [],
+				"name": "Data"
+			},
+			{
+				"items": [
+					"GolpeAgua",
+					"GolpeAgua2",
+					"GolpeAgua3",
+					"GolpeAgua4",
+					"GolpeAire",
+					"GolpeAire2",
+					"GolpeAire3",
+					"GolpeAire4",
+					"GolpeAire5",
+					"GolpeFuego",
+					"GolpeFuego2",
+					"GolpeFuego3",
+					"GolpeTierra",
+					"GolpeTierra2",
+					"GolpeTierra3",
+					"GolpeTierra4",
+					"GolpeTierra5",
+					"GolpeTierra6",
+					"GolpeHielo",
+					"GolpeHielo2",
+					"GolpeMusical",
+					"GolpeMusical2",
+					"GolpeMusical3"
+				],
+				"subfolders": [],
+				"name": "Attacks"
+			},
+			{
+				"items": [
+					"BlackBox",
+					"Option1",
+					"Option2",
+					"TextInBox",
+					"ArrayText",
+					"DicEspText"
+				],
+				"subfolders": [],
+				"name": "TextBox"
+			},
+			{
+				"items": [
+					"TilemapBackground",
+					"Puas",
+					"SolidTestBox",
+					"TilemapSolid"
+				],
+				"subfolders": [],
+				"name": "Escenario"
+			},
+			{
+				"items": [
+					"Kronejo",
+					"Dummy",
+					"Corte"
+				],
+				"subfolders": [],
+				"name": "Enemies"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"Players",
+			"LifeColor",
+			"AtaquesPersonajes",
+			"Enemy",
+			"Enemy2"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Test",
+			"Tutorial",
+			"Asset",
+			"Intro",
+			"Menu"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"eMain",
+			"eCamera",
+			"eEnemies",
+			"ePlayers",
+			"eFunctions",
+			"eHud",
+			"eIntro",
+			"eMenu"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"sound": {
+			"items": [
+				{
+					"name": "empezamos.ogg",
+					"type": "audio/ogg; codecs=vorbis"
+				},
+				{
+					"name": "hablar.ogg",
+					"type": "audio/ogg; codecs=vorbis"
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-114.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png"
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png"
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "ESP.json",
+					"type": "application/json"
+				}
+			],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "0.1.10",
+		"author": "Chronosphere Studio",
+		"authorEmail": "",
+		"authorWebsite": "http://",
+		"appId": "com.chronosphere.myapp",
+		"pixelRounding": false,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useHighDpi": true,
+		"orientations": "any",
+		"enableWebGL": true,
+		"gpuPreference": "high-performance",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "percent",
+		"preloadSounds": true,
+		"clearBackground": true,
+		"enhancedAccelerationPrecision": true
+	},
+	"viewportWidth": 560,
+	"viewportHeight": 315,
+	"firstLayout": "Intro"
+}
