@@ -92,6 +92,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 538916548933551
+		},
+		{
+			"name": "KbActive",
+			"type": "number",
+			"desc": "",
+			"sid": 346676810037169
 		}
 	],
 	"behaviorTypes": [

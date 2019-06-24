@@ -31,7 +31,7 @@
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Input Player 1",
+					"title": "Input Player 1 KB",
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
@@ -258,9 +258,189 @@
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Input Player 2",
+					"title": "Input Player 1 GP",
 					"description": "",
 					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 937490085730296,
+									"parameters": {
+										"gamepad": "0",
+										"axis": "left-analog-x-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player1",
+									"sid": 863192770704584,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 220729867647010,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 139059579357938
+								}
+							],
+							"actions": [],
+							"sid": 177226783494855,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 244520757554738,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 174275590355566,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "left"
+											}
+										}
+									],
+									"sid": 620279164096362,
+									"isOrBlock": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 648054054523716,
+									"parameters": {
+										"gamepad": "0",
+										"axis": "left-analog-y-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player1",
+									"sid": 486234202472768,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 586514412782173,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 224430022185421
+								}
+							],
+							"actions": [],
+							"sid": 921142393477113,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 137720671895092,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 188252042825481,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 149274154589114,
+									"isOrBlock": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 108221870744646,
+									"parameters": {
+										"variable": "hAngle",
+										"value": "angle(0,0,gp.Axis(0, 0), gp.Axis(0, 1))"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Player1",
+									"sid": 332646255349662,
+									"behaviorType": "CustomMovement",
+									"parameters": {
+										"which": "overall",
+										"speed": "0"
+									}
+								}
+							],
+							"sid": 174925606662666
+						}
+					],
+					"sid": 886979097645592
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Input Player 2",
+					"description": "",
+					"isActiveOnStart": false,
 					"children": [
 						{
 							"eventType": "block",
@@ -438,9 +618,189 @@
 				{
 					"eventType": "group",
 					"disabled": false,
+					"title": "Input Player 2 2nd",
+					"description": "",
+					"isActiveOnStart": false,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 585306381692575,
+									"parameters": {
+										"gamepad": "1",
+										"axis": "left-analog-x-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player2",
+									"sid": 730913554080417,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 687612801923257,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 430790234514749
+								}
+							],
+							"actions": [],
+							"sid": 591607170946498,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 628518134091425,
+											"parameters": {
+												"gamepad": "1",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player2",
+											"sid": 324886068167315,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "left"
+											}
+										}
+									],
+									"sid": 952410228911136,
+									"isOrBlock": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 551402939298025,
+									"parameters": {
+										"gamepad": "1",
+										"axis": "left-analog-y-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player2",
+									"sid": 500555199944688,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 331172910750417,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 877920188370735
+								}
+							],
+							"actions": [],
+							"sid": 874521173459887,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 275727225133039,
+											"parameters": {
+												"gamepad": "1",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player2",
+											"sid": 943040339331761,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 851716952516663,
+									"isOrBlock": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 859312831559655,
+									"parameters": {
+										"variable": "hAngle",
+										"value": "angle(0,0,gp.Axis(0, 0), gp.Axis(0, 1))"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Player2",
+									"sid": 917375713937561,
+									"behaviorType": "CustomMovement",
+									"parameters": {
+										"which": "overall",
+										"speed": "0"
+									}
+								}
+							],
+							"sid": 330194757384907
+						}
+					],
+					"sid": 900870325324275
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
 					"title": "Input Player 3",
 					"description": "",
-					"isActiveOnStart": true,
+					"isActiveOnStart": false,
 					"children": [
 						{
 							"eventType": "block",
@@ -609,9 +969,180 @@
 				{
 					"eventType": "group",
 					"disabled": false,
+					"title": "Input Player 3 2nd",
+					"description": "",
+					"isActiveOnStart": false,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 252092072989414,
+									"parameters": {
+										"gamepad": "2",
+										"axis": "left-analog-x-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player3",
+									"sid": 654253538589857,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 971752524565470,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 787735381902996
+								}
+							],
+							"actions": [],
+							"sid": 974834340293418,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 172601126663475,
+											"parameters": {
+												"gamepad": "2",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player3",
+											"sid": 541007698256711,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "left"
+											}
+										}
+									],
+									"sid": 546621414877327,
+									"isOrBlock": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 565312040647277,
+									"parameters": {
+										"gamepad": "2",
+										"axis": "left-analog-y-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player3",
+									"sid": 644283517450468,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 658245645634010,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 190839051515923
+								}
+							],
+							"actions": [],
+							"sid": 858295578598384,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 576528324982033,
+											"parameters": {
+												"gamepad": "2",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player3",
+											"sid": 598605289644598,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 646646516519941,
+									"isOrBlock": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "Player3",
+									"sid": 705201871494429,
+									"behaviorType": "CustomMovement",
+									"parameters": {
+										"which": "overall",
+										"speed": "0"
+									}
+								}
+							],
+							"sid": 286893125368675
+						}
+					],
+					"sid": 663439757296788
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
 					"title": "Input Player 4",
 					"description": "",
-					"isActiveOnStart": true,
+					"isActiveOnStart": false,
 					"children": [
 						{
 							"eventType": "block",
@@ -776,6 +1307,177 @@
 						}
 					],
 					"sid": 419244719073201
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Input Player 4 2nd",
+					"description": "",
+					"isActiveOnStart": false,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 329821933852951,
+									"parameters": {
+										"gamepad": "3",
+										"axis": "left-analog-x-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player4",
+									"sid": 803023163618965,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 119644377588599,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 784856193801383
+								}
+							],
+							"actions": [],
+							"sid": 616449633549411,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 319698745220624,
+											"parameters": {
+												"gamepad": "3",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player4",
+											"sid": 303592054076673,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "left"
+											}
+										}
+									],
+									"sid": 408400686371486,
+									"isOrBlock": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 299013781451978,
+									"parameters": {
+										"gamepad": "3",
+										"axis": "left-analog-y-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player4",
+									"sid": 650061418198631,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 127754477841528,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 689458327257554
+								}
+							],
+							"actions": [],
+							"sid": 302416929136585,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 954302623088811,
+											"parameters": {
+												"gamepad": "3",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player4",
+											"sid": 460877718695229,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 107039874227873,
+									"isOrBlock": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "Player4",
+									"sid": 967163334179977,
+									"behaviorType": "CustomMovement",
+									"parameters": {
+										"which": "overall",
+										"speed": "0"
+									}
+								}
+							],
+							"sid": 829962804870146
+						}
+					],
+					"sid": 198547722867827
 				},
 				{
 					"eventType": "block",
@@ -5300,6 +6002,16 @@
 											"parameters": {
 												"instance-variable": "Active"
 											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Players",
+											"sid": 373545745298378,
+											"parameters": {
+												"instance-variable": "KbActive",
+												"comparison": 0,
+												"value": "0"
+											}
 										}
 									],
 									"actions": [
@@ -5323,6 +6035,50 @@
 										}
 									],
 									"sid": 596393537475721
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Players",
+											"sid": 877802862093816,
+											"parameters": {
+												"instance-variable": "Active"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Players",
+											"sid": 246028947020343,
+											"parameters": {
+												"instance-variable": "KbActive",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 667464752936958,
+											"parameters": {
+												"group-name": "\"Input Player \" & Players.Id & \"2nd\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Players",
+											"sid": 924887740035444,
+											"behaviorType": "CustomMovement",
+											"parameters": {
+												"state": "disabled"
+											}
+										}
+									],
+									"sid": 138777765406954
 								},
 								{
 									"eventType": "block",
@@ -5806,6 +6562,615 @@
 				}
 			],
 			"sid": 233340476483945
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player2TecladoActivo",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "gp",
+							"sid": 663500735893121,
+							"parameters": {
+								"gamepad": "0",
+								"button": "back-view"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 319047359463863,
+							"parameters": {
+								"variable": "Players",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 774742924581450,
+							"parameters": {
+								"group-name": "\"Player2TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 708265649477760,
+							"parameters": {
+								"group-name": "\"Player3TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 232362465979686,
+							"parameters": {
+								"group-name": "\"Player4TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 677608853612912,
+							"parameters": {
+								"variable": "Players",
+								"value": "2"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 813985362949705,
+							"parameters": {
+								"name": "\"ActPlayers\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 220276872632846,
+							"parameters": {
+								"group-name": "\"Input Player 1 GP\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 819530838820209,
+							"parameters": {
+								"group-name": "\"Input Player 2\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 504600014111591,
+							"parameters": {
+								"instance-variable": "KbActive",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 112960552530044
+				}
+			],
+			"sid": 612946359101290
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player2TecladoInactivo",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "gp",
+							"sid": 934085531479548,
+							"parameters": {
+								"gamepad": "1",
+								"button": "back-view"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 351000659545715,
+							"parameters": {
+								"variable": "Players",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 706424748519310,
+							"parameters": {
+								"group-name": "\"Player2TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 241811427989202,
+							"parameters": {
+								"group-name": "\"Player3TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 722924567359944,
+							"parameters": {
+								"group-name": "\"Player4TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 549403736135010,
+							"parameters": {
+								"variable": "Players",
+								"value": "2"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 363038047024567,
+							"parameters": {
+								"name": "\"ActPlayers\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 433426839592331,
+							"parameters": {
+								"group-name": "\"Input Player 2 2nd\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 250790283990316,
+							"parameters": {
+								"instance-variable": "KbActive",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 175674991011301
+				}
+			],
+			"sid": 265531275243252
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player3TecladoActivo",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "gp",
+							"sid": 937948912541625,
+							"parameters": {
+								"gamepad": "1",
+								"button": "back-view"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 335634201547732,
+							"parameters": {
+								"variable": "Players",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 683105201407463,
+							"parameters": {
+								"group-name": "\"Player2TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 535618676307441,
+							"parameters": {
+								"group-name": "\"Player3TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 708213364893221,
+							"parameters": {
+								"group-name": "\"Player4TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 629886940660969,
+							"parameters": {
+								"variable": "Players",
+								"value": "3"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 564526326795192,
+							"parameters": {
+								"name": "\"ActPlayers\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 654997353036480,
+							"parameters": {
+								"group-name": "\"Input Player 3\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 541083215409190,
+							"parameters": {
+								"instance-variable": "KbActive",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 317806860725999
+				}
+			],
+			"sid": 597061962190287
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player3TecladoInactivo",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "gp",
+							"sid": 756523217970685,
+							"parameters": {
+								"gamepad": "2",
+								"button": "back-view"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 994781383886354,
+							"parameters": {
+								"variable": "Players",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 270534815187071,
+							"parameters": {
+								"group-name": "\"Player2TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 685744225604783,
+							"parameters": {
+								"group-name": "\"Player3TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 246582459762980,
+							"parameters": {
+								"group-name": "\"Player4TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 693245803839956,
+							"parameters": {
+								"variable": "Players",
+								"value": "3"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 500151528356252,
+							"parameters": {
+								"group-name": "\"Input Player 3 2nd\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 788304652172301,
+							"parameters": {
+								"name": "\"ActPlayers\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 383719221545475,
+							"parameters": {
+								"instance-variable": "KbActive",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 569966067564653
+				}
+			],
+			"sid": 354008277370339
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player4TecladoActivo",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "gp",
+							"sid": 697848075518035,
+							"parameters": {
+								"gamepad": "2",
+								"button": "back-view"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 551592527215028,
+							"parameters": {
+								"variable": "Players",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 204331601504410,
+							"parameters": {
+								"group-name": "\"Player2TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 281999719345925,
+							"parameters": {
+								"group-name": "\"Player3TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 103947889602799,
+							"parameters": {
+								"group-name": "\"Player4TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 731286040921472,
+							"parameters": {
+								"variable": "Players",
+								"value": "4"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 745225130419488,
+							"parameters": {
+								"name": "\"ActPlayers\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 474650222014161,
+							"parameters": {
+								"group-name": "\"Input Player 3\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 203836838588316,
+							"parameters": {
+								"instance-variable": "KbActive",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 314941829906644
+				}
+			],
+			"sid": 990107560247046
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player4TecladoInactivo",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "gp",
+							"sid": 908918898775222,
+							"parameters": {
+								"gamepad": "3",
+								"button": "back-view"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 816246105755503,
+							"parameters": {
+								"variable": "Players",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 984252680679576,
+							"parameters": {
+								"group-name": "\"Player2TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 180936944558633,
+							"parameters": {
+								"group-name": "\"Player3TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 635673854851092,
+							"parameters": {
+								"group-name": "\"Player4TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 965795562840846,
+							"parameters": {
+								"variable": "Players",
+								"value": "4"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 105400285210069,
+							"parameters": {
+								"name": "\"ActPlayers\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 816576661275571,
+							"parameters": {
+								"group-name": "\"Input Player 3 2nd\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 776353381690645,
+							"parameters": {
+								"instance-variable": "KbActive",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 266045908503475
+				}
+			],
+			"sid": 314557482046639
 		}
 	],
 	"sid": 731626504774849

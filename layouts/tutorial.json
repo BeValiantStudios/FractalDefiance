@@ -278,7 +278,8 @@
 						"target": -1,
 						"posToEnemy": "",
 						"TESTVAR1": 0,
-						"TESTVAR2": 0
+						"TESTVAR2": 0,
+						"KbActive": 1
 					},
 					"behaviors": {
 						"CustomMovement": {
@@ -560,7 +561,8 @@
 						"target": -1,
 						"posToEnemy": "",
 						"TESTVAR1": 0,
-						"TESTVAR2": 0
+						"TESTVAR2": 0,
+						"KbActive": 1
 					},
 					"behaviors": {
 						"CustomMovement": {
@@ -649,7 +651,8 @@
 						"target": -1,
 						"posToEnemy": "",
 						"TESTVAR1": 0,
-						"TESTVAR2": 0
+						"TESTVAR2": 0,
+						"KbActive": 1
 					},
 					"behaviors": {
 						"CustomMovement": {
@@ -738,7 +741,8 @@
 						"target": -1,
 						"posToEnemy": "",
 						"TESTVAR1": 0,
-						"TESTVAR2": 0
+						"TESTVAR2": 0,
+						"KbActive": 1
 					},
 					"behaviors": {
 						"CustomMovement": {
