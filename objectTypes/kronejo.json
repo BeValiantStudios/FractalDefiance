@@ -9,18 +9,6 @@
 			"type": "number",
 			"desc": "",
 			"sid": 753729305411963
-		},
-		{
-			"name": "ElegidoX",
-			"type": "number",
-			"desc": "",
-			"sid": 404337639310862
-		},
-		{
-			"name": "ElegidoY",
-			"type": "number",
-			"desc": "",
-			"sid": 145292079066913
 		}
 	],
 	"behaviorTypes": [],

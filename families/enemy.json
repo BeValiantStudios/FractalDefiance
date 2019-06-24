@@ -14,6 +14,24 @@
 			"type": "number",
 			"desc": "",
 			"sid": 248214938621156
+		},
+		{
+			"name": "SelectedUIDPlayer",
+			"type": "number",
+			"desc": "",
+			"sid": 967827497579947
+		},
+		{
+			"name": "chooseX",
+			"type": "number",
+			"desc": "",
+			"sid": 256141102283976
+		},
+		{
+			"name": "chooseY",
+			"type": "number",
+			"desc": "",
+			"sid": 516883176361264
 		}
 	],
 	"behaviorTypes": [
@@ -26,11 +44,6 @@
 			"behaviorId": "custom",
 			"name": "CustomMovement",
 			"sid": 395511273321912
-		},
-		{
-			"behaviorId": "Timer",
-			"name": "Timer",
-			"sid": 380346593677086
 		}
 	],
 	"effectTypes": [

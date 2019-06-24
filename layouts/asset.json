@@ -1330,9 +1330,10 @@
 					"instanceVariables": {
 						"SearchTime": 1,
 						"Vida": 100,
-						"Atacando": 0,
-						"ElegidoX": 0,
-						"ElegidoY": 0
+						"SelectedUIDPlayer": 0,
+						"chooseX": 0,
+						"chooseY": 0,
+						"Atacando": 0
 					},
 					"behaviors": {
 						"Pathfinding": {
@@ -1355,9 +1356,6 @@
 								"pixels-per-step": 5,
 								"enabled": true
 							}
-						},
-						"Timer": {
-							"properties": {}
 						}
 					},
 					"effects": {
