@@ -9,7 +9,7 @@
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Teclado",
+			"name": "Keyboard",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -17,7 +17,7 @@
 		{
 			"type": "plugin",
 			"id": "Function",
-			"name": "Función",
+			"name": "Function",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -25,7 +25,7 @@
 		{
 			"type": "plugin",
 			"id": "gamepad",
-			"name": "Mando",
+			"name": "Gamepad",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -33,7 +33,7 @@
 		{
 			"type": "plugin",
 			"id": "Mouse",
-			"name": "Ratón",
+			"name": "Mouse",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -57,7 +57,7 @@
 		{
 			"type": "plugin",
 			"id": "Browser",
-			"name": "Navegador",
+			"name": "Browser",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -73,7 +73,7 @@
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Texto",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -81,7 +81,7 @@
 		{
 			"type": "plugin",
 			"id": "TextBox",
-			"name": "Entrada de texto",
+			"name": "Text input",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -89,7 +89,7 @@
 		{
 			"type": "plugin",
 			"id": "Dictionary",
-			"name": "Diccionario",
+			"name": "Dictionary",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -97,7 +97,7 @@
 		{
 			"type": "plugin",
 			"id": "Arr",
-			"name": "Matriz",
+			"name": "Array",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -105,7 +105,7 @@
 		{
 			"type": "plugin",
 			"id": "Tilemap",
-			"name": "Mapa de mosaico",
+			"name": "Tilemap",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -113,7 +113,7 @@
 		{
 			"type": "behavior",
 			"id": "Pin",
-			"name": "Pegado",
+			"name": "Pin",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -121,7 +121,7 @@
 		{
 			"type": "behavior",
 			"id": "Bullet",
-			"name": "Bala",
+			"name": "Bullet",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -129,7 +129,7 @@
 		{
 			"type": "behavior",
 			"id": "Rotate",
-			"name": "Girar",
+			"name": "Rotate",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -137,7 +137,7 @@
 		{
 			"type": "behavior",
 			"id": "Sin",
-			"name": "Seno",
+			"name": "Sine",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -145,7 +145,7 @@
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Sólido",
+			"name": "Solid",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -153,7 +153,7 @@
 		{
 			"type": "behavior",
 			"id": "Fade",
-			"name": "Desvanecer",
+			"name": "Fade",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -161,7 +161,7 @@
 		{
 			"type": "behavior",
 			"id": "scrollto",
-			"name": "Desplazar hasta",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -169,7 +169,7 @@
 		{
 			"type": "behavior",
 			"id": "custom",
-			"name": "Personalizado",
+			"name": "Custom",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -177,7 +177,7 @@
 		{
 			"type": "behavior",
 			"id": "EightDir",
-			"name": "8 Direcciones",
+			"name": "8 Direction",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -185,7 +185,7 @@
 		{
 			"type": "behavior",
 			"id": "LOS",
-			"name": "Línea de visión",
+			"name": "Line of sight",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -193,7 +193,7 @@
 		{
 			"type": "behavior",
 			"id": "Pathfinding",
-			"name": "Busca-rutas",
+			"name": "Pathfinding",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -201,7 +201,7 @@
 		{
 			"type": "behavior",
 			"id": "Timer",
-			"name": "Temporizador",
+			"name": "Timer",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -209,7 +209,7 @@
 		{
 			"type": "effect",
 			"id": "setcolor",
-			"name": "Establecer color",
+			"name": "Set color",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
@@ -217,7 +217,7 @@
 		{
 			"type": "effect",
 			"id": "tint",
-			"name": "Teñir",
+			"name": "Tint",
 			"author": "Scirra",
 			"version": "r155",
 			"bundled": false
