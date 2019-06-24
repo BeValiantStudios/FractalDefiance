@@ -1,0 +1,22 @@
+{
+	"name": "AnimationText",
+	"plugin-id": "Text",
+	"sid": 867038613781697,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "UIDPlayer",
+			"type": "number",
+			"desc": "",
+			"sid": 745584753914081
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 596648898810944
+		}
+	],
+	"effectTypes": []
+}

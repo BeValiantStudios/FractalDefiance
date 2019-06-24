@@ -1,0 +1,47 @@
+{
+	"name": "BlackBox",
+	"plugin-id": "Sprite",
+	"sid": 247508419414576,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Pos",
+			"sid": 989722378209531
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Scale",
+			"sid": 975392466067389
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 557,
+						"duration": 1
+					}
+				],
+				"sid": 500342175540181,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

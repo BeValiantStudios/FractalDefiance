@@ -1,0 +1,47 @@
+{
+	"name": "GolpeMusical2",
+	"plugin-id": "Sprite",
+	"sid": 332654369611799,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 527350503049216
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 779390397854632
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 548,
+						"duration": 1
+					}
+				],
+				"sid": 304369378633012,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

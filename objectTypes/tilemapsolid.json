@@ -1,0 +1,26 @@
+{
+	"name": "TilemapSolid",
+	"plugin-id": "Tilemap",
+	"sid": 222202633036431,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 507059660215862
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 288,
+		"height": 191,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\Users\\Lab403_6\\Desktop\\Tile map Fis 1.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 573
+	},
+	"tile-collision-polys": {}
+}

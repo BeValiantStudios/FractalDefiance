@@ -1,0 +1,49 @@
+{
+	"name": "Camara",
+	"plugin-id": "Sprite",
+	"sid": 868670560047614,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "SeguimientoCamara",
+			"type": "number",
+			"desc": "",
+			"sid": 249985387698693
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 275288643944531
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 569,
+						"duration": 1
+					}
+				],
+				"sid": 944684225629068,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
