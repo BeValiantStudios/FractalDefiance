@@ -1,0 +1,422 @@
+{
+	"name": "eMinimap",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player1",
+					"sid": 594792544574554,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Fuego\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon1",
+					"sid": 500558893250364,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 129972975785066
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player1",
+					"sid": 582820507084140,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Agua\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon1",
+					"sid": 838545192415441,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 407522575780376
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player1",
+					"sid": 842400455111457,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Aire\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon1",
+					"sid": 444325320663829,
+					"parameters": {
+						"frame-number": "2"
+					}
+				}
+			],
+			"sid": 636840109319544
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player1",
+					"sid": 294370935312721,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Tierra\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon1",
+					"sid": 993340008353927,
+					"parameters": {
+						"frame-number": "3"
+					}
+				}
+			],
+			"sid": 481612854011667
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player2",
+					"sid": 617696292777032,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Fuego\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon2",
+					"sid": 765607914645730,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 949258852617323
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player2",
+					"sid": 493557935633464,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Agua\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon2",
+					"sid": 379232565902332,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 621406020093495
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player2",
+					"sid": 129259521012684,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Aire\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon2",
+					"sid": 301306732158995,
+					"parameters": {
+						"frame-number": "2"
+					}
+				}
+			],
+			"sid": 368122676610512
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player2",
+					"sid": 151213020516828,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Tierra\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon2",
+					"sid": 399938102847642,
+					"parameters": {
+						"frame-number": "3"
+					}
+				}
+			],
+			"sid": 597313232811658
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player3",
+					"sid": 204043118180548,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Fuego\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon3",
+					"sid": 957985302960900,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 911706611590527
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player3",
+					"sid": 442148965412258,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Agua\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon3",
+					"sid": 503078665595092,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 179086542669579
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player3",
+					"sid": 372312549627633,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Aire\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon3",
+					"sid": 839902528110413,
+					"parameters": {
+						"frame-number": "2"
+					}
+				}
+			],
+			"sid": 294568456734992
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player3",
+					"sid": 359310137765991,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Tierra\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon3",
+					"sid": 255889147193850,
+					"parameters": {
+						"frame-number": "3"
+					}
+				}
+			],
+			"sid": 349902253100395
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player4",
+					"sid": 116158230725059,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Fuego\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon4",
+					"sid": 733606809700397,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 160253520270174
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player4",
+					"sid": 896877391880264,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Agua\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon4",
+					"sid": 560024798462125,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 356011043091314
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player4",
+					"sid": 518310372288747,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Aire\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon4",
+					"sid": 243442384324651,
+					"parameters": {
+						"frame-number": "2"
+					}
+				}
+			],
+			"sid": 854460103850323
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player4",
+					"sid": 950011636709422,
+					"parameters": {
+						"instance-variable": "Character",
+						"comparison": 0,
+						"value": "\"Tierra\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerIcon4",
+					"sid": 126687658505886,
+					"parameters": {
+						"frame-number": "3"
+					}
+				}
+			],
+			"sid": 894100130239129
+		}
+	],
+	"sid": 605679628526876
+}

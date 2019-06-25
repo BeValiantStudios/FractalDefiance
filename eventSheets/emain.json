@@ -26,6 +26,10 @@
 			"includeSheet": "eObject"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "eMinimap"
+		},
+		{
 			"eventType": "variable",
 			"name": "DICCID",
 			"type": "string",

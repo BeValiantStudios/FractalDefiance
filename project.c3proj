@@ -253,7 +253,13 @@
 			"boxright",
 			"boxtop",
 			"TestBackground",
-			"TestSolid"
+			"TestSolid",
+			"IconoMuro",
+			"PlayerIcon1",
+			"PlayerIcon2",
+			"PlayerIcon3",
+			"PlayerIcon4",
+			"Minimap"
 		],
 		"subfolders": [
 			{
@@ -421,7 +427,6 @@
 	"layouts": {
 		"items": [
 			"Test",
-			"Tutorial",
 			"Asset",
 			"Intro",
 			"Menu"
@@ -438,7 +443,8 @@
 			"eHud",
 			"eIntro",
 			"eMenu",
-			"eObject"
+			"eObject",
+			"eMinimap"
 		],
 		"subfolders": []
 	},
