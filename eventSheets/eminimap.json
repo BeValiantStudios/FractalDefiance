@@ -416,6 +416,28 @@
 				}
 			],
 			"sid": 894100130239129
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 634681362130223
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PlayerIcon1",
+					"sid": 531924039203137,
+					"parameters": {
+						"x": "Minimap.X",
+						"y": "0"
+					}
+				}
+			],
+			"sid": 943873426364622
 		}
 	],
 	"sid": 605679628526876

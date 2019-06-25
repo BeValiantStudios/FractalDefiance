@@ -7461,6 +7461,27 @@
 				}
 			],
 			"sid": 314557482046639
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 804196200258554
+				}
+			],
+			"actions": [
+				{
+					"id": "download",
+					"objectClass": "Array",
+					"sid": 787246919106027,
+					"parameters": {
+						"filename": "\"mp.json\""
+					}
+				}
+			],
+			"sid": 951092957538752
 		}
 	],
 	"sid": 731626504774849

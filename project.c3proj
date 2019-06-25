@@ -259,7 +259,9 @@
 			"PlayerIcon2",
 			"PlayerIcon3",
 			"PlayerIcon4",
-			"Minimap"
+			"Minimap",
+			"Sprite2",
+			"Array"
 		],
 		"subfolders": [
 			{
@@ -507,6 +509,10 @@
 			"items": [
 				{
 					"name": "ESP.json",
+					"type": "application/json"
+				},
+				{
+					"name": "mp.json",
 					"type": "application/json"
 				}
 			],
