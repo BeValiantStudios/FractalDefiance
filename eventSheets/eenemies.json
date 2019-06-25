@@ -1144,6 +1144,31 @@
 					]
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "AtaquesPersonajes",
+					"sid": 580677512671337,
+					"parameters": {
+						"object": "Enemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Enemy",
+					"sid": 435368065679084,
+					"parameters": {
+						"instance-variable": "Vida",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 331214284980479
 		}
 	],
 	"sid": 882137182745008

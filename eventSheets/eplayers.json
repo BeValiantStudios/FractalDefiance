@@ -6559,9 +6559,616 @@
 							"sid": 167155140095961
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "f",
+							"sid": 760512513388845,
+							"parameters": {
+								"name": "\"P1TA\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 149536377440462,
+							"parameters": {
+								"group-name": "\"Player2TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 155915352872176,
+							"parameters": {
+								"group-name": "\"Player2TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 948048759442083,
+							"parameters": {
+								"variable": "Players",
+								"value": "1"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 414466088982305,
+							"parameters": {
+								"name": "\"ActPlayers\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 560011640505727,
+							"parameters": {
+								"group-name": "\"Input Player 1 GP\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 386700593091139,
+							"parameters": {
+								"group-name": "\"Input Player 1 KB\"",
+								"state": "activated"
+							}
+						}
+					],
+					"sid": 967475983444112
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "f",
+							"sid": 691594932383729,
+							"parameters": {
+								"name": "\"P2TA\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 459257630604867,
+							"parameters": {
+								"group-name": "\"Player2TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 594414709035371,
+							"parameters": {
+								"group-name": "\"Player3TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 230970304490594,
+							"parameters": {
+								"group-name": "\"Player4TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 307602931273188,
+							"parameters": {
+								"variable": "Players",
+								"value": "2"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 987805710425158,
+							"parameters": {
+								"name": "\"ActPlayers\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 583012135123535,
+							"parameters": {
+								"group-name": "\"Input Player 1 GP\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 149254597593426,
+							"parameters": {
+								"group-name": "\"Input Player 2\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 994280769840282,
+							"parameters": {
+								"instance-variable": "KbActive",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 322367411398343
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "f",
+							"sid": 263500140426463,
+							"parameters": {
+								"name": "\"P2TI\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 849040913961334,
+							"parameters": {
+								"group-name": "\"Player2TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 857947098953392,
+							"parameters": {
+								"group-name": "\"Player3TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 657882509276348,
+							"parameters": {
+								"group-name": "\"Player4TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 421582178379168,
+							"parameters": {
+								"variable": "Players",
+								"value": "2"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 965044410329605,
+							"parameters": {
+								"name": "\"ActPlayers\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 857367893293171,
+							"parameters": {
+								"group-name": "\"Input Player 2 2nd\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 395082504871552,
+							"parameters": {
+								"instance-variable": "KbActive",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 455056446873888
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "f",
+							"sid": 353636583131042,
+							"parameters": {
+								"name": "\"P3TA\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 129111495196003,
+							"parameters": {
+								"group-name": "\"Player2TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 683924626658790,
+							"parameters": {
+								"group-name": "\"Player3TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 813275060609023,
+							"parameters": {
+								"group-name": "\"Player4TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 697350164067693,
+							"parameters": {
+								"variable": "Players",
+								"value": "3"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 144660837013713,
+							"parameters": {
+								"name": "\"ActPlayers\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 568200255581287,
+							"parameters": {
+								"group-name": "\"Input Player 3\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 821825201607113,
+							"parameters": {
+								"instance-variable": "KbActive",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 385358858425212
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "f",
+							"sid": 600760567813852,
+							"parameters": {
+								"name": "\"P3TI\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 356924331219445,
+							"parameters": {
+								"group-name": "\"Player2TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 990413370527136,
+							"parameters": {
+								"group-name": "\"Player3TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 954724558619117,
+							"parameters": {
+								"group-name": "\"Player4TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 699998650463727,
+							"parameters": {
+								"variable": "Players",
+								"value": "3"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 968721952489349,
+							"parameters": {
+								"group-name": "\"Input Player 3 2nd\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 795694937072962,
+							"parameters": {
+								"name": "\"ActPlayers\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 599112125547523,
+							"parameters": {
+								"instance-variable": "KbActive",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 547150543745898
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "f",
+							"sid": 692524131867444,
+							"parameters": {
+								"name": "\"P4TA\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 550398690157998,
+							"parameters": {
+								"group-name": "\"Player2TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 568082957139813,
+							"parameters": {
+								"group-name": "\"Player3TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 681466674076738,
+							"parameters": {
+								"group-name": "\"Player4TecladoInactivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 131741562165285,
+							"parameters": {
+								"variable": "Players",
+								"value": "4"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 978029527432582,
+							"parameters": {
+								"name": "\"ActPlayers\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 909999363013672,
+							"parameters": {
+								"group-name": "\"Input Player 3\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 725953195459015,
+							"parameters": {
+								"instance-variable": "KbActive",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 242003696282568
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "f",
+							"sid": 477489932021867,
+							"parameters": {
+								"name": "\"P4TI\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 835890423795191,
+							"parameters": {
+								"group-name": "\"Player2TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 650443741474200,
+							"parameters": {
+								"group-name": "\"Player3TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 849369930845077,
+							"parameters": {
+								"group-name": "\"Player4TecladoActivo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 820832947910497,
+							"parameters": {
+								"variable": "Players",
+								"value": "4"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 902009623640749,
+							"parameters": {
+								"name": "\"ActPlayers\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 171955224860502,
+							"parameters": {
+								"group-name": "\"Input Player 3 2nd\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 443038303934381,
+							"parameters": {
+								"instance-variable": "KbActive",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 626032792435229
 				}
 			],
 			"sid": 233340476483945
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "gp",
+							"sid": 658748503772024,
+							"parameters": {
+								"gamepad": "0",
+								"button": "back-view"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 248195993487813,
+							"parameters": {
+								"variable": "Players",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 522678865840240,
+							"parameters": {
+								"name": "\"P1TA\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 924232086511621,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						}
+					],
+					"sid": 534981191317091
+				}
+			],
+			"sid": 886230233782901
 		},
 		{
 			"eventType": "group",
@@ -6595,75 +7202,20 @@
 					],
 					"actions": [
 						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 774742924581450,
-							"parameters": {
-								"group-name": "\"Player2TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 708265649477760,
-							"parameters": {
-								"group-name": "\"Player3TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 232362465979686,
-							"parameters": {
-								"group-name": "\"Player4TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 677608853612912,
-							"parameters": {
-								"variable": "Players",
-								"value": "2"
-							}
-						},
-						{
 							"id": "call-function",
 							"objectClass": "f",
-							"sid": 813985362949705,
+							"sid": 830708839743131,
 							"parameters": {
-								"name": "\"ActPlayers\"",
+								"name": "\"P2TA\"",
 								"parameter-n": []
 							}
 						},
 						{
-							"id": "set-group-active",
+							"id": "wait",
 							"objectClass": "System",
-							"sid": 220276872632846,
+							"sid": 348381075270674,
 							"parameters": {
-								"group-name": "\"Input Player 1 GP\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 819530838820209,
-							"parameters": {
-								"group-name": "\"Input Player 2\"",
-								"state": "activated"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Players",
-							"sid": 504600014111591,
-							"parameters": {
-								"instance-variable": "KbActive",
-								"value": "1"
+								"seconds": "1.0"
 							}
 						}
 					],
@@ -6704,66 +7256,20 @@
 					],
 					"actions": [
 						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 706424748519310,
-							"parameters": {
-								"group-name": "\"Player2TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 241811427989202,
-							"parameters": {
-								"group-name": "\"Player3TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 722924567359944,
-							"parameters": {
-								"group-name": "\"Player4TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 549403736135010,
-							"parameters": {
-								"variable": "Players",
-								"value": "2"
-							}
-						},
-						{
 							"id": "call-function",
 							"objectClass": "f",
-							"sid": 363038047024567,
+							"sid": 459228561118876,
 							"parameters": {
-								"name": "\"ActPlayers\"",
+								"name": "\"P2TI\"",
 								"parameter-n": []
 							}
 						},
 						{
-							"id": "set-group-active",
+							"id": "wait",
 							"objectClass": "System",
-							"sid": 433426839592331,
+							"sid": 969499256840929,
 							"parameters": {
-								"group-name": "\"Input Player 2 2nd\"",
-								"state": "activated"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Players",
-							"sid": 250790283990316,
-							"parameters": {
-								"instance-variable": "KbActive",
-								"value": "0"
+								"seconds": "1.0"
 							}
 						}
 					],
@@ -6804,66 +7310,12 @@
 					],
 					"actions": [
 						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 683105201407463,
-							"parameters": {
-								"group-name": "\"Player2TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 535618676307441,
-							"parameters": {
-								"group-name": "\"Player3TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 708213364893221,
-							"parameters": {
-								"group-name": "\"Player4TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 629886940660969,
-							"parameters": {
-								"variable": "Players",
-								"value": "3"
-							}
-						},
-						{
 							"id": "call-function",
 							"objectClass": "f",
-							"sid": 564526326795192,
+							"sid": 596104230428182,
 							"parameters": {
-								"name": "\"ActPlayers\"",
+								"name": "\"P3TA\"",
 								"parameter-n": []
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 654997353036480,
-							"parameters": {
-								"group-name": "\"Input Player 3\"",
-								"state": "activated"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Players",
-							"sid": 541083215409190,
-							"parameters": {
-								"instance-variable": "KbActive",
-								"value": "1"
 							}
 						}
 					],
@@ -6904,66 +7356,12 @@
 					],
 					"actions": [
 						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 270534815187071,
-							"parameters": {
-								"group-name": "\"Player2TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 685744225604783,
-							"parameters": {
-								"group-name": "\"Player3TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 246582459762980,
-							"parameters": {
-								"group-name": "\"Player4TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 693245803839956,
-							"parameters": {
-								"variable": "Players",
-								"value": "3"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 500151528356252,
-							"parameters": {
-								"group-name": "\"Input Player 3 2nd\"",
-								"state": "activated"
-							}
-						},
-						{
 							"id": "call-function",
 							"objectClass": "f",
-							"sid": 788304652172301,
+							"sid": 184966847281770,
 							"parameters": {
-								"name": "\"ActPlayers\"",
+								"name": "\"P3TI\"",
 								"parameter-n": []
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Players",
-							"sid": 383719221545475,
-							"parameters": {
-								"instance-variable": "KbActive",
-								"value": "0"
 							}
 						}
 					],
@@ -7004,66 +7402,12 @@
 					],
 					"actions": [
 						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 204331601504410,
-							"parameters": {
-								"group-name": "\"Player2TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 281999719345925,
-							"parameters": {
-								"group-name": "\"Player3TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 103947889602799,
-							"parameters": {
-								"group-name": "\"Player4TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 731286040921472,
-							"parameters": {
-								"variable": "Players",
-								"value": "4"
-							}
-						},
-						{
 							"id": "call-function",
 							"objectClass": "f",
-							"sid": 745225130419488,
+							"sid": 685897772374878,
 							"parameters": {
-								"name": "\"ActPlayers\"",
+								"name": "\"P4TA\"",
 								"parameter-n": []
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 474650222014161,
-							"parameters": {
-								"group-name": "\"Input Player 3\"",
-								"state": "activated"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Players",
-							"sid": 203836838588316,
-							"parameters": {
-								"instance-variable": "KbActive",
-								"value": "1"
 							}
 						}
 					],
@@ -7104,66 +7448,12 @@
 					],
 					"actions": [
 						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 984252680679576,
-							"parameters": {
-								"group-name": "\"Player2TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 180936944558633,
-							"parameters": {
-								"group-name": "\"Player3TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 635673854851092,
-							"parameters": {
-								"group-name": "\"Player4TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 965795562840846,
-							"parameters": {
-								"variable": "Players",
-								"value": "4"
-							}
-						},
-						{
 							"id": "call-function",
 							"objectClass": "f",
-							"sid": 105400285210069,
+							"sid": 919071643422497,
 							"parameters": {
-								"name": "\"ActPlayers\"",
+								"name": "\"P4TI\"",
 								"parameter-n": []
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 816576661275571,
-							"parameters": {
-								"group-name": "\"Input Player 3 2nd\"",
-								"state": "activated"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Players",
-							"sid": 776353381690645,
-							"parameters": {
-								"instance-variable": "KbActive",
-								"value": "0"
 							}
 						}
 					],
