@@ -22,6 +22,10 @@
 			"includeSheet": "eCamera"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "eObject"
+		},
+		{
 			"eventType": "variable",
 			"name": "DICCID",
 			"type": "string",

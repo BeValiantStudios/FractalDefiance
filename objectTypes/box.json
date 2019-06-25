@@ -1,0 +1,81 @@
+{
+	"name": "box",
+	"plugin-id": "Sprite",
+	"sid": 669789035317429,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "TileMovement",
+			"name": "TileMovement",
+			"sid": 916209120711274
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 333240227883544
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 14,
+						"height": 20,
+						"originX": -0.07142857142857142,
+						"originY": 1.05,
+						"originalSource": "C:\\Users\\liang\\Desktop\\weas\\caja.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 600,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.35,
+								1,
+								0.35,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5,
+								"y": 1
+							},
+							{
+								"name": "Image Point 2",
+								"x": 0,
+								"y": 0.7
+							},
+							{
+								"name": "Image Point 3",
+								"x": 1,
+								"y": 0.7
+							},
+							{
+								"name": "Image Point 4",
+								"x": 0.5,
+								"y": 0.3
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 131570937854489,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

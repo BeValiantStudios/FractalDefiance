@@ -168,6 +168,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "TileMovement",
+			"name": "Tile movement",
+			"author": "Scirra",
+			"version": "r148",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "custom",
 			"name": "Custom",
 			"author": "Scirra",
@@ -238,7 +246,14 @@
 			"Exit",
 			"FadeIn",
 			"FadeOut",
-			"Seleccion"
+			"Seleccion",
+			"box",
+			"boxbot",
+			"boxleft",
+			"boxright",
+			"boxtop",
+			"TestBackground",
+			"TestSolid"
 		],
 		"subfolders": [
 			{
@@ -371,7 +386,13 @@
 					"SolidTestBox",
 					"TilemapSolid"
 				],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [],
+						"subfolders": [],
+						"name": "Objetos"
+					}
+				],
 				"name": "Escenario"
 			},
 			{
@@ -416,7 +437,8 @@
 			"eFunctions",
 			"eHud",
 			"eIntro",
-			"eMenu"
+			"eMenu",
+			"eObject"
 		],
 		"subfolders": []
 	},

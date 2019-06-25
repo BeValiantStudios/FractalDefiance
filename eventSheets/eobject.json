@@ -1,0 +1,231 @@
+{
+	"name": "eObject",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "box",
+					"sid": 299963528278628
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "box",
+					"sid": 409996956078518,
+					"parameters": {
+						"object": "boxbot",
+						"layer": "box.LayerName",
+						"image-point": "1"
+					}
+				},
+				{
+					"id": "pin-to-object",
+					"objectClass": "boxbot",
+					"sid": 316461652003939,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "box",
+						"mode": "position-only"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "box",
+					"sid": 965520265545921,
+					"parameters": {
+						"object": "boxleft",
+						"layer": "box.LayerName",
+						"image-point": "2"
+					}
+				},
+				{
+					"id": "pin-to-object",
+					"objectClass": "boxleft",
+					"sid": 591489740076086,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "box",
+						"mode": "position-only"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "box",
+					"sid": 235678255574433,
+					"parameters": {
+						"object": "boxright",
+						"layer": "box.LayerName",
+						"image-point": "3"
+					}
+				},
+				{
+					"id": "pin-to-object",
+					"objectClass": "boxright",
+					"sid": 891937930643140,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "box",
+						"mode": "position-only"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "box",
+					"sid": 419806356299640,
+					"parameters": {
+						"object": "boxtop",
+						"layer": "box.LayerName",
+						"image-point": "4"
+					}
+				},
+				{
+					"id": "pin-to-object",
+					"objectClass": "boxtop",
+					"sid": 638146671050977,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "box",
+						"mode": "position-only"
+					}
+				}
+			],
+			"sid": 675762065359328
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Players",
+					"sid": 128193276237789,
+					"parameters": {
+						"object": "boxleft"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "boxleft",
+					"sid": 258996983827075,
+					"parameters": {
+						"object": "box"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "box",
+					"sid": 914291347735140,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 352189005485210
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Players",
+					"sid": 887170776277962,
+					"parameters": {
+						"object": "boxright"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "boxright",
+					"sid": 963541096408875,
+					"parameters": {
+						"object": "box"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "box",
+					"sid": 367706662025314,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 917648543013819
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Players",
+					"sid": 140994226364077,
+					"parameters": {
+						"object": "boxtop"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "boxtop",
+					"sid": 282552122203523,
+					"parameters": {
+						"object": "box"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "box",
+					"sid": 793475892780624,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 607181066701011
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Players",
+					"sid": 624342548978857,
+					"parameters": {
+						"object": "boxbot"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "boxbot",
+					"sid": 404173373162337,
+					"parameters": {
+						"object": "box"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "box",
+					"sid": 913460357960602,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 448929524506974
+		}
+	],
+	"sid": 574955216976380
+}
