@@ -249,7 +249,12 @@
 						"posToEnemy": "",
 						"TESTVAR1": 0,
 						"TESTVAR2": 0,
-						"KbActive": 1
+						"KbActive": 1,
+						"LastAngle": 0,
+						"LastAngleX": 0,
+						"LastAngleY": 0,
+						"Dashing": false,
+						"DashTimer": 0
 					},
 					"behaviors": {
 						"CustomMovement": {
@@ -532,7 +537,12 @@
 						"posToEnemy": "",
 						"TESTVAR1": 0,
 						"TESTVAR2": 0,
-						"KbActive": 1
+						"KbActive": 1,
+						"LastAngle": 0,
+						"LastAngleX": 0,
+						"LastAngleY": 0,
+						"Dashing": false,
+						"DashTimer": 0
 					},
 					"behaviors": {
 						"CustomMovement": {
@@ -622,7 +632,12 @@
 						"posToEnemy": "",
 						"TESTVAR1": 0,
 						"TESTVAR2": 0,
-						"KbActive": 1
+						"KbActive": 1,
+						"LastAngle": 0,
+						"LastAngleX": 0,
+						"LastAngleY": 0,
+						"Dashing": false,
+						"DashTimer": 0
 					},
 					"behaviors": {
 						"CustomMovement": {
@@ -712,7 +727,12 @@
 						"posToEnemy": "",
 						"TESTVAR1": 0,
 						"TESTVAR2": 0,
-						"KbActive": 1
+						"KbActive": 1,
+						"LastAngle": 0,
+						"LastAngleX": 0,
+						"LastAngleY": 0,
+						"Dashing": false,
+						"DashTimer": 0
 					},
 					"behaviors": {
 						"CustomMovement": {

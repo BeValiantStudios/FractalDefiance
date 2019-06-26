@@ -7482,6 +7482,256 @@
 				}
 			],
 			"sid": 951092957538752
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Players",
+					"sid": 357569303182691,
+					"parameters": {
+						"instance-variable": "Dashing"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 124422438365964,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "Players",
+							"sid": 358219483085064,
+							"parameters": {
+								"comparison": 1,
+								"x-co-ordinate": "Self.LastAngleX"
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "Players",
+							"sid": 458849236070462,
+							"parameters": {
+								"comparison": 1,
+								"y-co-ordinate": "Self.LastAngleY"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 864101449929795,
+							"parameters": {
+								"instance-variable": "LastAngle",
+								"value": "angle(Self.X, Self.Y, Self.LastAngleX, Self.LastAngleY)"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 695319375773485,
+							"parameters": {
+								"instance-variable": "LastAngleX",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 674186977246065,
+							"parameters": {
+								"instance-variable": "LastAngleY",
+								"value": "Self.Y"
+							}
+						}
+					],
+					"sid": 117897427897410,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "kb",
+					"sid": 415453520528409,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [],
+			"sid": 258759560059864,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Players",
+							"sid": 477379017574211,
+							"parameters": {
+								"instance-variable": "Dashing"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Players",
+							"sid": 694758709550962,
+							"parameters": {
+								"instance-variable": "Dashing",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Players",
+							"sid": 765741974519753,
+							"parameters": {
+								"instance-variable": "DashTimer",
+								"value": "0.2"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 797081235677221,
+							"parameters": {
+								"group-name": "\"Input Player 1 GP\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 469368142319567,
+							"parameters": {
+								"group-name": "\"Input Player 1 KB\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Players",
+							"sid": 601784768846616,
+							"behaviorType": "8Direcciones",
+							"parameters": {
+								"max-speed": "600"
+							}
+						}
+					],
+					"sid": 790337991100137
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Players",
+					"sid": 726673119748230,
+					"parameters": {
+						"instance-variable": "Dashing"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Players",
+					"sid": 744293514518705,
+					"parameters": {
+						"instance-variable": "DashTimer",
+						"value": "dt"
+					}
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "Players",
+					"sid": 898131174430091,
+					"behaviorType": "8Direcciones",
+					"parameters": {
+						"vector-x": "cos(Players.LastAngle + 180) * Players.8Direcciones.MaxSpeed"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "Players",
+					"sid": 106133266381907,
+					"behaviorType": "8Direcciones",
+					"parameters": {
+						"vector-y": "sin(Players.LastAngle + 180) * Players.8Direcciones.MaxSpeed"
+					}
+				}
+			],
+			"sid": 490181488597334,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Players",
+							"sid": 277849558066429,
+							"parameters": {
+								"instance-variable": "DashTimer",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Players",
+							"sid": 350528762851373,
+							"behaviorType": "8Direcciones",
+							"parameters": {
+								"max-speed": "200"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Players",
+							"sid": 954147021345153,
+							"parameters": {
+								"instance-variable": "Dashing",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 803169458041793,
+							"parameters": {
+								"group-name": "\"Input Player 1 GP\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 990540374870271,
+							"parameters": {
+								"group-name": "\"Input Player 1 KB\"",
+								"state": "activated"
+							}
+						}
+					],
+					"sid": 996417060818567
+				}
+			]
 		}
 	],
 	"sid": 731626504774849

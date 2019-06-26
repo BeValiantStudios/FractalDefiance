@@ -98,6 +98,36 @@
 			"type": "number",
 			"desc": "",
 			"sid": 346676810037169
+		},
+		{
+			"name": "LastAngle",
+			"type": "number",
+			"desc": "",
+			"sid": 536095310687020
+		},
+		{
+			"name": "LastAngleX",
+			"type": "number",
+			"desc": "",
+			"sid": 476547784355469
+		},
+		{
+			"name": "LastAngleY",
+			"type": "number",
+			"desc": "",
+			"sid": 714016944502402
+		},
+		{
+			"name": "Dashing",
+			"type": "boolean",
+			"desc": "",
+			"sid": 266491127957531
+		},
+		{
+			"name": "DashTimer",
+			"type": "number",
+			"desc": "",
+			"sid": 608319132523265
 		}
 	],
 	"behaviorTypes": [
