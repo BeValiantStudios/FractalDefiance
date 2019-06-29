@@ -254,7 +254,8 @@
 						"LastAngleX": 0,
 						"LastAngleY": 0,
 						"Dashing": false,
-						"DashTimer": 0
+						"DashTimer": 0,
+						"Direction": ""
 					},
 					"behaviors": {
 						"CustomMovement": {
@@ -267,8 +268,8 @@
 						"8Direcciones": {
 							"properties": {
 								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
+								"acceleration": 1000,
+								"deceleration": 1100,
 								"directions": "dir-8",
 								"set-angle": "no",
 								"default-controls": false,
@@ -302,10 +303,10 @@
 						}
 					},
 					"world": {
-						"x": 832,
-						"y": 848,
-						"width": 21,
-						"height": 21,
+						"x": 144,
+						"y": 624,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -523,7 +524,7 @@
 					"uid": 1,
 					"instanceVariables": {
 						"Id": 2,
-						"Character": "Hielo",
+						"Character": "Agua",
 						"Active": false,
 						"Estado": "Run",
 						"NumX": -50,
@@ -542,7 +543,8 @@
 						"LastAngleX": 0,
 						"LastAngleY": 0,
 						"Dashing": false,
-						"DashTimer": 0
+						"DashTimer": 0,
+						"Direction": ""
 					},
 					"behaviors": {
 						"CustomMovement": {
@@ -555,8 +557,8 @@
 						"8Direcciones": {
 							"properties": {
 								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
+								"acceleration": 1000,
+								"deceleration": 1100,
 								"directions": "dir-8",
 								"set-angle": "smooth",
 								"default-controls": false,
@@ -637,7 +639,8 @@
 						"LastAngleX": 0,
 						"LastAngleY": 0,
 						"Dashing": false,
-						"DashTimer": 0
+						"DashTimer": 0,
+						"Direction": ""
 					},
 					"behaviors": {
 						"CustomMovement": {
@@ -650,8 +653,8 @@
 						"8Direcciones": {
 							"properties": {
 								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
+								"acceleration": 1000,
+								"deceleration": 1100,
 								"directions": "dir-8",
 								"set-angle": "smooth",
 								"default-controls": false,
@@ -732,7 +735,8 @@
 						"LastAngleX": 0,
 						"LastAngleY": 0,
 						"Dashing": false,
-						"DashTimer": 0
+						"DashTimer": 0,
+						"Direction": ""
 					},
 					"behaviors": {
 						"CustomMovement": {
@@ -745,8 +749,8 @@
 						"8Direcciones": {
 							"properties": {
 								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
+								"acceleration": 1000,
+								"deceleration": 1100,
 								"directions": "dir-8",
 								"set-angle": "smooth",
 								"default-controls": false,
