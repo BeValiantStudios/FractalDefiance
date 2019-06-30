@@ -1,0 +1,752 @@
+{
+	"name": "Magoldo",
+	"plugin-id": "Sprite",
+	"sid": 914499778835269,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\DownIdle\\000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 749,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\DownIdle\\001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 750,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5,
+								"y": 0.8076923076923077
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\DownIdle\\002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 751,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5,
+								"y": 0.7307692307692307
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\DownIdle\\003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 752,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5,
+								"y": 0.6538461538461539
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\DownIdle\\004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 753,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\DownIdle\\005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 754,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5384615384615384,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\DownIdle\\006.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 755,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5384615384615384,
+						"originY": 0.6153846153846154,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\DownIdle\\007.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 756,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5384615384615384,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.46153846153846156,
+						"originY": 0.6153846153846154,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\DownIdle\\008.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 757,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.46153846153846156,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5384615384615384,
+						"originY": 0.6153846153846154,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\DownIdle\\009.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 758,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5384615384615384,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 592758752490983,
+				"name": "DownIdle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			},
+			{
+				"frames": [
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\RightIdle\\000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 759,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.6153846153846154,
+								"y": 0.8076923076923077
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\RightIdle\\001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 760,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.6153846153846154,
+								"y": 0.7307692307692307
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\RightIdle\\002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 761,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.6153846153846154,
+								"y": 0.6538461538461539
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\RightIdle\\003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 762,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5769230769230769,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\RightIdle\\004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 763,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.6153846153846154,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\RightIdle\\005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 764,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.6538461538461539,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\RightIdle\\006.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 765,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.6153846153846154,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\RightIdle\\007.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 766,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.6538461538461539,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\RightIdle\\008.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 767,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5769230769230769,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\RightIdle\\009.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 768,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.6538461538461539,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 878177111783001,
+				"name": "RightIdle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			},
+			{
+				"frames": [
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\UpIdle\\000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 769,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5,
+								"y": 0.8076923076923077
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\UpIdle\\001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 770,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5,
+								"y": 0.7307692307692307
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\UpIdle\\002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 771,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5,
+								"y": 0.6538461538461539
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\UpIdle\\003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 772,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\UpIdle\\004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 773,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\UpIdle\\005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 774,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5384615384615384,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\UpIdle\\006.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 775,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5,
+								"y": 0.5769230769230769
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\UpIdle\\007.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 776,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5384615384615384,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\UpIdle\\008.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 777,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.46153846153846156,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\UpIdle\\009.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 778,
+						"imagePoints": [
+							{
+								"name": "Disparo",
+								"x": 0.5384615384615384,
+								"y": 0.6153846153846154
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 869070011545212,
+				"name": "UpIdle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			},
+			{
+				"frames": [
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\DownRun\\000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 779,
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\DownRun\\001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 780,
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\DownRun\\002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 781,
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\DownRun\\003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 782,
+						"duration": 1
+					}
+				],
+				"sid": 810196393480429,
+				"name": "DownRun",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			},
+			{
+				"frames": [
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\RightRun\\000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 783,
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\RightRun\\001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 784,
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\RightRun\\002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 785,
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\RightRun\\003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 786,
+						"duration": 1
+					}
+				],
+				"sid": 973974149467378,
+				"name": "RightRun",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			},
+			{
+				"frames": [
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\UpRun\\000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 787,
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\UpRun\\001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 788,
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\UpRun\\002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 789,
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\Floating-Islands-saviours\\Animations\\Magoldo\\UpRun\\003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 790,
+						"duration": 1
+					}
+				],
+				"sid": 710857050701245,
+				"name": "UpRun",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			}
+		],
+		"subfolders": []
+	}
+}

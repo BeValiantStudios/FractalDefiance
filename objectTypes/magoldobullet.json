@@ -1,28 +1,34 @@
 {
-	"name": "ezgif432cdee93c7d",
+	"name": "MagoldoBullet",
 	"plugin-id": "Sprite",
-	"sid": 425939233850853,
+	"sid": 196976779325737,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 777356399755380
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 148,
-						"height": 38,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 687,
+						"imageSpriteId": 791,
 						"duration": 1
 					}
 				],
-				"sid": 294672312975834,
+				"sid": 508355614712767,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

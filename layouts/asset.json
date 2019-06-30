@@ -1329,7 +1329,7 @@
 					"uid": 101,
 					"instanceVariables": {
 						"SearchTime": 1,
-						"Vida": 100,
+						"Vida": 2000,
 						"SelectedUIDPlayer": 0,
 						"chooseX": 0,
 						"chooseY": 0,
@@ -1631,7 +1631,7 @@
 					"uid": 10,
 					"instanceVariables": {
 						"SearchTime": 1,
-						"Vida": 0,
+						"Vida": 2000,
 						"SelectedUIDPlayer": 0,
 						"chooseX": 0,
 						"chooseY": 0
@@ -1879,6 +1879,185 @@
 						"y": 82.43590012574907,
 						"width": 250,
 						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Esqueleto",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Up",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 115,
+					"instanceVariables": {
+						"SearchTime": 1,
+						"Vida": 2000,
+						"SelectedUIDPlayer": 0,
+						"chooseX": 0,
+						"chooseY": 0
+					},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 300,
+								"deceleration": 150,
+								"rotate-speed": 360,
+								"rotate-object": false,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"CustomMovement": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"Tint": {
+							"parameters": {
+								"color": [
+									1,
+									0,
+									0,
+									1
+								]
+							}
+						}
+					},
+					"world": {
+						"x": 333,
+						"y": 378,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Magoldo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "DownIdle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 117,
+					"instanceVariables": {
+						"SearchTime": 1,
+						"Vida": 2000,
+						"SelectedUIDPlayer": 0,
+						"chooseX": 0,
+						"chooseY": 0
+					},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 300,
+								"deceleration": 150,
+								"rotate-speed": 360,
+								"rotate-object": false,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"CustomMovement": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"Tint": {
+							"parameters": {
+								"color": [
+									1,
+									0,
+									0,
+									1
+								]
+							}
+						}
+					},
+					"world": {
+						"x": 511,
+						"y": 493,
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MagoldoBullet",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 118,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 299.3362022592795,
+						"y": 844.6110812264651,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

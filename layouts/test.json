@@ -303,10 +303,10 @@
 						}
 					},
 					"world": {
-						"x": 144,
-						"y": 624,
-						"width": 250,
-						"height": 250,
+						"x": 784,
+						"y": 896,
+						"width": 25,
+						"height": 25,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1672,6 +1672,421 @@
 						"height": 20,
 						"originX": -0.07142857142857142,
 						"originY": 1.05,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Kronejo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Right",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 114,
+					"instanceVariables": {
+						"SearchTime": 1,
+						"Vida": 1000,
+						"SelectedUIDPlayer": 0,
+						"chooseX": 0,
+						"chooseY": 0,
+						"Atacando": 0
+					},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 300,
+								"deceleration": 150,
+								"rotate-speed": 360,
+								"rotate-object": false,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"CustomMovement": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"Tint": {
+							"parameters": {
+								"color": [
+									1,
+									0,
+									0,
+									1
+								]
+							}
+						}
+					},
+					"world": {
+						"x": 832,
+						"y": 832,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Esqueleto",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Up",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 116,
+					"instanceVariables": {
+						"SearchTime": 1,
+						"Vida": 2000,
+						"SelectedUIDPlayer": 0,
+						"chooseX": 0,
+						"chooseY": 0
+					},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 300,
+								"deceleration": 150,
+								"rotate-speed": 360,
+								"rotate-object": false,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"CustomMovement": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"Tint": {
+							"parameters": {
+								"color": [
+									1,
+									0,
+									0,
+									1
+								]
+							}
+						}
+					},
+					"world": {
+						"x": 816,
+						"y": 688,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Magoldo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "DownIdle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 119,
+					"instanceVariables": {
+						"SearchTime": 1,
+						"Vida": 2000,
+						"SelectedUIDPlayer": 0,
+						"chooseX": 0,
+						"chooseY": 0
+					},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 300,
+								"deceleration": 150,
+								"rotate-speed": 360,
+								"rotate-object": false,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"CustomMovement": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"Tint": {
+							"parameters": {
+								"color": [
+									1,
+									0,
+									0,
+									1
+								]
+							}
+						}
+					},
+					"world": {
+						"x": 960,
+						"y": 656,
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Magoldo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "DownIdle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 120,
+					"instanceVariables": {
+						"SearchTime": 1,
+						"Vida": 2000,
+						"SelectedUIDPlayer": 0,
+						"chooseX": 0,
+						"chooseY": 0
+					},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 300,
+								"deceleration": 150,
+								"rotate-speed": 360,
+								"rotate-object": false,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"CustomMovement": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"Tint": {
+							"parameters": {
+								"color": [
+									1,
+									0,
+									0,
+									1
+								]
+							}
+						}
+					},
+					"world": {
+						"x": 608,
+						"y": 656,
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Magoldo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "DownIdle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 121,
+					"instanceVariables": {
+						"SearchTime": 1,
+						"Vida": 2000,
+						"SelectedUIDPlayer": 0,
+						"chooseX": 0,
+						"chooseY": 0
+					},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 300,
+								"deceleration": 150,
+								"rotate-speed": 360,
+								"rotate-object": false,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"CustomMovement": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"Tint": {
+							"parameters": {
+								"color": [
+									1,
+									0,
+									0,
+									1
+								]
+							}
+						}
+					},
+					"world": {
+						"x": 1104,
+						"y": 656,
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Magoldo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "DownIdle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 122,
+					"instanceVariables": {
+						"SearchTime": 1,
+						"Vida": 2000,
+						"SelectedUIDPlayer": 0,
+						"chooseX": 0,
+						"chooseY": 0
+					},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 300,
+								"deceleration": 150,
+								"rotate-speed": 360,
+								"rotate-object": false,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"CustomMovement": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"Tint": {
+							"parameters": {
+								"color": [
+									1,
+									0,
+									0,
+									1
+								]
+							}
+						}
+					},
+					"world": {
+						"x": 896,
+						"y": 496,
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

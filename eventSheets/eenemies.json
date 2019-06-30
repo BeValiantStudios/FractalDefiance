@@ -341,814 +341,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 127095607115775,
-					"parameters": {
-						"interval-seconds": "0.1"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 660849420755325,
-			"disabled": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-on-screen",
-							"objectClass": "Kronejo",
-							"sid": 330112847099469
-						}
-					],
-					"actions": [],
-					"sid": 381713838827141,
-					"disabled": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "for-each",
-									"objectClass": "System",
-									"sid": 539952253648876,
-									"parameters": {
-										"object": "Kronejo"
-									}
-								}
-							],
-							"actions": [],
-							"sid": 378922190679359,
-							"disabled": true,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-two-values",
-											"objectClass": "System",
-											"sid": 916788202264943,
-											"parameters": {
-												"first-value": "distance(Players.X,Players.Y,Kronejo.X,Kronejo.Y)",
-												"comparison": 4,
-												"second-value": "30"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-enabled",
-											"objectClass": "Kronejo",
-											"sid": 164097745051709,
-											"behaviorType": "Pathfinding",
-											"parameters": {
-												"set": "enabled"
-											}
-										},
-										{
-											"id": "set-instvar-value",
-											"objectClass": "Kronejo",
-											"sid": 463455107801324,
-											"parameters": {
-												"instance-variable": "Atacando",
-												"value": "0"
-											}
-										}
-									],
-									"sid": 998225935218968,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "Kronejo",
-											"sid": 440250772986577,
-											"parameters": {
-												"instance-variable": "Atacando",
-												"comparison": 0,
-												"value": "1"
-											}
-										}
-									],
-									"actions": [],
-									"sid": 234108570023028,
-									"disabled": true,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-speed",
-													"objectClass": "Kronejo",
-													"sid": 178289429269107,
-													"behaviorType": "Pathfinding",
-													"parameters": {
-														"comparison": 2,
-														"speed": "20"
-													}
-												}
-											],
-											"actions": [],
-											"sid": 207132940456046,
-											"disabled": true,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "is-animation-playing",
-															"objectClass": "Kronejo",
-															"sid": 982015465292109,
-															"parameters": {
-																"animation": "\"UpIdle\""
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-animation",
-															"objectClass": "Kronejo",
-															"sid": 468424665200419,
-															"parameters": {
-																"animation": "\"AttackUp\"",
-																"from": "beginning"
-															}
-														},
-														{
-															"id": "set-enabled",
-															"objectClass": "Kronejo",
-															"sid": 631571960067657,
-															"behaviorType": "Pathfinding",
-															"parameters": {
-																"set": "disabled"
-															}
-														}
-													],
-													"sid": 582319059166578,
-													"disabled": true,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "every-x-seconds",
-																	"objectClass": "System",
-																	"sid": 740284984842801,
-																	"parameters": {
-																		"interval-seconds": "random(0.8,1.0)"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "spawn-another-object",
-																	"objectClass": "Kronejo",
-																	"sid": 526325535124618,
-																	"parameters": {
-																		"object": "Corte",
-																		"layer": "\"Game\"",
-																		"image-point": "\"Disparo\""
-																	}
-																},
-																{
-																	"id": "set-angle-toward-position",
-																	"objectClass": "Corte",
-																	"sid": 441041751510887,
-																	"parameters": {
-																		"x": "Players.X",
-																		"y": "Players.Y"
-																	}
-																}
-															],
-															"sid": 413804078931846,
-															"disabled": true
-														}
-													]
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "is-animation-playing",
-															"objectClass": "Kronejo",
-															"sid": 421194552773655,
-															"parameters": {
-																"animation": "\"DownIdle\""
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-animation",
-															"objectClass": "Kronejo",
-															"sid": 220634783123147,
-															"parameters": {
-																"animation": "\"AttackDown\"",
-																"from": "beginning"
-															}
-														},
-														{
-															"id": "set-enabled",
-															"objectClass": "Kronejo",
-															"sid": 798955434442775,
-															"behaviorType": "Pathfinding",
-															"parameters": {
-																"set": "disabled"
-															}
-														}
-													],
-													"sid": 435082524146189,
-													"disabled": true,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "every-x-seconds",
-																	"objectClass": "System",
-																	"sid": 738529654265278,
-																	"parameters": {
-																		"interval-seconds": "random(0.8,1.0)"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "spawn-another-object",
-																	"objectClass": "Kronejo",
-																	"sid": 665858887638281,
-																	"parameters": {
-																		"object": "Corte",
-																		"layer": "\"Game\"",
-																		"image-point": "\"Disparo\""
-																	}
-																},
-																{
-																	"id": "set-angle-toward-position",
-																	"objectClass": "Corte",
-																	"sid": 502838748879339,
-																	"parameters": {
-																		"x": "Players.X",
-																		"y": "Players.Y"
-																	}
-																}
-															],
-															"sid": 127281368755414,
-															"disabled": true
-														}
-													]
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "is-animation-playing",
-															"objectClass": "Kronejo",
-															"sid": 156516422617366,
-															"parameters": {
-																"animation": "\"RightIdle\""
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-animation",
-															"objectClass": "Kronejo",
-															"sid": 160873085855257,
-															"parameters": {
-																"animation": "\"AttackRight\"",
-																"from": "beginning"
-															}
-														},
-														{
-															"id": "set-enabled",
-															"objectClass": "Kronejo",
-															"sid": 876355775342124,
-															"behaviorType": "Pathfinding",
-															"parameters": {
-																"set": "disabled"
-															}
-														}
-													],
-													"sid": 409034498267619,
-													"disabled": true,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "every-x-seconds",
-																	"objectClass": "System",
-																	"sid": 828855069819446,
-																	"parameters": {
-																		"interval-seconds": "random(0.8,1.0)"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "spawn-another-object",
-																	"objectClass": "Kronejo",
-																	"sid": 988977902458027,
-																	"parameters": {
-																		"object": "Corte",
-																		"layer": "\"Game\"",
-																		"image-point": "\"Disparo\""
-																	}
-																},
-																{
-																	"id": "set-angle-toward-position",
-																	"objectClass": "Corte",
-																	"sid": 527214684427158,
-																	"parameters": {
-																		"x": "Players.X",
-																		"y": "Players.Y"
-																	}
-																}
-															],
-															"sid": 793465650886393,
-															"disabled": true
-														}
-													]
-												}
-											]
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "else",
-													"objectClass": "System",
-													"sid": 274471304184472
-												}
-											],
-											"actions": [
-												{
-													"id": "set-instvar-value",
-													"objectClass": "Kronejo",
-													"sid": 507755642620759,
-													"parameters": {
-														"instance-variable": "Atacando",
-														"value": "0"
-													}
-												}
-											],
-											"sid": 674658609510535,
-											"disabled": true
-										}
-									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "Kronejo",
-											"sid": 797893019895327,
-											"parameters": {
-												"instance-variable": "Atacando",
-												"comparison": 0,
-												"value": "0"
-											}
-										}
-									],
-									"actions": [],
-									"sid": 969720561734870,
-									"disabled": true,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 833077346476434,
-													"parameters": {
-														"first-value": "Kronejo.Pathfinding.MovingAngle",
-														"comparison": 5,
-														"second-value": "315"
-													}
-												},
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 367736347988171,
-													"parameters": {
-														"first-value": "Kronejo.Pathfinding.MovingAngle",
-														"comparison": 2,
-														"second-value": "45"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "Kronejo",
-													"sid": 760291212052310,
-													"parameters": {
-														"animation": "\"Right\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "set-mirrored",
-													"objectClass": "Kronejo",
-													"sid": 877879771779342,
-													"parameters": {
-														"state": "not-mirrored"
-													}
-												}
-											],
-											"sid": 583249143568636,
-											"disabled": true,
-											"isOrBlock": true
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 154778710103822,
-													"parameters": {
-														"first-value": "Kronejo.Pathfinding.MovingAngle",
-														"comparison": 5,
-														"second-value": "45"
-													}
-												},
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 239726087970691,
-													"parameters": {
-														"first-value": "Kronejo.Pathfinding.MovingAngle",
-														"comparison": 2,
-														"second-value": "135"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "Kronejo",
-													"sid": 352628621225273,
-													"parameters": {
-														"animation": "\"Down\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "set-mirrored",
-													"objectClass": "Kronejo",
-													"sid": 946726429266674,
-													"parameters": {
-														"state": "not-mirrored"
-													}
-												}
-											],
-											"sid": 121191566315799,
-											"disabled": true
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 981409946557312,
-													"parameters": {
-														"first-value": "Kronejo.Pathfinding.MovingAngle",
-														"comparison": 5,
-														"second-value": "135"
-													}
-												},
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 701412216405151,
-													"parameters": {
-														"first-value": "Kronejo.Pathfinding.MovingAngle",
-														"comparison": 2,
-														"second-value": "225"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "Kronejo",
-													"sid": 497284636820570,
-													"parameters": {
-														"animation": "\"Right\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "set-mirrored",
-													"objectClass": "Kronejo",
-													"sid": 578002771759927,
-													"parameters": {
-														"state": "mirrored"
-													}
-												}
-											],
-											"sid": 521966509312980,
-											"disabled": true
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 783694676182932,
-													"parameters": {
-														"first-value": "Kronejo.Pathfinding.MovingAngle",
-														"comparison": 5,
-														"second-value": "225"
-													}
-												},
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 424330492852429,
-													"parameters": {
-														"first-value": "Kronejo.Pathfinding.MovingAngle",
-														"comparison": 2,
-														"second-value": "315"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "Kronejo",
-													"sid": 276214127489920,
-													"parameters": {
-														"animation": "\"Up\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "set-mirrored",
-													"objectClass": "Kronejo",
-													"sid": 960881984189757,
-													"parameters": {
-														"state": "not-mirrored"
-													}
-												}
-											],
-											"sid": 362125485658950,
-											"disabled": true
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 298527452471500,
-													"parameters": {
-														"first-value": "distance(Players.X,Players.Y,Kronejo.X,Kronejo.Y)",
-														"comparison": 3,
-														"second-value": "30"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-instvar-value",
-													"objectClass": "Kronejo",
-													"sid": 396158970150985,
-													"parameters": {
-														"instance-variable": "Atacando",
-														"value": "1"
-													}
-												}
-											],
-											"sid": 696646983387449,
-											"disabled": true,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 889637308090606,
-															"parameters": {
-																"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
-																"comparison": 5,
-																"second-value": "-45"
-															}
-														},
-														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 272654547665852,
-															"parameters": {
-																"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
-																"comparison": 2,
-																"second-value": "45"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-animation",
-															"objectClass": "Kronejo",
-															"sid": 750573358558513,
-															"parameters": {
-																"animation": "\"RightIdle\"",
-																"from": "beginning"
-															}
-														},
-														{
-															"id": "stop",
-															"objectClass": "Kronejo",
-															"sid": 721986360980055,
-															"behaviorType": "Pathfinding"
-														},
-														{
-															"id": "set-mirrored",
-															"objectClass": "Kronejo",
-															"sid": 331061940761077,
-															"parameters": {
-																"state": "not-mirrored"
-															}
-														}
-													],
-													"sid": 134810873430156,
-													"disabled": true
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 826491933337343,
-															"parameters": {
-																"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
-																"comparison": 5,
-																"second-value": "45"
-															}
-														},
-														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 262438308348205,
-															"parameters": {
-																"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
-																"comparison": 2,
-																"second-value": "135"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-animation",
-															"objectClass": "Kronejo",
-															"sid": 541999159461349,
-															"parameters": {
-																"animation": "\"DownIdle\"",
-																"from": "beginning"
-															}
-														},
-														{
-															"id": "stop",
-															"objectClass": "Kronejo",
-															"sid": 581891708976353,
-															"behaviorType": "Pathfinding"
-														},
-														{
-															"id": "set-mirrored",
-															"objectClass": "Kronejo",
-															"sid": 136163465615517,
-															"parameters": {
-																"state": "not-mirrored"
-															}
-														}
-													],
-													"sid": 458961335635710,
-													"disabled": true
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 571383436668937,
-															"parameters": {
-																"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
-																"comparison": 5,
-																"second-value": "135"
-															}
-														},
-														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 385323238082200,
-															"parameters": {
-																"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
-																"comparison": 2,
-																"second-value": "-135"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-animation",
-															"objectClass": "Kronejo",
-															"sid": 937987222080266,
-															"parameters": {
-																"animation": "\"RightIdle\"",
-																"from": "beginning"
-															}
-														},
-														{
-															"id": "set-mirrored",
-															"objectClass": "Kronejo",
-															"sid": 752792186467770,
-															"parameters": {
-																"state": "mirrored"
-															}
-														}
-													],
-													"sid": 526824487779293,
-													"disabled": true,
-													"isOrBlock": true
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 742466992992640,
-															"parameters": {
-																"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
-																"comparison": 3,
-																"second-value": "-45"
-															}
-														},
-														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 636187284842618,
-															"parameters": {
-																"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
-																"comparison": 4,
-																"second-value": "-135"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-animation",
-															"objectClass": "Kronejo",
-															"sid": 964449822613082,
-															"parameters": {
-																"animation": "\"UpIdle\"",
-																"from": "beginning"
-															}
-														},
-														{
-															"id": "stop",
-															"objectClass": "Kronejo",
-															"sid": 131239073153763,
-															"behaviorType": "Pathfinding"
-														},
-														{
-															"id": "set-mirrored",
-															"objectClass": "Kronejo",
-															"sid": 453617414595924,
-															"parameters": {
-																"state": "not-mirrored"
-															}
-														}
-													],
-													"sid": 417852086172197,
-													"disabled": true
-												}
-											]
-										}
-									]
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "AtaquesPersonajes",
 					"sid": 580677512671337,
@@ -1169,6 +361,1581 @@
 				}
 			],
 			"sid": 331214284980479
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Kronejo",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 782746138656964,
+							"parameters": {
+								"interval-seconds": "0.1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 611256652554185,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-on-screen",
+									"objectClass": "Kronejo",
+									"sid": 634032744913529
+								}
+							],
+							"actions": [],
+							"sid": 984055894907677,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 567311274071653,
+											"parameters": {
+												"object": "Kronejo"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 862244732008050,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 548348633130792,
+													"parameters": {
+														"first-value": "distance(Players.X,Players.Y,Kronejo.X,Kronejo.Y)",
+														"comparison": 4,
+														"second-value": "30"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "Kronejo",
+													"sid": 844655522478081,
+													"behaviorType": "Pathfinding",
+													"parameters": {
+														"set": "enabled"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "Kronejo",
+													"sid": 779846966117071,
+													"parameters": {
+														"instance-variable": "Atacando",
+														"value": "0"
+													}
+												}
+											],
+											"sid": 881157282926099
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Kronejo",
+													"sid": 549957891642033,
+													"parameters": {
+														"instance-variable": "Atacando",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 591411513259548,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-speed",
+															"objectClass": "Kronejo",
+															"sid": 278117639132406,
+															"behaviorType": "Pathfinding",
+															"parameters": {
+																"comparison": 2,
+																"speed": "20"
+															}
+														}
+													],
+													"actions": [],
+													"sid": 951706023105560,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "is-animation-playing",
+																	"objectClass": "Kronejo",
+																	"sid": 404085934416303,
+																	"parameters": {
+																		"animation": "\"UpIdle\""
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "set-animation",
+																	"objectClass": "Kronejo",
+																	"sid": 854654139849031,
+																	"parameters": {
+																		"animation": "\"AttackUp\"",
+																		"from": "beginning"
+																	}
+																},
+																{
+																	"id": "set-enabled",
+																	"objectClass": "Kronejo",
+																	"sid": 504889117081007,
+																	"behaviorType": "Pathfinding",
+																	"parameters": {
+																		"set": "disabled"
+																	}
+																}
+															],
+															"sid": 401048510825773,
+															"children": [
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "every-x-seconds",
+																			"objectClass": "System",
+																			"sid": 901361556828296,
+																			"parameters": {
+																				"interval-seconds": "random(0.8,1.0)"
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "spawn-another-object",
+																			"objectClass": "Kronejo",
+																			"sid": 796909263556333,
+																			"parameters": {
+																				"object": "Corte",
+																				"layer": "\"Game\"",
+																				"image-point": "\"Disparo\""
+																			}
+																		},
+																		{
+																			"id": "set-angle-toward-position",
+																			"objectClass": "Corte",
+																			"sid": 820780072119653,
+																			"parameters": {
+																				"x": "Players.X",
+																				"y": "Players.Y"
+																			}
+																		}
+																	],
+																	"sid": 362474080225179
+																}
+															]
+														},
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "is-animation-playing",
+																	"objectClass": "Kronejo",
+																	"sid": 896626702449054,
+																	"parameters": {
+																		"animation": "\"DownIdle\""
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "set-animation",
+																	"objectClass": "Kronejo",
+																	"sid": 272768809542807,
+																	"parameters": {
+																		"animation": "\"AttackDown\"",
+																		"from": "beginning"
+																	}
+																},
+																{
+																	"id": "set-enabled",
+																	"objectClass": "Kronejo",
+																	"sid": 625797653412309,
+																	"behaviorType": "Pathfinding",
+																	"parameters": {
+																		"set": "disabled"
+																	}
+																}
+															],
+															"sid": 493362662255718,
+															"children": [
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "every-x-seconds",
+																			"objectClass": "System",
+																			"sid": 443655281313794,
+																			"parameters": {
+																				"interval-seconds": "random(0.8,1.0)"
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "spawn-another-object",
+																			"objectClass": "Kronejo",
+																			"sid": 726880512542493,
+																			"parameters": {
+																				"object": "Corte",
+																				"layer": "\"Game\"",
+																				"image-point": "\"Disparo\""
+																			}
+																		},
+																		{
+																			"id": "set-angle-toward-position",
+																			"objectClass": "Corte",
+																			"sid": 723239503418704,
+																			"parameters": {
+																				"x": "Players.X",
+																				"y": "Players.Y"
+																			}
+																		}
+																	],
+																	"sid": 321107370675959
+																}
+															]
+														},
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "is-animation-playing",
+																	"objectClass": "Kronejo",
+																	"sid": 205969068219986,
+																	"parameters": {
+																		"animation": "\"RightIdle\""
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "set-animation",
+																	"objectClass": "Kronejo",
+																	"sid": 217260501138892,
+																	"parameters": {
+																		"animation": "\"AttackRight\"",
+																		"from": "beginning"
+																	}
+																},
+																{
+																	"id": "set-enabled",
+																	"objectClass": "Kronejo",
+																	"sid": 698597732809196,
+																	"behaviorType": "Pathfinding",
+																	"parameters": {
+																		"set": "disabled"
+																	}
+																}
+															],
+															"sid": 656787073721083,
+															"children": [
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "every-x-seconds",
+																			"objectClass": "System",
+																			"sid": 230522052299339,
+																			"parameters": {
+																				"interval-seconds": "random(0.8,1.0)"
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "spawn-another-object",
+																			"objectClass": "Kronejo",
+																			"sid": 208465928310055,
+																			"parameters": {
+																				"object": "Corte",
+																				"layer": "\"Game\"",
+																				"image-point": "\"Disparo\""
+																			}
+																		},
+																		{
+																			"id": "set-angle-toward-position",
+																			"objectClass": "Corte",
+																			"sid": 788235120482511,
+																			"parameters": {
+																				"x": "Players.X",
+																				"y": "Players.Y"
+																			}
+																		}
+																	],
+																	"sid": 528121344741310
+																}
+															]
+														}
+													]
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 672375824507158
+														}
+													],
+													"actions": [
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Kronejo",
+															"sid": 264432667711988,
+															"parameters": {
+																"instance-variable": "Atacando",
+																"value": "0"
+															}
+														}
+													],
+													"sid": 139461653053581
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Kronejo",
+													"sid": 923496082744231,
+													"parameters": {
+														"instance-variable": "Atacando",
+														"comparison": 0,
+														"value": "0"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 356512838893563,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 403736413975846,
+															"parameters": {
+																"first-value": "Kronejo.Pathfinding.MovingAngle",
+																"comparison": 5,
+																"second-value": "315"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 571211954639884,
+															"parameters": {
+																"first-value": "Kronejo.Pathfinding.MovingAngle",
+																"comparison": 2,
+																"second-value": "45"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-animation",
+															"objectClass": "Kronejo",
+															"sid": 785027723674701,
+															"parameters": {
+																"animation": "\"Right\"",
+																"from": "beginning"
+															}
+														},
+														{
+															"id": "set-mirrored",
+															"objectClass": "Kronejo",
+															"sid": 528941399930720,
+															"parameters": {
+																"state": "not-mirrored"
+															}
+														}
+													],
+													"sid": 954011521748228,
+													"isOrBlock": true
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 821263581182460,
+															"parameters": {
+																"first-value": "Kronejo.Pathfinding.MovingAngle",
+																"comparison": 5,
+																"second-value": "45"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 318168681477450,
+															"parameters": {
+																"first-value": "Kronejo.Pathfinding.MovingAngle",
+																"comparison": 2,
+																"second-value": "135"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-animation",
+															"objectClass": "Kronejo",
+															"sid": 872016104191607,
+															"parameters": {
+																"animation": "\"Down\"",
+																"from": "beginning"
+															}
+														},
+														{
+															"id": "set-mirrored",
+															"objectClass": "Kronejo",
+															"sid": 994168846915129,
+															"parameters": {
+																"state": "not-mirrored"
+															}
+														}
+													],
+													"sid": 161142266059406
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 741210021199757,
+															"parameters": {
+																"first-value": "Kronejo.Pathfinding.MovingAngle",
+																"comparison": 5,
+																"second-value": "135"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 167047137089886,
+															"parameters": {
+																"first-value": "Kronejo.Pathfinding.MovingAngle",
+																"comparison": 2,
+																"second-value": "225"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-animation",
+															"objectClass": "Kronejo",
+															"sid": 347388798958459,
+															"parameters": {
+																"animation": "\"Right\"",
+																"from": "beginning"
+															}
+														},
+														{
+															"id": "set-mirrored",
+															"objectClass": "Kronejo",
+															"sid": 836458450853163,
+															"parameters": {
+																"state": "mirrored"
+															}
+														}
+													],
+													"sid": 350847423715318
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 349368744003484,
+															"parameters": {
+																"first-value": "Kronejo.Pathfinding.MovingAngle",
+																"comparison": 5,
+																"second-value": "225"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 656251937525190,
+															"parameters": {
+																"first-value": "Kronejo.Pathfinding.MovingAngle",
+																"comparison": 2,
+																"second-value": "315"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-animation",
+															"objectClass": "Kronejo",
+															"sid": 283743782990529,
+															"parameters": {
+																"animation": "\"Up\"",
+																"from": "beginning"
+															}
+														},
+														{
+															"id": "set-mirrored",
+															"objectClass": "Kronejo",
+															"sid": 440602354418626,
+															"parameters": {
+																"state": "not-mirrored"
+															}
+														}
+													],
+													"sid": 629473154651776
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 779574725743886,
+															"parameters": {
+																"first-value": "distance(Players.X,Players.Y,Kronejo.X,Kronejo.Y)",
+																"comparison": 3,
+																"second-value": "30"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Kronejo",
+															"sid": 390988911747455,
+															"parameters": {
+																"instance-variable": "Atacando",
+																"value": "1"
+															}
+														}
+													],
+													"sid": 570341201200224,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "compare-two-values",
+																	"objectClass": "System",
+																	"sid": 519719665798194,
+																	"parameters": {
+																		"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
+																		"comparison": 5,
+																		"second-value": "-45"
+																	}
+																},
+																{
+																	"id": "compare-two-values",
+																	"objectClass": "System",
+																	"sid": 715832519103514,
+																	"parameters": {
+																		"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
+																		"comparison": 2,
+																		"second-value": "45"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "set-animation",
+																	"objectClass": "Kronejo",
+																	"sid": 331489833241682,
+																	"parameters": {
+																		"animation": "\"RightIdle\"",
+																		"from": "beginning"
+																	}
+																},
+																{
+																	"id": "stop",
+																	"objectClass": "Kronejo",
+																	"sid": 105385362203810,
+																	"behaviorType": "Pathfinding"
+																},
+																{
+																	"id": "set-mirrored",
+																	"objectClass": "Kronejo",
+																	"sid": 320226140236005,
+																	"parameters": {
+																		"state": "not-mirrored"
+																	}
+																}
+															],
+															"sid": 833488647466154
+														},
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "compare-two-values",
+																	"objectClass": "System",
+																	"sid": 632473522404675,
+																	"parameters": {
+																		"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
+																		"comparison": 5,
+																		"second-value": "45"
+																	}
+																},
+																{
+																	"id": "compare-two-values",
+																	"objectClass": "System",
+																	"sid": 739857895940374,
+																	"parameters": {
+																		"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
+																		"comparison": 2,
+																		"second-value": "135"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "set-animation",
+																	"objectClass": "Kronejo",
+																	"sid": 157902306003716,
+																	"parameters": {
+																		"animation": "\"DownIdle\"",
+																		"from": "beginning"
+																	}
+																},
+																{
+																	"id": "stop",
+																	"objectClass": "Kronejo",
+																	"sid": 834413998689992,
+																	"behaviorType": "Pathfinding"
+																},
+																{
+																	"id": "set-mirrored",
+																	"objectClass": "Kronejo",
+																	"sid": 239764298773117,
+																	"parameters": {
+																		"state": "not-mirrored"
+																	}
+																}
+															],
+															"sid": 801154443862915
+														},
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "compare-two-values",
+																	"objectClass": "System",
+																	"sid": 279304024580166,
+																	"parameters": {
+																		"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
+																		"comparison": 5,
+																		"second-value": "135"
+																	}
+																},
+																{
+																	"id": "compare-two-values",
+																	"objectClass": "System",
+																	"sid": 292544089630068,
+																	"parameters": {
+																		"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
+																		"comparison": 2,
+																		"second-value": "-135"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "set-animation",
+																	"objectClass": "Kronejo",
+																	"sid": 799663513895147,
+																	"parameters": {
+																		"animation": "\"RightIdle\"",
+																		"from": "beginning"
+																	}
+																},
+																{
+																	"id": "set-mirrored",
+																	"objectClass": "Kronejo",
+																	"sid": 452526461917726,
+																	"parameters": {
+																		"state": "mirrored"
+																	}
+																}
+															],
+															"sid": 897215951728068,
+															"isOrBlock": true
+														},
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "compare-two-values",
+																	"objectClass": "System",
+																	"sid": 227140502995477,
+																	"parameters": {
+																		"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
+																		"comparison": 3,
+																		"second-value": "-45"
+																	}
+																},
+																{
+																	"id": "compare-two-values",
+																	"objectClass": "System",
+																	"sid": 638726791264409,
+																	"parameters": {
+																		"first-value": "angle(Kronejo.X,Kronejo.Y,Players.X,Players.Y)",
+																		"comparison": 4,
+																		"second-value": "-135"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "set-animation",
+																	"objectClass": "Kronejo",
+																	"sid": 368327548426044,
+																	"parameters": {
+																		"animation": "\"UpIdle\"",
+																		"from": "beginning"
+																	}
+																},
+																{
+																	"id": "stop",
+																	"objectClass": "Kronejo",
+																	"sid": 982910241859268,
+																	"behaviorType": "Pathfinding"
+																},
+																{
+																	"id": "set-mirrored",
+																	"objectClass": "Kronejo",
+																	"sid": 866281356722244,
+																	"parameters": {
+																		"state": "not-mirrored"
+																	}
+																}
+															],
+															"sid": 739761771308084
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 858558610534988
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Esqueleto",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 340474385113517,
+							"parameters": {
+								"interval-seconds": "0.07"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 750681651513669,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-on-screen",
+									"objectClass": "Esqueleto",
+									"sid": 291523746445805
+								}
+							],
+							"actions": [],
+							"sid": 734671013908610,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 174678065850032,
+											"parameters": {
+												"object": "Esqueleto"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 863861950956142,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 757588056780905,
+													"parameters": {
+														"first-value": "Esqueleto.Pathfinding.MovingAngle",
+														"comparison": 5,
+														"second-value": "315"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 191593939466647,
+													"parameters": {
+														"first-value": "Esqueleto.Pathfinding.MovingAngle",
+														"comparison": 2,
+														"second-value": "45"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Esqueleto",
+													"sid": 139760149860878,
+													"parameters": {
+														"animation": "\"Right\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-mirrored",
+													"objectClass": "Esqueleto",
+													"sid": 113150846105747,
+													"parameters": {
+														"state": "not-mirrored"
+													}
+												}
+											],
+											"sid": 834348518077228,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 577437235767313,
+													"parameters": {
+														"first-value": "Esqueleto.Pathfinding.MovingAngle",
+														"comparison": 5,
+														"second-value": "45"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 824623193286803,
+													"parameters": {
+														"first-value": "Esqueleto.Pathfinding.MovingAngle",
+														"comparison": 2,
+														"second-value": "135"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Esqueleto",
+													"sid": 252351316690500,
+													"parameters": {
+														"animation": "\"Down\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-mirrored",
+													"objectClass": "Esqueleto",
+													"sid": 231475324081645,
+													"parameters": {
+														"state": "not-mirrored"
+													}
+												}
+											],
+											"sid": 741682106023056
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 107220864026667,
+													"parameters": {
+														"first-value": "Esqueleto.Pathfinding.MovingAngle",
+														"comparison": 5,
+														"second-value": "135"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 698239318130768,
+													"parameters": {
+														"first-value": "Esqueleto.Pathfinding.MovingAngle",
+														"comparison": 2,
+														"second-value": "225"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Esqueleto",
+													"sid": 196781864294189,
+													"parameters": {
+														"animation": "\"Right\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-mirrored",
+													"objectClass": "Esqueleto",
+													"sid": 514502320230314,
+													"parameters": {
+														"state": "mirrored"
+													}
+												}
+											],
+											"sid": 722507499536582
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 179677013027703,
+													"parameters": {
+														"first-value": "Esqueleto.Pathfinding.MovingAngle",
+														"comparison": 5,
+														"second-value": "225"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 962722574514721,
+													"parameters": {
+														"first-value": "Esqueleto.Pathfinding.MovingAngle",
+														"comparison": 2,
+														"second-value": "315"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Esqueleto",
+													"sid": 148669851539820,
+													"parameters": {
+														"animation": "\"Up\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-mirrored",
+													"objectClass": "Esqueleto",
+													"sid": 673653017339517,
+													"parameters": {
+														"state": "not-mirrored"
+													}
+												}
+											],
+											"sid": 253727519191410
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 813520226995582
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Magoldo",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 721293959983109
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 378159107638542,
+					"parameters": {
+						"interval-seconds": "0.07"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 358199590087074,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-screen",
+							"objectClass": "Magoldo",
+							"sid": 932134917353081
+						}
+					],
+					"actions": [],
+					"sid": 886345728470904,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 962342046718622,
+									"parameters": {
+										"object": "Magoldo"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 535864566142058,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-animation-frame",
+											"objectClass": "Magoldo",
+											"sid": 977215439116503,
+											"parameters": {
+												"comparison": 0,
+												"number": "8"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 494700535707465,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 845694440634561
+												}
+											],
+											"actions": [
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Magoldo",
+													"sid": 523380538732515,
+													"parameters": {
+														"object": "MagoldoBullet",
+														"layer": "\"Game\"",
+														"image-point": "0"
+													}
+												}
+											],
+											"sid": 237140239780058
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 949390057709279,
+											"parameters": {
+												"first-value": "distance(Magoldo.chooseX, Magoldo.chooseY,Magoldo.X,Magoldo.Y)",
+												"comparison": 4,
+												"second-value": "160"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 611965969864293,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 369389443099893,
+													"parameters": {
+														"first-value": "Magoldo.Pathfinding.MovingAngle",
+														"comparison": 5,
+														"second-value": "315"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 881746881969410,
+													"parameters": {
+														"first-value": "Magoldo.Pathfinding.MovingAngle",
+														"comparison": 2,
+														"second-value": "45"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Magoldo",
+													"sid": 824061326312602,
+													"parameters": {
+														"animation": "\"RightRun\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-mirrored",
+													"objectClass": "Magoldo",
+													"sid": 248495611888490,
+													"parameters": {
+														"state": "not-mirrored"
+													}
+												}
+											],
+											"sid": 580208041619992,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 883924476425442,
+													"parameters": {
+														"first-value": "Magoldo.Pathfinding.MovingAngle",
+														"comparison": 5,
+														"second-value": "45"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 914934172772012,
+													"parameters": {
+														"first-value": "Magoldo.Pathfinding.MovingAngle",
+														"comparison": 2,
+														"second-value": "135"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Magoldo",
+													"sid": 251201472664840,
+													"parameters": {
+														"animation": "\"DownRun\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-mirrored",
+													"objectClass": "Magoldo",
+													"sid": 913994236877497,
+													"parameters": {
+														"state": "not-mirrored"
+													}
+												}
+											],
+											"sid": 223953628140406
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 338764597752563,
+													"parameters": {
+														"first-value": "Magoldo.Pathfinding.MovingAngle",
+														"comparison": 5,
+														"second-value": "135"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 151423831304815,
+													"parameters": {
+														"first-value": "Magoldo.Pathfinding.MovingAngle",
+														"comparison": 2,
+														"second-value": "225"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Magoldo",
+													"sid": 462245489259327,
+													"parameters": {
+														"animation": "\"RightRun\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-mirrored",
+													"objectClass": "Magoldo",
+													"sid": 256739845419982,
+													"parameters": {
+														"state": "mirrored"
+													}
+												}
+											],
+											"sid": 932224518436713,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 465994004327273,
+													"parameters": {
+														"first-value": "Magoldo.Pathfinding.MovingAngle",
+														"comparison": 5,
+														"second-value": "225"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 899776578051610,
+													"parameters": {
+														"first-value": "Magoldo.Pathfinding.MovingAngle",
+														"comparison": 2,
+														"second-value": "315"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Magoldo",
+													"sid": 525653369942759,
+													"parameters": {
+														"animation": "\"UpRun\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-mirrored",
+													"objectClass": "Magoldo",
+													"sid": 419263629005295,
+													"parameters": {
+														"state": "not-mirrored"
+													}
+												}
+											],
+											"sid": 111275092591309,
+											"isOrBlock": true
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 948802605232689
+										}
+									],
+									"actions": [],
+									"sid": 982046960590805,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 568825189205908,
+													"parameters": {
+														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+														"comparison": 5,
+														"second-value": "-45"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 547536177295080,
+													"parameters": {
+														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+														"comparison": 2,
+														"second-value": "45"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Magoldo",
+													"sid": 880714572482620,
+													"parameters": {
+														"animation": "\"RightIdle\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "stop",
+													"objectClass": "Magoldo",
+													"sid": 589645987985310,
+													"behaviorType": "Pathfinding"
+												},
+												{
+													"id": "set-mirrored",
+													"objectClass": "Magoldo",
+													"sid": 605354818202646,
+													"parameters": {
+														"state": "not-mirrored"
+													}
+												}
+											],
+											"sid": 299069676834261
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 457449829738321,
+													"parameters": {
+														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+														"comparison": 5,
+														"second-value": "45"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 446457043785420,
+													"parameters": {
+														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+														"comparison": 2,
+														"second-value": "135"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Magoldo",
+													"sid": 268629337256440,
+													"parameters": {
+														"animation": "\"DownIdle\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "stop",
+													"objectClass": "Magoldo",
+													"sid": 710051891387587,
+													"behaviorType": "Pathfinding"
+												},
+												{
+													"id": "set-mirrored",
+													"objectClass": "Magoldo",
+													"sid": 456847978537962,
+													"parameters": {
+														"state": "not-mirrored"
+													}
+												}
+											],
+											"sid": 543450932607355
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 223763139041676,
+													"parameters": {
+														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+														"comparison": 5,
+														"second-value": "135"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 509466381903181,
+													"parameters": {
+														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+														"comparison": 0,
+														"second-value": "-135"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Magoldo",
+													"sid": 312214068422585,
+													"parameters": {
+														"animation": "\"RightIdle\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "stop",
+													"objectClass": "Magoldo",
+													"sid": 915498291708161,
+													"behaviorType": "Pathfinding"
+												},
+												{
+													"id": "set-mirrored",
+													"objectClass": "Magoldo",
+													"sid": 511485139679045,
+													"parameters": {
+														"state": "mirrored"
+													}
+												}
+											],
+											"sid": 436105033127890,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 392631037307674,
+													"parameters": {
+														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+														"comparison": 5,
+														"second-value": "-45"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 217038377208817,
+													"parameters": {
+														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+														"comparison": 2,
+														"second-value": "-135"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Magoldo",
+													"sid": 316841415075638,
+													"parameters": {
+														"animation": "\"UpIdle\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "stop",
+													"objectClass": "Magoldo",
+													"sid": 128952548247148,
+													"behaviorType": "Pathfinding"
+												},
+												{
+													"id": "set-mirrored",
+													"objectClass": "Magoldo",
+													"sid": 258984602970989,
+													"parameters": {
+														"state": "not-mirrored"
+													}
+												}
+											],
+											"sid": 431626335374249
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "MagoldoBullet",
+					"sid": 956849155135412
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "MagoldoBullet",
+					"sid": 662744031415095,
+					"parameters": {
+						"x": "Magoldo.chooseX",
+						"y": "Magoldo.chooseY"
+					}
+				}
+			],
+			"sid": 534111934257968
 		}
 	],
 	"sid": 882137182745008
