@@ -3795,11 +3795,21 @@
 		{
 			"type": "Array",
 			"properties": {
-				"width": 10,
-				"height": 1,
+				"width": 4,
+				"height": 2,
 				"depth": 1
 			},
 			"uid": 193,
+			"instanceVariables": {}
+		},
+		{
+			"type": "ArrayMp",
+			"properties": {
+				"width": 4,
+				"height": 2,
+				"depth": 1
+			},
+			"uid": 124,
 			"instanceVariables": {}
 		}
 	],

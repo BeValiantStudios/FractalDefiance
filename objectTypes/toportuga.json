@@ -1,0 +1,300 @@
+{
+	"name": "Toportuga",
+	"plugin-id": "Sprite",
+	"sid": 474646427556083,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Attack\\Toportuga_Attack1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 796,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Attack\\Toportuga_Attack2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 797,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Attack\\Toportuga_Attack3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 798,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Attack\\Toportuga_Attack4.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 799,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Attack\\Toportuga_Attack5.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 800,
+						"duration": 1
+					}
+				],
+				"sid": 930084228513841,
+				"name": "Attack",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			},
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Idle\\Toportuga_Idle1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 801,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Idle\\Toportuga_Idle2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 802,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Idle\\Toportuga_Idle3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 803,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Idle\\Toportuga_Idle4.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 804,
+						"duration": 1
+					}
+				],
+				"sid": 932652237177494,
+				"name": "Idle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			},
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Walk\\Toportuga_Walk1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 805,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Walk\\Toportuga_Walk2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 806,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Walk\\Toportuga_Walk3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 807,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Walk\\Toportuga_Walk4.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 808,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Walk\\Toportuga_Walk5.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 809,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Walk\\Toportuga_Walk6.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 810,
+						"duration": 1
+					}
+				],
+				"sid": 447940822177204,
+				"name": "Walk",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			},
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Jump\\Toportuga_Jump1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 811,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Jump\\Toportuga_Jump2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 812,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Jump\\Toportuga_Jump3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 813,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Jump\\Toportuga_Jump4.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 814,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Jump\\Toportuga_Jump5.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 815,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Jump\\Toportuga_Jump6.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 816,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\diego\\Documents\\GitHub\\FractalDefianceC3\\Assets\\Toportuga\\Jump\\Toportuga_Jump7.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 817,
+						"duration": 1
+					}
+				],
+				"sid": 752581530386791,
+				"name": "Jump",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			}
+		],
+		"subfolders": []
+	}
+}
