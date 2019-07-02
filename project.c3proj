@@ -469,6 +469,10 @@
 				{
 					"name": "hablar.ogg",
 					"type": "audio/ogg; codecs=vorbis"
+				},
+				{
+					"name": "pantalla-titulo.webm",
+					"type": "audio/webm; codecs=opus"
 				}
 			],
 			"subfolders": []

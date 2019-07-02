@@ -46,6 +46,33 @@
 						"group-name": "\"Selector\"",
 						"state": "activated"
 					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 335571148687285,
+					"parameters": {
+						"audio-file": "pantalla-titulo"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 897326185631791,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 965707759126606,
+					"parameters": {
+						"audio-file": "pantalla-titulo",
+						"loop": "looping",
+						"volume": "-5",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 629579203647029
