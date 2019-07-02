@@ -1402,459 +1402,89 @@
 			"title": "Magoldo",
 			"description": "",
 			"isActiveOnStart": true,
-			"children": [],
-			"sid": 721293959983109
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 378159107638542,
-					"parameters": {
-						"interval-seconds": "0.07"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 358199590087074,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-on-screen",
-							"objectClass": "Magoldo",
-							"sid": 932134917353081
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 867761503678066,
+							"parameters": {
+								"interval-seconds": "0.07"
+							}
 						}
 					],
 					"actions": [],
-					"sid": 886345728470904,
+					"sid": 489797131524025,
 					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "for-each",
-									"objectClass": "System",
-									"sid": 962342046718622,
-									"parameters": {
-										"object": "Magoldo"
-									}
+									"id": "is-on-screen",
+									"objectClass": "Magoldo",
+									"sid": 394814175224703
 								}
 							],
 							"actions": [],
-							"sid": 535864566142058,
+							"sid": 509896299702489,
 							"children": [
 								{
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "compare-animation-frame",
-											"objectClass": "Magoldo",
-											"sid": 977215439116503,
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 732842040132552,
 											"parameters": {
-												"comparison": 0,
-												"number": "8"
+												"object": "Magoldo"
 											}
 										}
 									],
 									"actions": [],
-									"sid": 494700535707465,
+									"sid": 202988768907096,
 									"children": [
 										{
 											"eventType": "block",
 											"conditions": [
 												{
-													"id": "trigger-once-while-true",
-													"objectClass": "System",
-													"sid": 845694440634561
-												}
-											],
-											"actions": [
-												{
-													"id": "spawn-another-object",
+													"id": "compare-animation-frame",
 													"objectClass": "Magoldo",
-													"sid": 523380538732515,
+													"sid": 898795916427270,
 													"parameters": {
-														"object": "MagoldoBullet",
-														"layer": "\"Game\"",
-														"image-point": "0"
-													}
-												}
-											],
-											"sid": 237140239780058
-										}
-									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-two-values",
-											"objectClass": "System",
-											"sid": 949390057709279,
-											"parameters": {
-												"first-value": "distance(Magoldo.chooseX, Magoldo.chooseY,Magoldo.X,Magoldo.Y)",
-												"comparison": 4,
-												"second-value": "160"
-											}
-										}
-									],
-									"actions": [],
-									"sid": 611965969864293,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 369389443099893,
-													"parameters": {
-														"first-value": "Magoldo.Pathfinding.MovingAngle",
-														"comparison": 5,
-														"second-value": "315"
-													}
-												},
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 881746881969410,
-													"parameters": {
-														"first-value": "Magoldo.Pathfinding.MovingAngle",
-														"comparison": 2,
-														"second-value": "45"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "Magoldo",
-													"sid": 824061326312602,
-													"parameters": {
-														"animation": "\"RightRun\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "set-mirrored",
-													"objectClass": "Magoldo",
-													"sid": 248495611888490,
-													"parameters": {
-														"state": "not-mirrored"
-													}
-												}
-											],
-											"sid": 580208041619992,
-											"isOrBlock": true
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 883924476425442,
-													"parameters": {
-														"first-value": "Magoldo.Pathfinding.MovingAngle",
-														"comparison": 5,
-														"second-value": "45"
-													}
-												},
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 914934172772012,
-													"parameters": {
-														"first-value": "Magoldo.Pathfinding.MovingAngle",
-														"comparison": 2,
-														"second-value": "135"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "Magoldo",
-													"sid": 251201472664840,
-													"parameters": {
-														"animation": "\"DownRun\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "set-mirrored",
-													"objectClass": "Magoldo",
-													"sid": 913994236877497,
-													"parameters": {
-														"state": "not-mirrored"
-													}
-												}
-											],
-											"sid": 223953628140406
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 338764597752563,
-													"parameters": {
-														"first-value": "Magoldo.Pathfinding.MovingAngle",
-														"comparison": 5,
-														"second-value": "135"
-													}
-												},
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 151423831304815,
-													"parameters": {
-														"first-value": "Magoldo.Pathfinding.MovingAngle",
-														"comparison": 2,
-														"second-value": "225"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "Magoldo",
-													"sid": 462245489259327,
-													"parameters": {
-														"animation": "\"RightRun\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "set-mirrored",
-													"objectClass": "Magoldo",
-													"sid": 256739845419982,
-													"parameters": {
-														"state": "mirrored"
-													}
-												}
-											],
-											"sid": 932224518436713,
-											"isOrBlock": true
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 465994004327273,
-													"parameters": {
-														"first-value": "Magoldo.Pathfinding.MovingAngle",
-														"comparison": 5,
-														"second-value": "225"
-													}
-												},
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 899776578051610,
-													"parameters": {
-														"first-value": "Magoldo.Pathfinding.MovingAngle",
-														"comparison": 2,
-														"second-value": "315"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "Magoldo",
-													"sid": 525653369942759,
-													"parameters": {
-														"animation": "\"UpRun\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "set-mirrored",
-													"objectClass": "Magoldo",
-													"sid": 419263629005295,
-													"parameters": {
-														"state": "not-mirrored"
-													}
-												}
-											],
-											"sid": 111275092591309,
-											"isOrBlock": true
-										}
-									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "else",
-											"objectClass": "System",
-											"sid": 948802605232689
-										}
-									],
-									"actions": [],
-									"sid": 982046960590805,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 568825189205908,
-													"parameters": {
-														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
-														"comparison": 5,
-														"second-value": "-45"
-													}
-												},
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 547536177295080,
-													"parameters": {
-														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
-														"comparison": 2,
-														"second-value": "45"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "Magoldo",
-													"sid": 880714572482620,
-													"parameters": {
-														"animation": "\"RightIdle\"",
-														"from": "current-frame"
-													}
-												},
-												{
-													"id": "stop",
-													"objectClass": "Magoldo",
-													"sid": 589645987985310,
-													"behaviorType": "Pathfinding"
-												},
-												{
-													"id": "set-mirrored",
-													"objectClass": "Magoldo",
-													"sid": 605354818202646,
-													"parameters": {
-														"state": "not-mirrored"
-													}
-												}
-											],
-											"sid": 299069676834261
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 457449829738321,
-													"parameters": {
-														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
-														"comparison": 5,
-														"second-value": "45"
-													}
-												},
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 446457043785420,
-													"parameters": {
-														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
-														"comparison": 2,
-														"second-value": "135"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "Magoldo",
-													"sid": 268629337256440,
-													"parameters": {
-														"animation": "\"DownIdle\"",
-														"from": "current-frame"
-													}
-												},
-												{
-													"id": "stop",
-													"objectClass": "Magoldo",
-													"sid": 710051891387587,
-													"behaviorType": "Pathfinding"
-												},
-												{
-													"id": "set-mirrored",
-													"objectClass": "Magoldo",
-													"sid": 456847978537962,
-													"parameters": {
-														"state": "not-mirrored"
-													}
-												}
-											],
-											"sid": 543450932607355
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 223763139041676,
-													"parameters": {
-														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
-														"comparison": 5,
-														"second-value": "135"
-													}
-												},
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 509466381903181,
-													"parameters": {
-														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
 														"comparison": 0,
-														"second-value": "-135"
+														"number": "8"
 													}
 												}
 											],
-											"actions": [
+											"actions": [],
+											"sid": 848409734772447,
+											"children": [
 												{
-													"id": "set-animation",
-													"objectClass": "Magoldo",
-													"sid": 312214068422585,
-													"parameters": {
-														"animation": "\"RightIdle\"",
-														"from": "current-frame"
-													}
-												},
-												{
-													"id": "stop",
-													"objectClass": "Magoldo",
-													"sid": 915498291708161,
-													"behaviorType": "Pathfinding"
-												},
-												{
-													"id": "set-mirrored",
-													"objectClass": "Magoldo",
-													"sid": 511485139679045,
-													"parameters": {
-														"state": "mirrored"
-													}
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "trigger-once-while-true",
+															"objectClass": "System",
+															"sid": 126972770335127
+														}
+													],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Magoldo",
+															"sid": 160626662173669,
+															"parameters": {
+																"object": "MagoldoBullet",
+																"layer": "\"Game\"",
+																"image-point": "0"
+															}
+														}
+													],
+													"sid": 869456488177680
 												}
-											],
-											"sid": 436105033127890,
-											"isOrBlock": true
+											]
 										},
 										{
 											"eventType": "block",
@@ -1862,50 +1492,420 @@
 												{
 													"id": "compare-two-values",
 													"objectClass": "System",
-													"sid": 392631037307674,
+													"sid": 348704561459673,
 													"parameters": {
-														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
-														"comparison": 5,
-														"second-value": "-45"
+														"first-value": "distance(Magoldo.chooseX, Magoldo.chooseY,Magoldo.X,Magoldo.Y)",
+														"comparison": 4,
+														"second-value": "160"
 													}
+												}
+											],
+											"actions": [],
+											"sid": 352160905587956,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 429396885061870,
+															"parameters": {
+																"first-value": "Magoldo.Pathfinding.MovingAngle",
+																"comparison": 5,
+																"second-value": "315"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 235955465947904,
+															"parameters": {
+																"first-value": "Magoldo.Pathfinding.MovingAngle",
+																"comparison": 2,
+																"second-value": "45"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-animation",
+															"objectClass": "Magoldo",
+															"sid": 489614172507655,
+															"parameters": {
+																"animation": "\"RightRun\"",
+																"from": "beginning"
+															}
+														},
+														{
+															"id": "set-mirrored",
+															"objectClass": "Magoldo",
+															"sid": 140025307730161,
+															"parameters": {
+																"state": "not-mirrored"
+															}
+														}
+													],
+													"sid": 719421708564847,
+													"isOrBlock": true
 												},
 												{
-													"id": "compare-two-values",
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 650594801533372,
+															"parameters": {
+																"first-value": "Magoldo.Pathfinding.MovingAngle",
+																"comparison": 5,
+																"second-value": "45"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 994014848777625,
+															"parameters": {
+																"first-value": "Magoldo.Pathfinding.MovingAngle",
+																"comparison": 2,
+																"second-value": "135"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-animation",
+															"objectClass": "Magoldo",
+															"sid": 142730945594320,
+															"parameters": {
+																"animation": "\"DownRun\"",
+																"from": "beginning"
+															}
+														},
+														{
+															"id": "set-mirrored",
+															"objectClass": "Magoldo",
+															"sid": 301393803055178,
+															"parameters": {
+																"state": "not-mirrored"
+															}
+														}
+													],
+													"sid": 407590756056162
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 457314558702874,
+															"parameters": {
+																"first-value": "Magoldo.Pathfinding.MovingAngle",
+																"comparison": 5,
+																"second-value": "135"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 757144508448510,
+															"parameters": {
+																"first-value": "Magoldo.Pathfinding.MovingAngle",
+																"comparison": 2,
+																"second-value": "225"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-animation",
+															"objectClass": "Magoldo",
+															"sid": 363123639187339,
+															"parameters": {
+																"animation": "\"RightRun\"",
+																"from": "beginning"
+															}
+														},
+														{
+															"id": "set-mirrored",
+															"objectClass": "Magoldo",
+															"sid": 173782164664716,
+															"parameters": {
+																"state": "mirrored"
+															}
+														}
+													],
+													"sid": 938583736870463,
+													"isOrBlock": true
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 696466339601570,
+															"parameters": {
+																"first-value": "Magoldo.Pathfinding.MovingAngle",
+																"comparison": 5,
+																"second-value": "225"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 540540375305721,
+															"parameters": {
+																"first-value": "Magoldo.Pathfinding.MovingAngle",
+																"comparison": 2,
+																"second-value": "315"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-animation",
+															"objectClass": "Magoldo",
+															"sid": 563493432729700,
+															"parameters": {
+																"animation": "\"UpRun\"",
+																"from": "beginning"
+															}
+														},
+														{
+															"id": "set-mirrored",
+															"objectClass": "Magoldo",
+															"sid": 247760793793758,
+															"parameters": {
+																"state": "not-mirrored"
+															}
+														}
+													],
+													"sid": 768719453853169,
+													"isOrBlock": true
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
 													"objectClass": "System",
-													"sid": 217038377208817,
-													"parameters": {
-														"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
-														"comparison": 2,
-														"second-value": "-135"
-													}
+													"sid": 246756330525348
 												}
 											],
-											"actions": [
+											"actions": [],
+											"sid": 500999094436824,
+											"children": [
 												{
-													"id": "set-animation",
-													"objectClass": "Magoldo",
-													"sid": 316841415075638,
-													"parameters": {
-														"animation": "\"UpIdle\"",
-														"from": "current-frame"
-													}
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 848598473919968,
+															"parameters": {
+																"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+																"comparison": 5,
+																"second-value": "-45"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 975055091319980,
+															"parameters": {
+																"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+																"comparison": 2,
+																"second-value": "45"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-animation",
+															"objectClass": "Magoldo",
+															"sid": 503184555303730,
+															"parameters": {
+																"animation": "\"RightIdle\"",
+																"from": "current-frame"
+															}
+														},
+														{
+															"id": "stop",
+															"objectClass": "Magoldo",
+															"sid": 896219275854182,
+															"behaviorType": "Pathfinding"
+														},
+														{
+															"id": "set-mirrored",
+															"objectClass": "Magoldo",
+															"sid": 270606928064932,
+															"parameters": {
+																"state": "not-mirrored"
+															}
+														}
+													],
+													"sid": 199677464456260
 												},
 												{
-													"id": "stop",
-													"objectClass": "Magoldo",
-													"sid": 128952548247148,
-													"behaviorType": "Pathfinding"
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 972712821950319,
+															"parameters": {
+																"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+																"comparison": 5,
+																"second-value": "45"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 403371778409229,
+															"parameters": {
+																"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+																"comparison": 2,
+																"second-value": "135"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-animation",
+															"objectClass": "Magoldo",
+															"sid": 802726716906506,
+															"parameters": {
+																"animation": "\"DownIdle\"",
+																"from": "current-frame"
+															}
+														},
+														{
+															"id": "stop",
+															"objectClass": "Magoldo",
+															"sid": 546843222160768,
+															"behaviorType": "Pathfinding"
+														},
+														{
+															"id": "set-mirrored",
+															"objectClass": "Magoldo",
+															"sid": 229885232283910,
+															"parameters": {
+																"state": "not-mirrored"
+															}
+														}
+													],
+													"sid": 983720207250343
 												},
 												{
-													"id": "set-mirrored",
-													"objectClass": "Magoldo",
-													"sid": 258984602970989,
-													"parameters": {
-														"state": "not-mirrored"
-													}
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 437687353393125,
+															"parameters": {
+																"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+																"comparison": 5,
+																"second-value": "135"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 463903970267351,
+															"parameters": {
+																"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+																"comparison": 0,
+																"second-value": "-135"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-animation",
+															"objectClass": "Magoldo",
+															"sid": 421996335642876,
+															"parameters": {
+																"animation": "\"RightIdle\"",
+																"from": "current-frame"
+															}
+														},
+														{
+															"id": "stop",
+															"objectClass": "Magoldo",
+															"sid": 164926598484976,
+															"behaviorType": "Pathfinding"
+														},
+														{
+															"id": "set-mirrored",
+															"objectClass": "Magoldo",
+															"sid": 959066863429507,
+															"parameters": {
+																"state": "mirrored"
+															}
+														}
+													],
+													"sid": 179644633205001,
+													"isOrBlock": true
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 389811191670663,
+															"parameters": {
+																"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+																"comparison": 5,
+																"second-value": "-45"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 884041068055387,
+															"parameters": {
+																"first-value": "angle(Magoldo.X,Magoldo.Y,Magoldo.chooseX,Magoldo.chooseY)",
+																"comparison": 2,
+																"second-value": "-135"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-animation",
+															"objectClass": "Magoldo",
+															"sid": 816072494581680,
+															"parameters": {
+																"animation": "\"UpIdle\"",
+																"from": "current-frame"
+															}
+														},
+														{
+															"id": "stop",
+															"objectClass": "Magoldo",
+															"sid": 281968656035600,
+															"behaviorType": "Pathfinding"
+														},
+														{
+															"id": "set-mirrored",
+															"objectClass": "Magoldo",
+															"sid": 571043134415156,
+															"parameters": {
+																"state": "not-mirrored"
+															}
+														}
+													],
+													"sid": 534820061706542
 												}
-											],
-											"sid": 431626335374249
+											]
 										}
 									]
 								}
@@ -1913,7 +1913,8 @@
 						}
 					]
 				}
-			]
+			],
+			"sid": 721293959983109
 		},
 		{
 			"eventType": "block",
@@ -1936,6 +1937,90 @@
 				}
 			],
 			"sid": 534111934257968
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemy",
+					"sid": 449726247513855,
+					"parameters": {
+						"object": "AtaquesPersonajes"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Enemy",
+					"sid": 832634279789270,
+					"parameters": {
+						"instance-variable": "Vida",
+						"value": "100"
+					}
+				}
+			],
+			"sid": 826316376391537
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Enemy",
+					"sid": 716283802455517,
+					"parameters": {
+						"instance-variable": "Vida",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Enemy",
+					"sid": 360917495870862
+				}
+			],
+			"sid": 128883014507443
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "MagoldoBullet",
+					"sid": 541089180341939,
+					"parameters": {
+						"object": "Players"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "f",
+					"sid": 369486202069288,
+					"parameters": {
+						"name": "\"Lifebar.Update\"",
+						"parameter-n": [
+							"Players.Id"
+						]
+					}
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Players",
+					"sid": 250970163783094,
+					"parameters": {
+						"instance-variable": "VidaActual",
+						"value": "5"
+					}
+				}
+			],
+			"sid": 586672341799326
 		}
 	],
 	"sid": 882137182745008

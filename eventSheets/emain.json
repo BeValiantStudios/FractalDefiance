@@ -30,6 +30,10 @@
 			"includeSheet": "eMinimap"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "eRooms"
+		},
+		{
 			"eventType": "variable",
 			"name": "DICCID",
 			"type": "string",
@@ -114,6 +118,15 @@
 			],
 			"actions": [
 				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 402124776736915,
+					"parameters": {
+						"tag": "\"ReqRoomData\"",
+						"file": "RoomData.json"
+					}
+				},
+				{
 					"id": "load",
 					"objectClass": "CharacterID",
 					"sid": 883294184958814,
@@ -165,6 +178,14 @@
 						"name": "\"ActPlayers\"",
 						"parameter-n": []
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "pausa",
+					"sid": 996755925390529,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 384543293374546,
@@ -211,6 +232,30 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 499532966747222,
+							"parameters": {
+								"tag": "\"ReqRoomData\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "RoomData",
+							"sid": 452594116424946,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						}
+					],
+					"sid": 608654771369844
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-text-changed",
 							"objectClass": "TextBox",
 							"sid": 707600836273593
@@ -240,6 +285,193 @@
 				}
 			],
 			"sid": 544789076177150
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 533050972476940,
+					"parameters": {
+						"first-value": "timescale",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "pausa",
+					"sid": 526723971655955,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "salir",
+					"sid": 242458595301799,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Continue",
+					"sid": 525869619885517,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 878689232646050,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 121072132176394,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "salir"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "close",
+							"objectClass": "Browser",
+							"sid": 219483961786712
+						}
+					],
+					"sid": 348131646734064
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 507215496913219,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Continue"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 425006053806687,
+							"parameters": {
+								"time-scale": "1 - timescale"
+							}
+						}
+					],
+					"sid": 304452121098385
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 785944418330291,
+					"parameters": {
+						"first-value": "timescale",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "salir",
+					"sid": 711989587696191,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "pausa",
+					"sid": 601043523440524,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Continue",
+					"sid": 959012165153377,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 168641341418962
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "kb",
+					"sid": 786763676800224,
+					"parameters": {
+						"key": 13
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 430872437817099,
+					"parameters": {
+						"time-scale": "1 - timescale"
+					}
+				}
+			],
+			"sid": 270598924866783
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player1",
+					"sid": 651010773424822,
+					"parameters": {
+						"object": "Sprite4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "f",
+					"sid": 643305464739692,
+					"parameters": {
+						"name": "\"Textbox\"",
+						"parameter-n": [
+							"0",
+							"\"Gracias por probar el Demo\""
+						]
+					}
+				}
+			],
+			"sid": 901639794131650
 		}
 	],
 	"sid": 901481160981704

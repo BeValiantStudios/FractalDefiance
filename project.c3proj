@@ -144,6 +144,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "TileMovement",
+			"name": "Tile movement",
+			"author": "Scirra",
+			"version": "r157",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -154,22 +162,6 @@
 			"type": "behavior",
 			"id": "Fade",
 			"name": "Fade",
-			"author": "Scirra",
-			"version": "r157",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
-			"author": "Scirra",
-			"version": "r157",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "TileMovement",
-			"name": "Tile movement",
 			"author": "Scirra",
 			"version": "r157",
 			"bundled": false
@@ -216,6 +208,14 @@
 		},
 		{
 			"type": "effect",
+			"id": "lighten",
+			"name": "Lighten",
+			"author": "Scirra",
+			"version": "r157",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "setcolor",
 			"name": "Set color",
 			"author": "Scirra",
@@ -247,13 +247,6 @@
 			"FadeIn",
 			"FadeOut",
 			"Seleccion",
-			"box",
-			"boxbot",
-			"boxleft",
-			"boxright",
-			"boxtop",
-			"TestBackground",
-			"TestSolid",
 			"IconoMuro",
 			"PlayerIcon1",
 			"PlayerIcon2",
@@ -262,11 +255,20 @@
 			"Minimap",
 			"Sprite2",
 			"Array",
-			"Esqueleto",
-			"Magoldo",
-			"MagoldoBullet",
-			"Toportuga",
-			"ArrayMp"
+			"ArrayMp",
+			"Sprite3",
+			"LuzCircular",
+			"TextInput",
+			"pausa",
+			"salir",
+			"Continue",
+			"Sprite4",
+			"Text2",
+			"LOGO",
+			"LuzCircular2",
+			"Sprite6",
+			"RayosDeLuz",
+			"RayosDeLuz2"
 		],
 		"subfolders": [
 			{
@@ -397,11 +399,22 @@
 					"TilemapBackground",
 					"Puas",
 					"SolidTestBox",
-					"TilemapSolid"
+					"TilemapSolid",
+					"TestBackground",
+					"TestSolid",
+					"TilemapEscenario1",
+					"TilemapSolid1",
+					"TilemapEscenario2"
 				],
 				"subfolders": [
 					{
-						"items": [],
+						"items": [
+							"box",
+							"boxbot",
+							"boxleft",
+							"boxright",
+							"boxtop"
+						],
 						"subfolders": [],
 						"name": "Objetos"
 					}
@@ -412,10 +425,22 @@
 				"items": [
 					"Kronejo",
 					"Dummy",
-					"Corte"
+					"Corte",
+					"Toportuga",
+					"Magoldo",
+					"MagoldoBullet",
+					"Esqueleto"
 				],
 				"subfolders": [],
 				"name": "Enemies"
+			},
+			{
+				"items": [
+					"room",
+					"RoomData"
+				],
+				"subfolders": [],
+				"name": "Rooms"
 			}
 		]
 	},
@@ -451,7 +476,8 @@
 			"eIntro",
 			"eMenu",
 			"eObject",
-			"eMinimap"
+			"eMinimap",
+			"eRooms"
 		],
 		"subfolders": []
 	},
@@ -526,6 +552,10 @@
 				},
 				{
 					"name": "mp.json",
+					"type": "application/json"
+				},
+				{
+					"name": "RoomData.json",
 					"type": "application/json"
 				}
 			],

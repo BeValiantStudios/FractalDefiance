@@ -1,16 +1,9 @@
 {
-	"name": "Camara",
+	"name": "Sprite4",
 	"plugin-id": "Sprite",
-	"sid": 868670560047614,
+	"sid": 853825590133483,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "SeguimientoCamara",
-			"type": "number",
-			"desc": "",
-			"sid": 249985387698693
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -25,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 570,
+						"imageSpriteId": 14,
 						"duration": 1
 					}
 				],
-				"sid": 944684225629068,
-				"name": "Default",
+				"sid": 966871551897739,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

@@ -2138,6 +2138,43 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "room",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 125,
+					"instanceVariables": {
+						"RoomID": 0,
+						"RoomState": "",
+						"HasEnemies": false,
+						"HasPuzzle": false,
+						"EnemyCount": 0,
+						"OleadaAct": 0,
+						"OleadaMax": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 709,
+						"y": -3,
+						"width": 250,
+						"height": 250,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 732891118539554,

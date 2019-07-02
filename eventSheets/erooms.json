@@ -1,0 +1,214 @@
+{
+	"name": "eRooms",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "f",
+					"sid": 703551743376857,
+					"parameters": {
+						"name": "\"ActualizarRooms\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 490057382002372,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 734362685710467,
+							"parameters": {
+								"object": "room"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 263476238772481,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "puzzle n enemies bool's "
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 192266307168888,
+									"parameters": {
+										"first-value": "int(RoomData.At(0,room.RoomID))",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "puzzle"
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "room",
+									"sid": 376534672074133,
+									"parameters": {
+										"instance-variable": "HasPuzzle",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "room",
+									"sid": 175572381364732,
+									"parameters": {
+										"instance-variable": "HasEnemies",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 624252358454066
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 997222053720141,
+									"parameters": {
+										"first-value": "int(RoomData.At(0,room.RoomID))",
+										"comparison": 0,
+										"second-value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "enemie"
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "room",
+									"sid": 448948436642439,
+									"parameters": {
+										"instance-variable": "HasPuzzle",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "room",
+									"sid": 583471145231767,
+									"parameters": {
+										"instance-variable": "HasEnemies",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 423714861714582
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 321378300482900,
+									"parameters": {
+										"first-value": "int(RoomData.At(0,room.RoomID))",
+										"comparison": 0,
+										"second-value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "puzzle n enemies"
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "room",
+									"sid": 854999292506392,
+									"parameters": {
+										"instance-variable": "HasPuzzle",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "room",
+									"sid": 444848372028970,
+									"parameters": {
+										"instance-variable": "HasEnemies",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 349263968106892
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 370014524218243,
+									"parameters": {
+										"first-value": "int(RoomData.At(0,room.RoomID))",
+										"comparison": 0,
+										"second-value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "inactive"
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "room",
+									"sid": 231230424724756,
+									"parameters": {
+										"instance-variable": "HasPuzzle",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "room",
+									"sid": 971399051430191,
+									"parameters": {
+										"instance-variable": "HasEnemies",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 478454667454832
+						},
+						{
+							"eventType": "comment",
+							"text": "current oleada"
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 756945624835878
+						}
+					]
+				}
+			]
+		}
+	],
+	"sid": 711221136540757
+}

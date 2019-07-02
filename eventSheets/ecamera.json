@@ -2,6 +2,46 @@
 	"name": "eCamera",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "zoneX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 900905702355401
+		},
+		{
+			"eventType": "variable",
+			"name": "zoneY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 210091236695831
+		},
+		{
+			"eventType": "variable",
+			"name": "mitadpantallax",
+			"type": "number",
+			"initialValue": "280",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 227768776575006
+		},
+		{
+			"eventType": "variable",
+			"name": "mitadpantallay",
+			"type": "number",
+			"initialValue": "157.5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 497929341856117
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -219,7 +259,21 @@
 				},
 				{
 					"eventType": "block",
-					"conditions": [],
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 979769185555095
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "room",
+							"sid": 718036413530329,
+							"parameters": {
+								"object": "Camara"
+							}
+						}
+					],
 					"actions": [
 						{
 							"id": "set-position",
@@ -235,6 +289,64 @@
 				}
 			],
 			"sid": 936276036363788
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "asd",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 876529900250288
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "room",
+							"sid": 256010936082866,
+							"parameters": {
+								"object": "Camara"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 671025450487217,
+							"parameters": {
+								"variable": "zoneX",
+								"value": "clamp(Camara.X,  room.X + mitadPantallaX, room.X + room.Width - mitadPantallaX)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 288898250045673,
+							"parameters": {
+								"variable": "zoneY",
+								"value": "clamp(Camara.Y, room.Y + mitadPantallaY,  room.Y + room.Height - mitadPantallaY)"
+							}
+						},
+						{
+							"id": "scroll-to-position",
+							"objectClass": "System",
+							"sid": 622095102941605,
+							"parameters": {
+								"x": "lerp(scrollx, zoneX, 0.1*60*dt)",
+								"y": "lerp(scrolly, zoneY, 0.1*60*dt)"
+							}
+						}
+					],
+					"sid": 611554585696651
+				}
+			],
+			"sid": 763275468353727
 		}
 	],
 	"sid": 442166297377518

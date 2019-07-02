@@ -1,16 +1,9 @@
 {
-	"name": "Camara",
+	"name": "LuzCircular",
 	"plugin-id": "Sprite",
-	"sid": 868670560047614,
+	"sid": 295099361174528,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "SeguimientoCamara",
-			"type": "number",
-			"desc": "",
-			"sid": 249985387698693
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -18,18 +11,18 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 519,
+						"height": 535,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 570,
+						"imageSpriteId": 12,
 						"duration": 1
 					}
 				],
-				"sid": 944684225629068,
+				"sid": 218973215305100,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

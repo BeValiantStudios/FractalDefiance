@@ -446,6 +446,38 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "on-button-pressed",
+									"objectClass": "gp",
+									"sid": 909499210177296,
+									"parameters": {
+										"gamepad": "(ArrayMp.At(1,1))",
+										"button": "right-shoulder-button"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 686433743742752,
+									"parameters": {
+										"name": "\"ButtonAttack\"",
+										"parameter-n": [
+											"1",
+											"1",
+											"(ArrayMp.At(1,1))",
+											"1"
+										]
+									}
+								}
+							],
+							"sid": 288670227279236,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "compare-axis",
 									"objectClass": "gp",
 									"sid": 997988361210645,
@@ -457,7 +489,17 @@
 									}
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player2",
+									"sid": 793779716483597,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
 							"sid": 615573406404090,
 							"isOrBlock": true
 						},
@@ -488,7 +530,17 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player2",
+											"sid": 140640675000401,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "left"
+											}
+										}
+									],
 									"sid": 174573274402851,
 									"isOrBlock": true
 								}
@@ -509,7 +561,17 @@
 									}
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player2",
+									"sid": 151476142515800,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
 							"sid": 141207410124933,
 							"isOrBlock": true
 						},
@@ -540,7 +602,17 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player2",
+											"sid": 695255133075387,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
 									"sid": 745627295529170,
 									"isOrBlock": true
 								}
@@ -557,6 +629,16 @@
 									"parameters": {
 										"variable": "hAngle",
 										"value": "angle(0,0,gp.Axis(0, 0), gp.Axis(0, 1))"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Player2",
+									"sid": 833203629968527,
+									"behaviorType": "CustomMovement",
+									"parameters": {
+										"which": "overall",
+										"speed": "0"
 									}
 								}
 							],
@@ -576,6 +658,38 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "on-button-pressed",
+									"objectClass": "gp",
+									"sid": 920715263994003,
+									"parameters": {
+										"gamepad": "(ArrayMp.At(2,1))",
+										"button": "right-shoulder-button"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 765562078516208,
+									"parameters": {
+										"name": "\"ButtonAttack\"",
+										"parameter-n": [
+											"2",
+											"1",
+											"(ArrayMp.At(2,1))",
+											"2"
+										]
+									}
+								}
+							],
+							"sid": 199722067537802,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "compare-axis",
 									"objectClass": "gp",
 									"sid": 483505873265867,
@@ -587,7 +701,17 @@
 									}
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player3",
+									"sid": 589592113003037,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
 							"sid": 721086195195748,
 							"isOrBlock": true
 						},
@@ -618,7 +742,17 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player3",
+											"sid": 625384884500377,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "left"
+											}
+										}
+									],
 									"sid": 114734085121741,
 									"isOrBlock": true
 								}
@@ -639,7 +773,17 @@
 									}
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player3",
+									"sid": 178820476945018,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
 							"sid": 651808403055722,
 							"isOrBlock": true
 						},
@@ -670,11 +814,47 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player3",
+											"sid": 162084455780425,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
 									"sid": 161665072466951,
 									"isOrBlock": true
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 458855133370314,
+									"parameters": {
+										"variable": "hAngle",
+										"value": "angle(0,0,gp.Axis(0, 0), gp.Axis(0, 1))"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Player3",
+									"sid": 501747113224670,
+									"behaviorType": "CustomMovement",
+									"parameters": {
+										"which": "overall",
+										"speed": "0"
+									}
+								}
+							],
+							"sid": 769158827119212
 						}
 					],
 					"sid": 296479658721115
@@ -701,7 +881,17 @@
 									}
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player4",
+									"sid": 935865083530505,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
 							"sid": 917261753969214,
 							"isOrBlock": true
 						},
@@ -732,7 +922,17 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player4",
+											"sid": 521247128812877,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "left"
+											}
+										}
+									],
 									"sid": 675460463698861,
 									"isOrBlock": true
 								}
@@ -753,7 +953,17 @@
 									}
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player4",
+									"sid": 430161306359269,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
 							"sid": 982982883530233,
 							"isOrBlock": true
 						},
@@ -784,14 +994,82 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player4",
+											"sid": 151607938652283,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
 									"sid": 915250432947884,
 									"isOrBlock": true
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 146296224957940,
+									"parameters": {
+										"variable": "hAngle",
+										"value": "angle(0,0,gp.Axis(0, 0), gp.Axis(0, 1))"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Player4",
+									"sid": 245463034278841,
+									"behaviorType": "CustomMovement",
+									"parameters": {
+										"which": "overall",
+										"speed": "0"
+									}
+								}
+							],
+							"sid": 466206728325801
 						}
 					],
 					"sid": 419244719073201
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "gp",
+							"sid": 804253213775119,
+							"parameters": {
+								"gamepad": "(ArrayMp.At(3,1))",
+								"button": "right-shoulder-button"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 138615392644295,
+							"parameters": {
+								"name": "\"ButtonAttack\"",
+								"parameter-n": [
+									"3",
+									"1",
+									"(ArrayMp.At(3,1))",
+									"3"
+								]
+							}
+						}
+					],
+					"sid": 892521048405186,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -978,6 +1256,7 @@
 						}
 					],
 					"sid": 108429215030673,
+					"disabled": true,
 					"isOrBlock": true
 				},
 				{
@@ -1019,6 +1298,7 @@
 						}
 					],
 					"sid": 752740554592634,
+					"disabled": true,
 					"isOrBlock": true
 				},
 				{
@@ -1060,6 +1340,7 @@
 						}
 					],
 					"sid": 654750711914356,
+					"disabled": true,
 					"isOrBlock": true
 				}
 			],
@@ -2222,6 +2503,32 @@
 							"sid": 776871024580316,
 							"children": [
 								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 950535846622973,
+											"parameters": {
+												"interval-seconds": "0.5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "find-path",
+											"objectClass": "Players",
+											"sid": 880871302949323,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"x": "Player1.X + Self.NumX",
+												"y": "Player1.Y + Self.NumY"
+											}
+										}
+									],
+									"sid": 262327100099694
+								},
+								{
 									"eventType": "comment",
 									"text": "0 uid / 1 control / 2 gamepad number / 3 player number"
 								},
@@ -2256,6 +2563,7 @@
 										}
 									],
 									"sid": 636345319459604,
+									"disabled": true,
 									"children": [
 										{
 											"eventType": "block",
@@ -2271,6 +2579,7 @@
 											],
 											"actions": [],
 											"sid": 419571360075413,
+											"disabled": true,
 											"children": [
 												{
 													"eventType": "block",
@@ -2286,6 +2595,7 @@
 													],
 													"actions": [],
 													"sid": 590360045398247,
+													"disabled": true,
 													"children": [
 														{
 															"eventType": "block",
@@ -2313,7 +2623,8 @@
 																	}
 																}
 															],
-															"sid": 739476286649284
+															"sid": 739476286649284,
+															"disabled": true
 														}
 													]
 												}
@@ -2337,6 +2648,7 @@
 									],
 									"actions": [],
 									"sid": 298798248328003,
+									"disabled": true,
 									"children": [
 										{
 											"eventType": "block",
@@ -2352,6 +2664,7 @@
 											],
 											"actions": [],
 											"sid": 556333382312889,
+											"disabled": true,
 											"children": [
 												{
 													"eventType": "block",
@@ -2397,35 +2710,10 @@
 															}
 														}
 													],
-													"sid": 246639478750961
+													"sid": 246639478750961,
+													"disabled": true
 												}
 											]
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "every-x-seconds",
-													"objectClass": "System",
-													"sid": 865323990648904,
-													"parameters": {
-														"interval-seconds": "0.5"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "find-path",
-													"objectClass": "Players",
-													"sid": 961680480862457,
-													"behaviorType": "Pathfinding",
-													"parameters": {
-														"x": "Player1.X + Self.NumX",
-														"y": "Player1.Y + Self.NumY"
-													}
-												}
-											],
-											"sid": 330154518260477
 										}
 									]
 								},
@@ -2444,7 +2732,8 @@
 										}
 									],
 									"actions": [],
-									"sid": 709554225011537
+									"sid": 709554225011537,
+									"disabled": true
 								}
 							]
 						}
@@ -7650,18 +7939,7 @@
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 713950289028299,
-									"parameters": {
-										"first-value": "(ArrayMp.at (0,1)) & (ArrayMp.at (2,1)) & (ArrayMp.at (3,1))",
-										"comparison": 1,
-										"second-value": "0"
-									}
-								}
-							],
+							"conditions": [],
 							"actions": [],
 							"sid": 371564397996699,
 							"children": [
@@ -7714,6 +7992,15 @@
 											"parameters": {
 												"name": "\"ActUIDS\"",
 												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player2",
+											"sid": 666838276785523,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
 											}
 										},
 										{
@@ -7777,18 +8064,7 @@
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 143853190135442,
-									"parameters": {
-										"first-value": "(ArrayMp.at (0,1)) & (ArrayMp.at (2,1)) & (ArrayMp.at (3,1))",
-										"comparison": 1,
-										"second-value": "1"
-									}
-								}
-							],
+							"conditions": [],
 							"actions": [],
 							"sid": 626578596137166,
 							"children": [
@@ -7831,6 +8107,15 @@
 											"parameters": {
 												"name": "\"ActUIDS\"",
 												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player2",
+											"sid": 793988523486371,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
 											}
 										},
 										{
@@ -7895,18 +8180,7 @@
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 624545979938574,
-									"parameters": {
-										"first-value": "(ArrayMp.at (0,1)) & (ArrayMp.at (2,1)) & (ArrayMp.at (3,1))",
-										"comparison": 1,
-										"second-value": "2"
-									}
-								}
-							],
+							"conditions": [],
 							"actions": [],
 							"sid": 249308646812705,
 							"children": [
@@ -7949,6 +8223,15 @@
 											"parameters": {
 												"name": "\"ActUIDS\"",
 												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player2",
+											"sid": 951584565742586,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
 											}
 										},
 										{
@@ -8013,18 +8296,7 @@
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 523743898320039,
-									"parameters": {
-										"first-value": "(ArrayMp.at (0,1)) & (ArrayMp.at (2,1)) & (ArrayMp.at (3,1))",
-										"comparison": 1,
-										"second-value": "3"
-									}
-								}
-							],
+							"conditions": [],
 							"actions": [],
 							"sid": 472000181569243,
 							"children": [
@@ -8067,6 +8339,15 @@
 											"parameters": {
 												"name": "\"ActUIDS\"",
 												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player2",
+											"sid": 372472126158820,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
 											}
 										},
 										{
@@ -8141,18 +8422,7 @@
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 339330285029825,
-									"parameters": {
-										"first-value": "(ArrayMp.at (0,1)) & (ArrayMp.at (1,1)) & (ArrayMp.at (3,1))",
-										"comparison": 1,
-										"second-value": "0"
-									}
-								}
-							],
+							"conditions": [],
 							"actions": [],
 							"sid": 494841593375181,
 							"children": [
@@ -8205,6 +8475,15 @@
 											"parameters": {
 												"name": "\"ActUIDS\"",
 												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player3",
+											"sid": 200933348333786,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
 											}
 										},
 										{
@@ -8269,18 +8548,7 @@
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 462005536943443,
-									"parameters": {
-										"first-value": "(ArrayMp.at (0,1)) & (ArrayMp.at (1,1)) & (ArrayMp.at (3,1))",
-										"comparison": 1,
-										"second-value": "1"
-									}
-								}
-							],
+							"conditions": [],
 							"actions": [],
 							"sid": 929500635031621,
 							"children": [
@@ -8323,6 +8591,15 @@
 											"parameters": {
 												"name": "\"ActUIDS\"",
 												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player3",
+											"sid": 715176902929824,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
 											}
 										},
 										{
@@ -8387,18 +8664,7 @@
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 676703752658018,
-									"parameters": {
-										"first-value": "(ArrayMp.at (0,1)) & (ArrayMp.at (1,1)) & (ArrayMp.at (3,1))",
-										"comparison": 1,
-										"second-value": "2"
-									}
-								}
-							],
+							"conditions": [],
 							"actions": [],
 							"sid": 708346825441900,
 							"children": [
@@ -8441,6 +8707,15 @@
 											"parameters": {
 												"name": "\"ActUIDS\"",
 												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player3",
+											"sid": 716452106566890,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
 											}
 										},
 										{
@@ -8505,18 +8780,7 @@
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 666238876897475,
-									"parameters": {
-										"first-value": "(ArrayMp.at (0,1)) & (ArrayMp.at (1,1)) & (ArrayMp.at (3,1))",
-										"comparison": 1,
-										"second-value": "3"
-									}
-								}
-							],
+							"conditions": [],
 							"actions": [],
 							"sid": 491563102633363,
 							"children": [
@@ -8559,6 +8823,15 @@
 											"parameters": {
 												"name": "\"ActUIDS\"",
 												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player3",
+											"sid": 515509440349871,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
 											}
 										},
 										{
@@ -8633,18 +8906,7 @@
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 660215047025099,
-									"parameters": {
-										"first-value": "(ArrayMp.at (0,1)) & (ArrayMp.at (1,1)) & (ArrayMp.at (2,1))",
-										"comparison": 1,
-										"second-value": "0"
-									}
-								}
-							],
+							"conditions": [],
 							"actions": [],
 							"sid": 148770676411837,
 							"children": [
@@ -8679,6 +8941,15 @@
 											"parameters": {
 												"variable": "Players",
 												"value": "4"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player4",
+											"sid": 996674761160607,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
 											}
 										},
 										{
@@ -8744,18 +9015,7 @@
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 362436171484919,
-									"parameters": {
-										"first-value": "(ArrayMp.at (0,1)) & (ArrayMp.at (1,1)) & (ArrayMp.at (2,1))",
-										"comparison": 1,
-										"second-value": "1"
-									}
-								}
-							],
+							"conditions": [],
 							"actions": [],
 							"sid": 361972904070542,
 							"children": [
@@ -8798,6 +9058,15 @@
 											"parameters": {
 												"name": "\"ActUIDS\"",
 												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player4",
+											"sid": 294286959973719,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
 											}
 										},
 										{
@@ -8845,18 +9114,7 @@
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 904021456891211,
-									"parameters": {
-										"first-value": "(ArrayMp.at (0,1)) & (ArrayMp.at (1,1)) & (ArrayMp.at (2,1))",
-										"comparison": 1,
-										"second-value": "2"
-									}
-								}
-							],
+							"conditions": [],
 							"actions": [],
 							"sid": 162245210969656,
 							"children": [
@@ -8899,6 +9157,15 @@
 											"parameters": {
 												"name": "\"ActUIDS\"",
 												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player4",
+											"sid": 752873532452494,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
 											}
 										},
 										{
@@ -8946,18 +9213,7 @@
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 532376995721963,
-									"parameters": {
-										"first-value": "(ArrayMp.at (0,1)) & (ArrayMp.at (1,1)) & (ArrayMp.at (2,1))",
-										"comparison": 1,
-										"second-value": "3"
-									}
-								}
-							],
+							"conditions": [],
 							"actions": [],
 							"sid": 601509173009268,
 							"children": [
@@ -9000,6 +9256,15 @@
 											"parameters": {
 												"name": "\"ActUIDS\"",
 												"parameter-n": []
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player4",
+											"sid": 464316659690220,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
 											}
 										},
 										{

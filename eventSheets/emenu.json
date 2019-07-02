@@ -15,6 +15,24 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 639783731884220
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 770888268713110
+				}
+			],
+			"sid": 854930419496828
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 303349035715058
