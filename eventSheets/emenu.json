@@ -357,6 +357,17 @@
 								"variable": "Selector",
 								"value": "1"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 791874263792687,
+							"parameters": {
+								"audio-file": "hablar",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 528424337196473
@@ -381,6 +392,17 @@
 							"parameters": {
 								"variable": "Selector",
 								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 424675518770229,
+							"parameters": {
+								"audio-file": "hablar",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -408,6 +430,17 @@
 								"variable": "Selector",
 								"value": "1"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 937948395697858,
+							"parameters": {
+								"audio-file": "hablar",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 370290829008557,
@@ -434,6 +467,17 @@
 							"parameters": {
 								"variable": "Selector",
 								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 561237735246994,
+							"parameters": {
+								"audio-file": "hablar",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -802,7 +846,33 @@
 							}
 						}
 					],
-					"sid": 754445671036259
+					"sid": 754445671036259,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 291379456690663
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 755502719620354,
+									"parameters": {
+										"audio-file": "hablar",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 595823601457580
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -827,7 +897,33 @@
 							}
 						}
 					],
-					"sid": 998974656515656
+					"sid": 998974656515656,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 963935794408879
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 751016312660223,
+									"parameters": {
+										"audio-file": "hablar",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 751964091601155
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -852,7 +948,33 @@
 							}
 						}
 					],
-					"sid": 266019977861963
+					"sid": 266019977861963,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 261984328853932
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 440854757845821,
+									"parameters": {
+										"audio-file": "hablar",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 256604531534366
+						}
+					]
 				}
 			],
 			"sid": 111146127347998

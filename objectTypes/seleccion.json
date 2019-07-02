@@ -11,14 +11,14 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 22,
+						"height": 22,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "C:\\Users\\diego\\Desktop\\cursor.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 593,
+						"imageSpriteId": 2197,
 						"duration": 1
 					},
 					{

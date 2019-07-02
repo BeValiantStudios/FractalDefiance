@@ -107,18 +107,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Player2",
-					"sid": 617696292777032,
-					"parameters": {
-						"instance-variable": "Character",
-						"comparison": 0,
-						"value": "\"Fuego\""
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "set-animation-frame",
@@ -133,18 +122,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Player2",
-					"sid": 493557935633464,
-					"parameters": {
-						"instance-variable": "Character",
-						"comparison": 0,
-						"value": "\"Agua\""
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "set-animation-frame",
@@ -159,18 +137,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Player2",
-					"sid": 129259521012684,
-					"parameters": {
-						"instance-variable": "Character",
-						"comparison": 0,
-						"value": "\"Aire\""
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "set-animation-frame",
@@ -185,18 +152,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Player2",
-					"sid": 151213020516828,
-					"parameters": {
-						"instance-variable": "Character",
-						"comparison": 0,
-						"value": "\"Tierra\""
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "set-animation-frame",
@@ -211,18 +167,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Player3",
-					"sid": 204043118180548,
-					"parameters": {
-						"instance-variable": "Character",
-						"comparison": 0,
-						"value": "\"Fuego\""
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "set-animation-frame",
@@ -237,18 +182,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Player3",
-					"sid": 442148965412258,
-					"parameters": {
-						"instance-variable": "Character",
-						"comparison": 0,
-						"value": "\"Agua\""
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "set-animation-frame",
@@ -263,18 +197,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Player3",
-					"sid": 372312549627633,
-					"parameters": {
-						"instance-variable": "Character",
-						"comparison": 0,
-						"value": "\"Aire\""
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "set-animation-frame",
@@ -289,18 +212,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Player3",
-					"sid": 359310137765991,
-					"parameters": {
-						"instance-variable": "Character",
-						"comparison": 0,
-						"value": "\"Tierra\""
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "set-animation-frame",
@@ -315,18 +227,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Player4",
-					"sid": 116158230725059,
-					"parameters": {
-						"instance-variable": "Character",
-						"comparison": 0,
-						"value": "\"Fuego\""
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "set-animation-frame",
@@ -341,18 +242,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Player4",
-					"sid": 896877391880264,
-					"parameters": {
-						"instance-variable": "Character",
-						"comparison": 0,
-						"value": "\"Agua\""
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "set-animation-frame",
@@ -367,18 +257,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Player4",
-					"sid": 518310372288747,
-					"parameters": {
-						"instance-variable": "Character",
-						"comparison": 0,
-						"value": "\"Aire\""
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "set-animation-frame",
@@ -393,18 +272,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Player4",
-					"sid": 950011636709422,
-					"parameters": {
-						"instance-variable": "Character",
-						"comparison": 0,
-						"value": "\"Tierra\""
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "set-animation-frame",

@@ -14,334 +14,632 @@
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 23,
+								"height": 25,
 								"originX": 0.5,
-								"originY": 0.5,
-								"originalSource": "",
+								"originY": 0.6199999999999999,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunIzqE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 0,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 857,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunIzqE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 858,
+								"duration": 1
+							},
+							{
+								"width": 20,
+								"height": 31,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunIzqE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 859,
+								"duration": 1
+							},
+							{
+								"width": 25,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunIzqE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 860,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 31,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunIzqE\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 861,
+								"duration": 1
+							},
+							{
+								"width": 20,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunIzqE\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 862,
 								"duration": 1
 							}
 						],
 						"sid": 584779414279364,
 						"name": "FuegoWalkTopLft",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 22,
+								"height": 28,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 1,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 863,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 30,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 864,
+								"duration": 1
+							},
+							{
+								"width": 20,
+								"height": 31,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 865,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 30,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 866,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 30,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunE\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 867,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 31,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunE\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 868,
 								"duration": 1
 							}
 						],
 						"sid": 663494739264301,
 						"name": "FuegoWalkTop",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 23,
+								"height": 25,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunDerE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 2,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 869,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunDerE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 870,
+								"duration": 1
+							},
+							{
+								"width": 20,
+								"height": 31,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunDerE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 871,
+								"duration": 1
+							},
+							{
+								"width": 25,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunDerE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 872,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 31,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunDerE\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 873,
+								"duration": 1
+							},
+							{
+								"width": 20,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunDerE\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 874,
 								"duration": 1
 							}
 						],
 						"sid": 431903359016798,
 						"name": "FuegoWalkTopRgt",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 22,
+								"height": 28,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Run\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 3,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 875,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 32,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Run\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 876,
+								"duration": 1
+							},
+							{
+								"width": 20,
+								"height": 31,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Run\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 877,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Run\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 878,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 32,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Run\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 879,
+								"duration": 1
+							},
+							{
+								"width": 20,
+								"height": 31,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Run\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 880,
 								"duration": 1
 							}
 						],
 						"sid": 360896501831086,
 						"name": "FuegoWalkBot",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 23,
+								"height": 24,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunIzqF\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 4,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 881,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunIzqF\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 882,
+								"duration": 1
+							},
+							{
+								"width": 19,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunIzqF\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 883,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 25,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunIzqF\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 884,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunIzqF\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 885,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 29,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunIzqF\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 886,
 								"duration": 1
 							}
 						],
 						"sid": 476741311393165,
 						"name": "FuegoWalkBotLft",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 23,
+								"height": 24,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunDerF\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 5,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 887,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunDerF\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 888,
+								"duration": 1
+							},
+							{
+								"width": 19,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunDerF\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 889,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 25,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunDerF\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 890,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunDerF\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 891,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 29,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\RunDerF\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 892,
 								"duration": 1
 							}
 						],
 						"sid": 820166590515085,
 						"name": "FuegoWalkBotRgt",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 21,
+								"height": 29,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleIzqE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 6,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 893,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 29,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleIzqE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 894,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 31,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleIzqE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 895,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 33,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleIzqE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 896,
 								"duration": 1
 							}
 						],
 						"sid": 153885158427551,
 						"name": "FuegoIdleTopLft",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 22,
+								"height": 30,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 7,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 897,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 29,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 898,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 31,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 899,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 31,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 900,
 								"duration": 1
 							}
 						],
 						"sid": 178917746889170,
 						"name": "FuegoIdleTop",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 21,
+								"height": 29,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleDerE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 8,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 901,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 29,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleDerE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 902,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 31,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleDerE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 903,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 33,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleDerE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 904,
 								"duration": 1
 							}
 						],
 						"sid": 151525648563777,
 						"name": "FuegoIdleTopRgt",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
-							{
-								"width": 250,
-								"height": 250,
-								"originX": 0.59375,
-								"originY": 0.5813953488372093,
-								"originalSource": "",
-								"exportFormat": "png",
-								"exportQuality": 0.8,
-								"imageSpriteId": 9,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
-								"duration": 1
-							},
 							{
 								"width": 32,
 								"height": 43,
@@ -437,79 +735,121 @@
 						],
 						"sid": 854992746547377,
 						"name": "FuegoIdleBot",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 23,
+								"height": 31,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleIzqF\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 10,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 909,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 29,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleIzqF\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 910,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 31,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleIzqF\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 911,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 33,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleIzqF\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 912,
 								"duration": 1
 							}
 						],
 						"sid": 851964578658815,
 						"name": "FuegoIdleBotLft",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 23,
+								"height": 31,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleDerF\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 11,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 905,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 29,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleDerF\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 906,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 31,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleDerF\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 907,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 33,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\IdleDerF\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 908,
 								"duration": 1
 							}
 						],
 						"sid": 110958189841876,
 						"name": "FuegoIdleBotRgt",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					}
 				],
 				"subfolders": [],
@@ -520,410 +860,794 @@
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 24,
+								"height": 25,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunIzqE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 12,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 561,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunIzqE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 562,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunIzqE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 563,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 25,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunIzqE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 564,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunIzqE\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 565,
+								"duration": 1
+							},
+							{
+								"width": 19,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunIzqE\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 566,
 								"duration": 1
 							}
 						],
 						"sid": 953588005759710,
 						"name": "AguaWalkTopLft",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 26,
+								"height": 25,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 13,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 567,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 687,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 722,
+								"duration": 1
+							},
+							{
+								"width": 26,
+								"height": 25,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 723,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunE\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 724,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunE\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 743,
 								"duration": 1
 							}
 						],
 						"sid": 338758254033881,
 						"name": "AguaWalkTop",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 24,
+								"height": 25,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunDerE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 14,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 744,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunDerE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 745,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunDerE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 746,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 25,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunDerE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 747,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunDerE\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 748,
+								"duration": 1
+							},
+							{
+								"width": 19,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunDerE\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 792,
 								"duration": 1
 							}
 						],
 						"sid": 844554865019451,
 						"name": "AguaWalkTopRgt",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 26,
+								"height": 25,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Run\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 15,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 793,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Run\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 794,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Run\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 795,
+								"duration": 1
+							},
+							{
+								"width": 26,
+								"height": 25,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Run\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 818,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Run\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 819,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Run\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 820,
 								"duration": 1
 							}
 						],
 						"sid": 150726149394763,
 						"name": "AguaWalkBot",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 24,
+								"height": 25,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunIzqF\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 16,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 821,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunIzqF\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 822,
+								"duration": 1
+							},
+							{
+								"width": 20,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunIzqF\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 823,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 25,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunIzqF\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 824,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunIzqF\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 825,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunIzqF\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 826,
 								"duration": 1
 							}
 						],
 						"sid": 959740064201113,
 						"name": "AguaWalkBotLft",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 24,
+								"height": 25,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunDerF\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 17,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 827,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunDerF\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 828,
+								"duration": 1
+							},
+							{
+								"width": 20,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunDerF\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 829,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 25,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunDerF\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 830,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunDerF\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 831,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\RunDerF\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 832,
 								"duration": 1
 							}
 						],
 						"sid": 354922611487131,
 						"name": "AguaWalkBotRgt",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 21,
+								"height": 28,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleIzqE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 18,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 833,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 26,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleIzqE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 834,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleIzqE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 835,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 29,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleIzqE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 836,
 								"duration": 1
 							}
 						],
 						"sid": 425684722934616,
 						"name": "AguaIdleTopLft",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 24,
+								"height": 28,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 19,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 837,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 838,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 839,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 29,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 840,
 								"duration": 1
 							}
 						],
 						"sid": 640082605771055,
 						"name": "AguaIdleTop",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 21,
+								"height": 28,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleDerE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 20,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 841,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 26,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleDerE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 842,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleDerE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 843,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 29,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleDerE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 844,
 								"duration": 1
 							}
 						],
 						"sid": 526988639341187,
 						"name": "AguaIdleTopRgt",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 24,
+								"height": 28,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Idle\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 21,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 845,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 26,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Idle\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 846,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Idle\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 847,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 29,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Idle\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 848,
 								"duration": 1
 							}
 						],
 						"sid": 351649354726242,
 						"name": "AguaIdleBot",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 22,
+								"height": 29,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleIzqF\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 22,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 849,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleIzqF\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 850,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 26,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleIzqF\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 851,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleIzqF\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 852,
 								"duration": 1
 							}
 						],
 						"sid": 479578480029635,
 						"name": "AguaIdleBotLft",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 22,
+								"height": 28,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleDerF\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 23,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 853,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 26,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleDerF\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 854,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleDerF\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 855,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 29,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\IdleDerF\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 856,
 								"duration": 1
 							}
 						],
 						"sid": 187470087970276,
 						"name": "AguaIdleBotRgt",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					}
 				],
 				"subfolders": [],
@@ -1078,7 +1802,7 @@
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 12
+						"speed": 10
 					},
 					{
 						"frames": [
@@ -1227,7 +1951,7 @@
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 12
+						"speed": 10
 					},
 					{
 						"frames": [
@@ -1376,7 +2100,7 @@
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 12
+						"speed": 10
 					},
 					{
 						"frames": [
@@ -1525,7 +2249,7 @@
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 12
+						"speed": 10
 					},
 					{
 						"frames": [
@@ -1674,7 +2398,7 @@
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 12
+						"speed": 10
 					},
 					{
 						"frames": [
@@ -1823,7 +2547,7 @@
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 12
+						"speed": 10
 					},
 					{
 						"frames": [
@@ -1926,7 +2650,7 @@
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 12
+						"speed": 10
 					},
 					{
 						"frames": [
@@ -2029,7 +2753,7 @@
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 12
+						"speed": 10
 					},
 					{
 						"frames": [
@@ -2132,7 +2856,7 @@
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 12
+						"speed": 10
 					},
 					{
 						"frames": [
@@ -2235,7 +2959,7 @@
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 12
+						"speed": 10
 					},
 					{
 						"frames": [
@@ -2338,7 +3062,7 @@
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 12
+						"speed": 10
 					},
 					{
 						"frames": [
@@ -2441,7 +3165,7 @@
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 12
+						"speed": 10
 					}
 				],
 				"subfolders": [],
@@ -2452,410 +3176,794 @@
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 25,
+								"height": 24,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunIzqE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 36,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 913,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunIzqE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 914,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunIzqE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 915,
+								"duration": 1
+							},
+							{
+								"width": 25,
+								"height": 24,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunIzqE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 916,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunIzqE\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 917,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 26,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunIzqE\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 918,
 								"duration": 1
 							}
 						],
 						"sid": 659590464603788,
 						"name": "TierraWalkTopLft",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 28,
+								"height": 24,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 37,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 919,
+								"duration": 1
+							},
+							{
+								"width": 26,
+								"height": 26,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 920,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 921,
+								"duration": 1
+							},
+							{
+								"width": 28,
+								"height": 24,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 922,
+								"duration": 1
+							},
+							{
+								"width": 26,
+								"height": 26,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunE\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 923,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunE\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 924,
 								"duration": 1
 							}
 						],
 						"sid": 569114372873066,
 						"name": "TierraWalkTop",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 25,
+								"height": 24,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunDerE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 38,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 925,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunDerE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 926,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunDerE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 927,
+								"duration": 1
+							},
+							{
+								"width": 25,
+								"height": 24,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunDerE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 928,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunDerE\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 929,
+								"duration": 1
+							},
+							{
+								"width": 21,
+								"height": 26,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunDerE\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 930,
 								"duration": 1
 							}
 						],
 						"sid": 474668644458272,
 						"name": "TierraWalkTopRgt",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 28,
+								"height": 25,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\Run\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 39,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 931,
+								"duration": 1
+							},
+							{
+								"width": 28,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\Run\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 932,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\Run\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 933,
+								"duration": 1
+							},
+							{
+								"width": 28,
+								"height": 25,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\Run\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 934,
+								"duration": 1
+							},
+							{
+								"width": 28,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\Run\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 935,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\Run\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 936,
 								"duration": 1
 							}
 						],
 						"sid": 753747314039861,
 						"name": "TierraWalkBot",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 26,
+								"height": 24,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunizqF\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 40,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 937,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 26,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunizqF\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 938,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunizqF\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 939,
+								"duration": 1
+							},
+							{
+								"width": 26,
+								"height": 24,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunizqF\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 940,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunizqF\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 941,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunizqF\\5.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 942,
 								"duration": 1
 							}
 						],
 						"sid": 492344323333885,
 						"name": "TierraWalkBotLft",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 24,
+								"height": 28,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunDerF\\5.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 41,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 943,
+								"duration": 1
+							},
+							{
+								"width": 26,
+								"height": 24,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunDerF\\0.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 944,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 26,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunDerF\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 945,
+								"duration": 1
+							},
+							{
+								"width": 22,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunDerF\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 946,
+								"duration": 1
+							},
+							{
+								"width": 26,
+								"height": 24,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunDerF\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 947,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\RunDerF\\4.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 948,
 								"duration": 1
 							}
 						],
 						"sid": 356916744635017,
 						"name": "TierraWalkBotRgt",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 23,
+								"height": 28,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleIzqE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 42,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 949,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 26,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleIzqE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 950,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleIzqE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 951,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 29,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleIzqE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 952,
 								"duration": 1
 							}
 						],
 						"sid": 760948576270745,
 						"name": "TierraIdleTopLft",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 26,
+								"height": 25,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 43,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 953,
+								"duration": 1
+							},
+							{
+								"width": 26,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 954,
+								"duration": 1
+							},
+							{
+								"width": 26,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 955,
+								"duration": 1
+							},
+							{
+								"width": 26,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 956,
 								"duration": 1
 							}
 						],
 						"sid": 544712785688018,
 						"name": "TierraIdleTop",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 23,
+								"height": 28,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleDerE\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 44,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 957,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 26,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleDerE\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 958,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleDerE\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 959,
+								"duration": 1
+							},
+							{
+								"width": 23,
+								"height": 29,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleDerE\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 960,
 								"duration": 1
 							}
 						],
 						"sid": 725843757715336,
 						"name": "TierraIdleTopRgt",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 28,
+								"height": 27,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\Idle\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 45,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 961,
+								"duration": 1
+							},
+							{
+								"width": 28,
+								"height": 25,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\Idle\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 962,
+								"duration": 1
+							},
+							{
+								"width": 28,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\Idle\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 963,
+								"duration": 1
+							},
+							{
+								"width": 28,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\Idle\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 964,
 								"duration": 1
 							}
 						],
 						"sid": 592766745926407,
 						"name": "TierraIdleBot",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 24,
+								"height": 27,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleIzqF\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 46,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 965,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 25,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleIzqF\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 966,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleIzqF\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 967,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleIzqF\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 968,
 								"duration": 1
 							}
 						],
 						"sid": 425914489906320,
 						"name": "TierraIdleBotLft",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					},
 					{
 						"frames": [
 							{
-								"width": 250,
-								"height": 250,
+								"width": 24,
+								"height": 27,
 								"originX": 0.5,
 								"originY": 0.5,
-								"originalSource": "",
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleDerF\\0.png",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 47,
-								"collisionPoly": {
-									"points": [
-										0.13513513513513514,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.23684210526315788,
-										0.7567567567567568,
-										0.8421052631578947,
-										0.13513513513513514,
-										0.8421052631578947
-									]
-								},
+								"imageSpriteId": 969,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 25,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleDerF\\1.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 970,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 27,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleDerF\\2.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 971,
+								"duration": 1
+							},
+							{
+								"width": 24,
+								"height": 28,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "C:\\Users\\diego\\Desktop\\Sprites dc\\Fuego\\Tierra\\IdleDerF\\3.png",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 972,
 								"duration": 1
 							}
 						],
 						"sid": 557081923446828,
 						"name": "TierraIdleBotRgt",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 10
 					}
 				],
 				"subfolders": [],

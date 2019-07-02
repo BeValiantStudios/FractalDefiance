@@ -457,17 +457,7 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player2",
-									"sid": 721606762073057,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"control": "right"
-									}
-								}
-							],
+							"actions": [],
 							"sid": 615573406404090,
 							"isOrBlock": true
 						},
@@ -498,17 +488,7 @@
 											}
 										}
 									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player2",
-											"sid": 110721769305252,
-											"behaviorType": "8Direcciones",
-											"parameters": {
-												"control": "left"
-											}
-										}
-									],
+									"actions": [],
 									"sid": 174573274402851,
 									"isOrBlock": true
 								}
@@ -529,17 +509,7 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player2",
-									"sid": 280882677505915,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"control": "down"
-									}
-								}
-							],
+							"actions": [],
 							"sid": 141207410124933,
 							"isOrBlock": true
 						},
@@ -570,17 +540,7 @@
 											}
 										}
 									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player2",
-											"sid": 294322703803027,
-											"behaviorType": "8Direcciones",
-											"parameters": {
-												"control": "up"
-											}
-										}
-									],
+									"actions": [],
 									"sid": 745627295529170,
 									"isOrBlock": true
 								}
@@ -597,16 +557,6 @@
 									"parameters": {
 										"variable": "hAngle",
 										"value": "angle(0,0,gp.Axis(0, 0), gp.Axis(0, 1))"
-									}
-								},
-								{
-									"id": "set-speed",
-									"objectClass": "Player2",
-									"sid": 303700080988711,
-									"behaviorType": "CustomMovement",
-									"parameters": {
-										"which": "overall",
-										"speed": "0"
 									}
 								}
 							],
@@ -637,17 +587,7 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player3",
-									"sid": 250285728103253,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"control": "right"
-									}
-								}
-							],
+							"actions": [],
 							"sid": 721086195195748,
 							"isOrBlock": true
 						},
@@ -678,17 +618,7 @@
 											}
 										}
 									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player3",
-											"sid": 214140904003030,
-											"behaviorType": "8Direcciones",
-											"parameters": {
-												"control": "left"
-											}
-										}
-									],
+									"actions": [],
 									"sid": 114734085121741,
 									"isOrBlock": true
 								}
@@ -709,17 +639,7 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player3",
-									"sid": 108598999646626,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"control": "down"
-									}
-								}
-							],
+							"actions": [],
 							"sid": 651808403055722,
 							"isOrBlock": true
 						},
@@ -750,38 +670,11 @@
 											}
 										}
 									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player3",
-											"sid": 807771705765995,
-											"behaviorType": "8Direcciones",
-											"parameters": {
-												"control": "up"
-											}
-										}
-									],
+									"actions": [],
 									"sid": 161665072466951,
 									"isOrBlock": true
 								}
 							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "set-speed",
-									"objectClass": "Player3",
-									"sid": 834910057743113,
-									"behaviorType": "CustomMovement",
-									"parameters": {
-										"which": "overall",
-										"speed": "0"
-									}
-								}
-							],
-							"sid": 423732105603088
 						}
 					],
 					"sid": 296479658721115
@@ -808,17 +701,7 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player4",
-									"sid": 177165029851717,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"control": "right"
-									}
-								}
-							],
+							"actions": [],
 							"sid": 917261753969214,
 							"isOrBlock": true
 						},
@@ -849,17 +732,7 @@
 											}
 										}
 									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player4",
-											"sid": 268569676100777,
-											"behaviorType": "8Direcciones",
-											"parameters": {
-												"control": "left"
-											}
-										}
-									],
+									"actions": [],
 									"sid": 675460463698861,
 									"isOrBlock": true
 								}
@@ -880,17 +753,7 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player4",
-									"sid": 127085947051067,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"control": "down"
-									}
-								}
-							],
+							"actions": [],
 							"sid": 982982883530233,
 							"isOrBlock": true
 						},
@@ -921,38 +784,11 @@
 											}
 										}
 									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player4",
-											"sid": 969788672868607,
-											"behaviorType": "8Direcciones",
-											"parameters": {
-												"control": "up"
-											}
-										}
-									],
+									"actions": [],
 									"sid": 915250432947884,
 									"isOrBlock": true
 								}
 							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "set-speed",
-									"objectClass": "Player4",
-									"sid": 793625870216811,
-									"behaviorType": "CustomMovement",
-									"parameters": {
-										"which": "overall",
-										"speed": "0"
-									}
-								}
-							],
-							"sid": 211710224531643
 						}
 					],
 					"sid": 419244719073201

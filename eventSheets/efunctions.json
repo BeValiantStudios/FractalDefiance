@@ -12,1295 +12,6 @@
 			"sid": 207035150115863
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-function",
-					"objectClass": "f",
-					"sid": 477374860021463,
-					"parameters": {
-						"name": "\"ActPortraits\""
-					}
-				}
-			],
-			"actions": [],
-			"sid": 722368578907277,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "PortraitP1",
-							"sid": 533048055213735,
-							"parameters": {
-								"frame-number": "int(CharacterID.Get(Player1.Character))"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "PortraitP2",
-							"sid": 571801370231594,
-							"parameters": {
-								"frame-number": "int(CharacterID.Get(Player2.Character))"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "PortraitP3",
-							"sid": 168201329134567,
-							"parameters": {
-								"frame-number": "int(CharacterID.Get(Player3.Character))"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "PortraitP4",
-							"sid": 496256096888496,
-							"parameters": {
-								"frame-number": "int(CharacterID.Get(Player4.Character))"
-							}
-						}
-					],
-					"sid": 319393495142879
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-function",
-					"objectClass": "f",
-					"sid": 661207798846674,
-					"parameters": {
-						"name": "\"Lifebar.Update\""
-					}
-				}
-			],
-			"actions": [],
-			"sid": 280350645151730,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-parameter",
-							"objectClass": "f",
-							"sid": 324498968589360,
-							"parameters": {
-								"index": "0",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 609518198515259,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Player1",
-									"sid": 366101386656832,
-									"parameters": {
-										"instance-variable": "VidaMaxima",
-										"comparison": 4,
-										"value": "50+Self.VidaActual"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-angle",
-									"objectClass": "P1LifebarCache",
-									"sid": 604273216148891,
-									"parameters": {
-										"angle": "(Player1.VidaMaxima-Player1.VidaActual)*3.6"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "P1LifebarCache2",
-									"sid": 310408304503772,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "P1LifebarDegrade2",
-									"sid": 118581144085106,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 177773322421279
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 418595417956582
-								}
-							],
-							"actions": [
-								{
-									"id": "set-angle",
-									"objectClass": "P1LifebarCache",
-									"sid": 916223070629122,
-									"parameters": {
-										"angle": "180"
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "P1LifebarCache2",
-									"sid": 533996995707994,
-									"parameters": {
-										"angle": "(Player1.VidaMaxima-Player1.VidaActual)*3.6"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "P1LifebarCache2",
-									"sid": 259355905994263,
-									"parameters": {
-										"visibility": "visible"
-									}
-								}
-							],
-							"sid": 239744015901504
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-parameter",
-							"objectClass": "f",
-							"sid": 384407108615740,
-							"parameters": {
-								"index": "0",
-								"comparison": 0,
-								"value": "2"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 752937838219485,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Player2",
-									"sid": 213663919429185,
-									"parameters": {
-										"instance-variable": "VidaMaxima",
-										"comparison": 4,
-										"value": "50+Self.VidaActual"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-angle",
-									"objectClass": "P2LifebarCache",
-									"sid": 605088746059930,
-									"parameters": {
-										"angle": "(Player2.VidaMaxima-Player2.VidaActual)*3.6"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "P2LifebarCache2",
-									"sid": 456496409219638,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "P2LifebarDegrade2",
-									"sid": 435466185120467,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 967502739230220
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 574036662719836
-								}
-							],
-							"actions": [
-								{
-									"id": "set-angle",
-									"objectClass": "P2LifebarCache",
-									"sid": 422223902755071,
-									"parameters": {
-										"angle": "180"
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "P2LifebarCache2",
-									"sid": 384627773543928,
-									"parameters": {
-										"angle": "(Player2.VidaMaxima-Player2.VidaActual)*3.6"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "P2LifebarCache2",
-									"sid": 640614221347348,
-									"parameters": {
-										"visibility": "visible"
-									}
-								}
-							],
-							"sid": 492345053069178
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-parameter",
-							"objectClass": "f",
-							"sid": 489557960033659,
-							"parameters": {
-								"index": "0",
-								"comparison": 0,
-								"value": "3"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 146899087131607,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Player3",
-									"sid": 360560188093744,
-									"parameters": {
-										"instance-variable": "VidaMaxima",
-										"comparison": 4,
-										"value": "50+Self.VidaActual"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-angle",
-									"objectClass": "P3LifebarCache",
-									"sid": 563514782260509,
-									"parameters": {
-										"angle": "(Player3.VidaMaxima-Player3.VidaActual)*3.6"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "P3LifebarCache2",
-									"sid": 622973682394752,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "P3LifebarDegrade2",
-									"sid": 448796753109652,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 417972603426855
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 289242564454350
-								}
-							],
-							"actions": [
-								{
-									"id": "set-angle",
-									"objectClass": "P3LifebarCache",
-									"sid": 954495452674696,
-									"parameters": {
-										"angle": "180"
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "P3LifebarCache2",
-									"sid": 718668469242944,
-									"parameters": {
-										"angle": "(Player3.VidaMaxima-Player3.VidaActual)*3.6"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "P3LifebarCache2",
-									"sid": 399499598280863,
-									"parameters": {
-										"visibility": "visible"
-									}
-								}
-							],
-							"sid": 397982512599510
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-parameter",
-							"objectClass": "f",
-							"sid": 658929228959641,
-							"parameters": {
-								"index": "0",
-								"comparison": 0,
-								"value": "4"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 111489350613888,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Player4",
-									"sid": 853372728689560,
-									"parameters": {
-										"instance-variable": "VidaMaxima",
-										"comparison": 4,
-										"value": "50+Self.VidaActual"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-angle",
-									"objectClass": "P4LifebarCache",
-									"sid": 796122621135058,
-									"parameters": {
-										"angle": "(Player4.VidaMaxima-Player4.VidaActual)*3.6"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "P4LifebarCache2",
-									"sid": 570900278937381,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "P4LifebarDegrade2",
-									"sid": 423570981982894,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 264654599492783
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 236118797050485
-								}
-							],
-							"actions": [
-								{
-									"id": "set-angle",
-									"objectClass": "P4LifebarCache",
-									"sid": 612095778512198,
-									"parameters": {
-										"angle": "180"
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "P4LifebarCache2",
-									"sid": 580635307703772,
-									"parameters": {
-										"angle": "(Player4.VidaMaxima-Player4.VidaActual)*3.6"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "P4LifebarCache2",
-									"sid": 864486013829949,
-									"parameters": {
-										"visibility": "visible"
-									}
-								}
-							],
-							"sid": 958444686470139
-						}
-					]
-				}
-			]
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "DegradeP1",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P1LifebarDegrade2",
-							"sid": 654040315376215,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 0,
-								"value": "P1LifebarCache2.Angle"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [],
-					"sid": 803247244183780,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 130320253169230
-								}
-							],
-							"actions": [
-								{
-									"id": "add-to-instvar",
-									"objectClass": "P1LifebarDegrade2",
-									"sid": 114848515923083,
-									"parameters": {
-										"instance-variable": "Degrade",
-										"value": "1"
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "P1LifebarDegrade2",
-									"sid": 812931441192889,
-									"parameters": {
-										"angle": "P1LifebarDegrade2.Degrade"
-									}
-								}
-							],
-							"sid": 563693810436924
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "P1LifebarDegrade2",
-									"sid": 556848628951951,
-									"parameters": {
-										"instance-variable": "Degrade",
-										"comparison": 5,
-										"value": "180"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-visible",
-									"objectClass": "P1LifebarDegrade2",
-									"sid": 361563760263314,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 502408427319663,
-							"disabled": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 491637096606419
-								}
-							],
-							"actions": [
-								{
-									"id": "set-visible",
-									"objectClass": "P1LifebarDegrade2",
-									"sid": 103015621923226,
-									"parameters": {
-										"visibility": "visible"
-									}
-								}
-							],
-							"sid": 652353245670402,
-							"disabled": true
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P1LifebarDegrade",
-							"sid": 878300200060912,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 0,
-								"value": "P1LifebarCache.Angle"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [],
-					"sid": 454788991957946,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 398038479831380
-								}
-							],
-							"actions": [
-								{
-									"id": "add-to-instvar",
-									"objectClass": "P1LifebarDegrade",
-									"sid": 543781135839003,
-									"parameters": {
-										"instance-variable": "Degrade",
-										"value": "1"
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "P1LifebarDegrade",
-									"sid": 802525061045098,
-									"parameters": {
-										"angle": "P1LifebarDegrade.Degrade"
-									}
-								}
-							],
-							"sid": 602369092194196
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P1LifebarDegrade",
-							"sid": 814019091574807,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 5,
-								"value": "360"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "P1LifebarDegrade",
-							"sid": 574156373223071,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 565941210809590
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 483706929082398
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "P1LifebarDegrade",
-							"sid": 396592204575916,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 679361314833260
-				}
-			],
-			"sid": 499485337665723
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "DegradeP2",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P2LifebarDegrade2",
-							"sid": 995644018424131,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 0,
-								"value": "P2LifebarCache2.Angle"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [],
-					"sid": 931990842859677,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 763880307807571
-								}
-							],
-							"actions": [
-								{
-									"id": "add-to-instvar",
-									"objectClass": "P2LifebarDegrade2",
-									"sid": 207192653601806,
-									"parameters": {
-										"instance-variable": "Degrade",
-										"value": "1"
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "P2LifebarDegrade2",
-									"sid": 674252475750252,
-									"parameters": {
-										"angle": "P2LifebarDegrade2.Degrade"
-									}
-								}
-							],
-							"sid": 539978076704360
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P2LifebarDegrade2",
-							"sid": 353106690514102,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 5,
-								"value": "180"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "P2LifebarDegrade2",
-							"sid": 739902445150265,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 612525340216396,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 278971728429197
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "P2LifebarDegrade2",
-							"sid": 457617034591136,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 688034089778208,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P2LifebarDegrade",
-							"sid": 790920108612145,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 0,
-								"value": "P2LifebarCache.Angle"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [],
-					"sid": 605797615725038,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 163424778275156
-								}
-							],
-							"actions": [
-								{
-									"id": "add-to-instvar",
-									"objectClass": "P2LifebarDegrade",
-									"sid": 234651717062247,
-									"parameters": {
-										"instance-variable": "Degrade",
-										"value": "1"
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "P2LifebarDegrade",
-									"sid": 345119072368378,
-									"parameters": {
-										"angle": "P2LifebarDegrade.Degrade"
-									}
-								}
-							],
-							"sid": 855595980501330
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P2LifebarDegrade",
-							"sid": 939356494737611,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 5,
-								"value": "360"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "P2LifebarDegrade",
-							"sid": 254674716909398,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 713728966481650
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 171419775193350
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "P2LifebarDegrade",
-							"sid": 924108125136314,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 532357876524844
-				}
-			],
-			"sid": 554897925225157
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "DegradeP3",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P3LifebarDegrade2",
-							"sid": 745494047081054,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 0,
-								"value": "P3LifebarCache2.Angle"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [],
-					"sid": 697827977962709,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 958795546410428
-								}
-							],
-							"actions": [
-								{
-									"id": "add-to-instvar",
-									"objectClass": "P3LifebarDegrade2",
-									"sid": 272081117406444,
-									"parameters": {
-										"instance-variable": "Degrade",
-										"value": "1"
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "P3LifebarDegrade2",
-									"sid": 798163203955462,
-									"parameters": {
-										"angle": "P3LifebarDegrade2.Degrade"
-									}
-								}
-							],
-							"sid": 345260584351209
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P3LifebarDegrade2",
-							"sid": 925242651581446,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 5,
-								"value": "180"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "P3LifebarDegrade2",
-							"sid": 362959281110531,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 799167926124081,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 838006291666993
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "P3LifebarDegrade2",
-							"sid": 664038326655956,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 144904098016765,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P3LifebarDegrade",
-							"sid": 939424748217503,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 0,
-								"value": "P3LifebarCache.Angle"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [],
-					"sid": 494784087756344,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 366793632396803
-								}
-							],
-							"actions": [
-								{
-									"id": "add-to-instvar",
-									"objectClass": "P3LifebarDegrade",
-									"sid": 743785037026379,
-									"parameters": {
-										"instance-variable": "Degrade",
-										"value": "1"
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "P3LifebarDegrade",
-									"sid": 491138234678515,
-									"parameters": {
-										"angle": "P3LifebarDegrade.Degrade"
-									}
-								}
-							],
-							"sid": 866309035383174
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P3LifebarDegrade",
-							"sid": 383879774936122,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 5,
-								"value": "360"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "P3LifebarDegrade",
-							"sid": 898599283897393,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 107747822425712
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 935933689249845
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "P3LifebarDegrade",
-							"sid": 635294056467231,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 615173016153666
-				}
-			],
-			"sid": 878899238907188
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "DegradeP4",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P4LifebarDegrade2",
-							"sid": 992963753619260,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 0,
-								"value": "P4LifebarCache2.Angle"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [],
-					"sid": 304199403176875,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 169963332193219
-								}
-							],
-							"actions": [
-								{
-									"id": "add-to-instvar",
-									"objectClass": "P4LifebarDegrade2",
-									"sid": 474650931300430,
-									"parameters": {
-										"instance-variable": "Degrade",
-										"value": "1"
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "P4LifebarDegrade2",
-									"sid": 913604198892097,
-									"parameters": {
-										"angle": "P4LifebarDegrade2.Degrade"
-									}
-								}
-							],
-							"sid": 514922429236960
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P4LifebarDegrade2",
-							"sid": 382479007974897,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 5,
-								"value": "180"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "P4LifebarDegrade2",
-							"sid": 142449537551096,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 369442236930055,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 937130928513577
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "P4LifebarDegrade2",
-							"sid": 471263280603439,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 969904369530566,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P4LifebarDegrade",
-							"sid": 719576096671352,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 0,
-								"value": "P4LifebarCache.Angle"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [],
-					"sid": 453289803315056,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 547814849227281
-								}
-							],
-							"actions": [
-								{
-									"id": "add-to-instvar",
-									"objectClass": "P4LifebarDegrade",
-									"sid": 517972506162996,
-									"parameters": {
-										"instance-variable": "Degrade",
-										"value": "1"
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "P4LifebarDegrade",
-									"sid": 220362970700132,
-									"parameters": {
-										"angle": "P4LifebarDegrade.Degrade"
-									}
-								}
-							],
-							"sid": 115168526224481
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "P4LifebarDegrade",
-							"sid": 762760028507424,
-							"parameters": {
-								"instance-variable": "Degrade",
-								"comparison": 5,
-								"value": "360"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "P4LifebarDegrade",
-							"sid": 288405320606652,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 351715332211632
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 221943182941126
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "P4LifebarDegrade",
-							"sid": 366303188512282,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 933454810958318
-				}
-			],
-			"sid": 221642464227925
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "TextBox Functions",
@@ -2644,6 +1355,1295 @@
 				}
 			],
 			"sid": 317801146745908
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "f",
+					"sid": 477374860021463,
+					"parameters": {
+						"name": "\"ActPortraits\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 722368578907277,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "PortraitP1",
+							"sid": 533048055213735,
+							"parameters": {
+								"frame-number": "int(CharacterID.Get(Player1.Character))"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "PortraitP2",
+							"sid": 571801370231594,
+							"parameters": {
+								"frame-number": "int(CharacterID.Get(Player2.Character))"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "PortraitP3",
+							"sid": 168201329134567,
+							"parameters": {
+								"frame-number": "int(CharacterID.Get(Player3.Character))"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "PortraitP4",
+							"sid": 496256096888496,
+							"parameters": {
+								"frame-number": "int(CharacterID.Get(Player4.Character))"
+							}
+						}
+					],
+					"sid": 319393495142879
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "f",
+					"sid": 661207798846674,
+					"parameters": {
+						"name": "\"Lifebar.Update\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 280350645151730,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "f",
+							"sid": 324498968589360,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 609518198515259,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player1",
+									"sid": 366101386656832,
+									"parameters": {
+										"instance-variable": "VidaMaxima",
+										"comparison": 4,
+										"value": "50+Self.VidaActual"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "P1LifebarCache",
+									"sid": 604273216148891,
+									"parameters": {
+										"angle": "(Player1.VidaMaxima-Player1.VidaActual)*3.6"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "P1LifebarCache2",
+									"sid": 310408304503772,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "P1LifebarDegrade2",
+									"sid": 118581144085106,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 177773322421279
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 418595417956582
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "P1LifebarCache",
+									"sid": 916223070629122,
+									"parameters": {
+										"angle": "180"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "P1LifebarCache2",
+									"sid": 533996995707994,
+									"parameters": {
+										"angle": "(Player1.VidaMaxima-Player1.VidaActual)*3.6"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "P1LifebarCache2",
+									"sid": 259355905994263,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 239744015901504
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "f",
+							"sid": 384407108615740,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 752937838219485,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player2",
+									"sid": 213663919429185,
+									"parameters": {
+										"instance-variable": "VidaMaxima",
+										"comparison": 4,
+										"value": "50+Self.VidaActual"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "P2LifebarCache",
+									"sid": 605088746059930,
+									"parameters": {
+										"angle": "(Player2.VidaMaxima-Player2.VidaActual)*3.6"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "P2LifebarCache2",
+									"sid": 456496409219638,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "P2LifebarDegrade2",
+									"sid": 435466185120467,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 967502739230220
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 574036662719836
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "P2LifebarCache",
+									"sid": 422223902755071,
+									"parameters": {
+										"angle": "180"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "P2LifebarCache2",
+									"sid": 384627773543928,
+									"parameters": {
+										"angle": "(Player2.VidaMaxima-Player2.VidaActual)*3.6"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "P2LifebarCache2",
+									"sid": 640614221347348,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 492345053069178
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "f",
+							"sid": 489557960033659,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 146899087131607,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player3",
+									"sid": 360560188093744,
+									"parameters": {
+										"instance-variable": "VidaMaxima",
+										"comparison": 4,
+										"value": "50+Self.VidaActual"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "P3LifebarCache",
+									"sid": 563514782260509,
+									"parameters": {
+										"angle": "(Player3.VidaMaxima-Player3.VidaActual)*3.6"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "P3LifebarCache2",
+									"sid": 622973682394752,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "P3LifebarDegrade2",
+									"sid": 448796753109652,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 417972603426855
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 289242564454350
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "P3LifebarCache",
+									"sid": 954495452674696,
+									"parameters": {
+										"angle": "180"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "P3LifebarCache2",
+									"sid": 718668469242944,
+									"parameters": {
+										"angle": "(Player3.VidaMaxima-Player3.VidaActual)*3.6"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "P3LifebarCache2",
+									"sid": 399499598280863,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 397982512599510
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "f",
+							"sid": 658929228959641,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 111489350613888,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player4",
+									"sid": 853372728689560,
+									"parameters": {
+										"instance-variable": "VidaMaxima",
+										"comparison": 4,
+										"value": "50+Self.VidaActual"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "P4LifebarCache",
+									"sid": 796122621135058,
+									"parameters": {
+										"angle": "(Player4.VidaMaxima-Player4.VidaActual)*3.6"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "P4LifebarCache2",
+									"sid": 570900278937381,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "P4LifebarDegrade2",
+									"sid": 423570981982894,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 264654599492783
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 236118797050485
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "P4LifebarCache",
+									"sid": 612095778512198,
+									"parameters": {
+										"angle": "180"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "P4LifebarCache2",
+									"sid": 580635307703772,
+									"parameters": {
+										"angle": "(Player4.VidaMaxima-Player4.VidaActual)*3.6"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "P4LifebarCache2",
+									"sid": 864486013829949,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 958444686470139
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "DegradeP1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P1LifebarDegrade2",
+							"sid": 654040315376215,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 0,
+								"value": "P1LifebarCache2.Angle"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 803247244183780,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 130320253169230
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "P1LifebarDegrade2",
+									"sid": 114848515923083,
+									"parameters": {
+										"instance-variable": "Degrade",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "P1LifebarDegrade2",
+									"sid": 812931441192889,
+									"parameters": {
+										"angle": "P1LifebarDegrade2.Degrade"
+									}
+								}
+							],
+							"sid": 563693810436924
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "P1LifebarDegrade2",
+									"sid": 556848628951951,
+									"parameters": {
+										"instance-variable": "Degrade",
+										"comparison": 5,
+										"value": "180"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "P1LifebarDegrade2",
+									"sid": 361563760263314,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 502408427319663,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 491637096606419
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "P1LifebarDegrade2",
+									"sid": 103015621923226,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 652353245670402,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P1LifebarDegrade",
+							"sid": 878300200060912,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 0,
+								"value": "P1LifebarCache.Angle"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 454788991957946,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 398038479831380
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "P1LifebarDegrade",
+									"sid": 543781135839003,
+									"parameters": {
+										"instance-variable": "Degrade",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "P1LifebarDegrade",
+									"sid": 802525061045098,
+									"parameters": {
+										"angle": "P1LifebarDegrade.Degrade"
+									}
+								}
+							],
+							"sid": 602369092194196
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P1LifebarDegrade",
+							"sid": 814019091574807,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 5,
+								"value": "360"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "P1LifebarDegrade",
+							"sid": 574156373223071,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 565941210809590
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 483706929082398
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "P1LifebarDegrade",
+							"sid": 396592204575916,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 679361314833260
+				}
+			],
+			"sid": 499485337665723
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "DegradeP2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P2LifebarDegrade2",
+							"sid": 995644018424131,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 0,
+								"value": "P2LifebarCache2.Angle"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 931990842859677,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 763880307807571
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "P2LifebarDegrade2",
+									"sid": 207192653601806,
+									"parameters": {
+										"instance-variable": "Degrade",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "P2LifebarDegrade2",
+									"sid": 674252475750252,
+									"parameters": {
+										"angle": "P2LifebarDegrade2.Degrade"
+									}
+								}
+							],
+							"sid": 539978076704360
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P2LifebarDegrade2",
+							"sid": 353106690514102,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 5,
+								"value": "180"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "P2LifebarDegrade2",
+							"sid": 739902445150265,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 612525340216396,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 278971728429197
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "P2LifebarDegrade2",
+							"sid": 457617034591136,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 688034089778208,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P2LifebarDegrade",
+							"sid": 790920108612145,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 0,
+								"value": "P2LifebarCache.Angle"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 605797615725038,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 163424778275156
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "P2LifebarDegrade",
+									"sid": 234651717062247,
+									"parameters": {
+										"instance-variable": "Degrade",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "P2LifebarDegrade",
+									"sid": 345119072368378,
+									"parameters": {
+										"angle": "P2LifebarDegrade.Degrade"
+									}
+								}
+							],
+							"sid": 855595980501330
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P2LifebarDegrade",
+							"sid": 939356494737611,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 5,
+								"value": "360"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "P2LifebarDegrade",
+							"sid": 254674716909398,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 713728966481650
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 171419775193350
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "P2LifebarDegrade",
+							"sid": 924108125136314,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 532357876524844
+				}
+			],
+			"sid": 554897925225157
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "DegradeP3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P3LifebarDegrade2",
+							"sid": 745494047081054,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 0,
+								"value": "P3LifebarCache2.Angle"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 697827977962709,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 958795546410428
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "P3LifebarDegrade2",
+									"sid": 272081117406444,
+									"parameters": {
+										"instance-variable": "Degrade",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "P3LifebarDegrade2",
+									"sid": 798163203955462,
+									"parameters": {
+										"angle": "P3LifebarDegrade2.Degrade"
+									}
+								}
+							],
+							"sid": 345260584351209
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P3LifebarDegrade2",
+							"sid": 925242651581446,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 5,
+								"value": "180"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "P3LifebarDegrade2",
+							"sid": 362959281110531,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 799167926124081,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 838006291666993
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "P3LifebarDegrade2",
+							"sid": 664038326655956,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 144904098016765,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P3LifebarDegrade",
+							"sid": 939424748217503,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 0,
+								"value": "P3LifebarCache.Angle"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 494784087756344,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 366793632396803
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "P3LifebarDegrade",
+									"sid": 743785037026379,
+									"parameters": {
+										"instance-variable": "Degrade",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "P3LifebarDegrade",
+									"sid": 491138234678515,
+									"parameters": {
+										"angle": "P3LifebarDegrade.Degrade"
+									}
+								}
+							],
+							"sid": 866309035383174
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P3LifebarDegrade",
+							"sid": 383879774936122,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 5,
+								"value": "360"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "P3LifebarDegrade",
+							"sid": 898599283897393,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 107747822425712
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 935933689249845
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "P3LifebarDegrade",
+							"sid": 635294056467231,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 615173016153666
+				}
+			],
+			"sid": 878899238907188
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "DegradeP4",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P4LifebarDegrade2",
+							"sid": 992963753619260,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 0,
+								"value": "P4LifebarCache2.Angle"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 304199403176875,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 169963332193219
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "P4LifebarDegrade2",
+									"sid": 474650931300430,
+									"parameters": {
+										"instance-variable": "Degrade",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "P4LifebarDegrade2",
+									"sid": 913604198892097,
+									"parameters": {
+										"angle": "P4LifebarDegrade2.Degrade"
+									}
+								}
+							],
+							"sid": 514922429236960
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P4LifebarDegrade2",
+							"sid": 382479007974897,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 5,
+								"value": "180"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "P4LifebarDegrade2",
+							"sid": 142449537551096,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 369442236930055,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 937130928513577
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "P4LifebarDegrade2",
+							"sid": 471263280603439,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 969904369530566,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P4LifebarDegrade",
+							"sid": 719576096671352,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 0,
+								"value": "P4LifebarCache.Angle"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 453289803315056,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 547814849227281
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "P4LifebarDegrade",
+									"sid": 517972506162996,
+									"parameters": {
+										"instance-variable": "Degrade",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "P4LifebarDegrade",
+									"sid": 220362970700132,
+									"parameters": {
+										"angle": "P4LifebarDegrade.Degrade"
+									}
+								}
+							],
+							"sid": 115168526224481
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "P4LifebarDegrade",
+							"sid": 762760028507424,
+							"parameters": {
+								"instance-variable": "Degrade",
+								"comparison": 5,
+								"value": "360"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "P4LifebarDegrade",
+							"sid": 288405320606652,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 351715332211632
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 221943182941126
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "P4LifebarDegrade",
+							"sid": 366303188512282,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 933454810958318
+				}
+			],
+			"sid": 221642464227925
 		}
 	],
 	"sid": 450407204117189

@@ -11,47 +11,47 @@
 			{
 				"frames": [
 					{
-						"width": 60,
-						"height": 60,
+						"width": 40,
+						"height": 40,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "C:\\Users\\diego\\Desktop\\Personaje_Fuego_DS.png",
+						"originalSource": "C:\\Users\\diego\\Desktop\\portrait-Fuego.gif",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 450,
+						"imageSpriteId": 2182,
 						"duration": 1
 					},
 					{
-						"width": 60,
-						"height": 60,
+						"width": 44,
+						"height": 34,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "C:\\Users\\diego\\Desktop\\portrait-Agua.gif",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 451,
+						"imageSpriteId": 2183,
 						"duration": 1
 					},
 					{
-						"width": 60,
-						"height": 60,
+						"width": 44,
+						"height": 34,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "C:\\Users\\diego\\Desktop\\portrait-Aire.gif",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 452,
+						"imageSpriteId": 2184,
 						"duration": 1
 					},
 					{
-						"width": 60,
-						"height": 60,
+						"width": 52,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "C:\\Users\\diego\\Desktop\\portrait-Tierra.gif",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 453,
+						"imageSpriteId": 2180,
 						"duration": 1
 					},
 					{
@@ -173,6 +173,17 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 464,
+						"duration": 1
+					},
+					{
+						"width": 60,
+						"height": 60,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2179,
 						"duration": 1
 					}
 				],

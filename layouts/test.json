@@ -305,10 +305,10 @@
 					"world": {
 						"x": 784,
 						"y": 896,
-						"width": 25,
+						"width": 23,
 						"height": 25,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.6199999999999999,
 						"color": [
 							1,
 							1,
@@ -509,294 +509,6 @@
 							1
 						],
 						"angle": 1.570796371,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Player2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "FuegoWalkTopLft",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1,
-					"instanceVariables": {
-						"Id": 2,
-						"Character": "Agua",
-						"Active": false,
-						"Estado": "Run",
-						"NumX": -50,
-						"NumY": -50,
-						"VidaActual": 100,
-						"VidaMaxima": 100,
-						"Combo": 1,
-						"isDodge": true,
-						"isSeen": false,
-						"target": -1,
-						"posToEnemy": "",
-						"TESTVAR1": 0,
-						"TESTVAR2": 0,
-						"KbActive": 1,
-						"LastAngle": 0,
-						"LastAngleX": 0,
-						"LastAngleY": 0,
-						"Dashing": false,
-						"DashTimer": 0,
-						"Direction": ""
-					},
-					"behaviors": {
-						"CustomMovement": {
-							"properties": {
-								"stepping-mode": "none",
-								"pixels-per-step": 5,
-								"enabled": true
-							}
-						},
-						"8Direcciones": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 1100,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"LineOfSight": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 10000,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
-						"Pathfinding": {
-							"properties": {
-								"cell-size": 16,
-								"cell-border": -1,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"rotate-speed": 135,
-								"rotate-object": false,
-								"diagonals": true,
-								"enabled": true
-							}
-						},
-						"Timer": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 880,
-						"y": 864,
-						"width": 21,
-						"height": 21,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Player3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "FuegoWalkTopLft",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 2,
-					"instanceVariables": {
-						"Id": 3,
-						"Character": "Tierra",
-						"Active": false,
-						"Estado": "Run",
-						"NumX": -50,
-						"NumY": 50,
-						"VidaActual": 100,
-						"VidaMaxima": 100,
-						"Combo": 1,
-						"isDodge": true,
-						"isSeen": false,
-						"target": -1,
-						"posToEnemy": "",
-						"TESTVAR1": 0,
-						"TESTVAR2": 0,
-						"KbActive": 1,
-						"LastAngle": 0,
-						"LastAngleX": 0,
-						"LastAngleY": 0,
-						"Dashing": false,
-						"DashTimer": 0,
-						"Direction": ""
-					},
-					"behaviors": {
-						"CustomMovement": {
-							"properties": {
-								"stepping-mode": "none",
-								"pixels-per-step": 5,
-								"enabled": true
-							}
-						},
-						"8Direcciones": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 1100,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"LineOfSight": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 10000,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
-						"Pathfinding": {
-							"properties": {
-								"cell-size": 16,
-								"cell-border": -1,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"rotate-speed": 135,
-								"rotate-object": false,
-								"diagonals": true,
-								"enabled": true
-							}
-						},
-						"Timer": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 992,
-						"y": 864,
-						"width": 21,
-						"height": 21,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Player4",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "FuegoWalkTopLft",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3,
-					"instanceVariables": {
-						"Id": 4,
-						"Character": "Aire",
-						"Active": false,
-						"Estado": "Run",
-						"NumX": 50,
-						"NumY": 50,
-						"VidaActual": 100,
-						"VidaMaxima": 100,
-						"Combo": 1,
-						"isDodge": true,
-						"isSeen": false,
-						"target": -1,
-						"posToEnemy": "",
-						"TESTVAR1": 0,
-						"TESTVAR2": 0,
-						"KbActive": 1,
-						"LastAngle": 0,
-						"LastAngleX": 0,
-						"LastAngleY": 0,
-						"Dashing": false,
-						"DashTimer": 0,
-						"Direction": ""
-					},
-					"behaviors": {
-						"CustomMovement": {
-							"properties": {
-								"stepping-mode": "none",
-								"pixels-per-step": 5,
-								"enabled": true
-							}
-						},
-						"8Direcciones": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 1100,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"LineOfSight": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 10000,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
-						"Pathfinding": {
-							"properties": {
-								"cell-size": 16,
-								"cell-border": -1,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"rotate-speed": 135,
-								"rotate-object": false,
-								"diagonals": true,
-								"enabled": true
-							}
-						},
-						"Timer": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 944,
-						"y": 880,
-						"width": 21,
-						"height": 21,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
 						"zElevation": 0
 					}
 				},
@@ -2096,6 +1808,294 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Player2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "FuegoWalkTopLft",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1,
+					"instanceVariables": {
+						"Id": 2,
+						"Character": "Agua",
+						"Active": true,
+						"Estado": "Run",
+						"NumX": 0,
+						"NumY": 0,
+						"VidaActual": 100,
+						"VidaMaxima": 100,
+						"Combo": 1,
+						"isDodge": true,
+						"isSeen": false,
+						"target": -1,
+						"posToEnemy": "",
+						"TESTVAR1": 0,
+						"TESTVAR2": 0,
+						"KbActive": 1,
+						"LastAngle": 0,
+						"LastAngleX": 0,
+						"LastAngleY": 0,
+						"Dashing": false,
+						"DashTimer": 0,
+						"Direction": ""
+					},
+					"behaviors": {
+						"CustomMovement": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						},
+						"8Direcciones": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 1100,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 10000,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"rotate-speed": 135,
+								"rotate-object": false,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"Timer": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 864,
+						"y": 896,
+						"width": 23,
+						"height": 25,
+						"originX": 0.5,
+						"originY": 0.6199999999999999,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Player3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "FuegoWalkTopLft",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"instanceVariables": {
+						"Id": 3,
+						"Character": "Aire",
+						"Active": true,
+						"Estado": "Run",
+						"NumX": 0,
+						"NumY": 0,
+						"VidaActual": 100,
+						"VidaMaxima": 100,
+						"Combo": 1,
+						"isDodge": true,
+						"isSeen": false,
+						"target": -1,
+						"posToEnemy": "",
+						"TESTVAR1": 0,
+						"TESTVAR2": 0,
+						"KbActive": 1,
+						"LastAngle": 0,
+						"LastAngleX": 0,
+						"LastAngleY": 0,
+						"Dashing": false,
+						"DashTimer": 0,
+						"Direction": ""
+					},
+					"behaviors": {
+						"CustomMovement": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						},
+						"8Direcciones": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 1100,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 10000,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"rotate-speed": 135,
+								"rotate-object": false,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"Timer": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 912,
+						"y": 880,
+						"width": 23,
+						"height": 25,
+						"originX": 0.5,
+						"originY": 0.6199999999999999,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Player4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "FuegoWalkTopLft",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 3,
+					"instanceVariables": {
+						"Id": 4,
+						"Character": "Tierra",
+						"Active": true,
+						"Estado": "Run",
+						"NumX": 0,
+						"NumY": 0,
+						"VidaActual": 100,
+						"VidaMaxima": 100,
+						"Combo": 1,
+						"isDodge": true,
+						"isSeen": false,
+						"target": -1,
+						"posToEnemy": "",
+						"TESTVAR1": 0,
+						"TESTVAR2": 0,
+						"KbActive": 1,
+						"LastAngle": 0,
+						"LastAngleX": 0,
+						"LastAngleY": 0,
+						"Dashing": false,
+						"DashTimer": 0,
+						"Direction": ""
+					},
+					"behaviors": {
+						"CustomMovement": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						},
+						"8Direcciones": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 1100,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 10000,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"rotate-speed": 135,
+								"rotate-object": false,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"Timer": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 944,
+						"y": 896,
+						"width": 23,
+						"height": 25,
+						"originX": 0.5,
+						"originY": 0.6199999999999999,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 863459924913680,
@@ -2140,9 +2140,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 26.275985718,
-						"y": 25.408111572,
-						"width": 30,
-						"height": 30,
+						"y": 22,
+						"width": 20,
+						"height": 20,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2169,9 +2169,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 530.231079102,
-						"y": 22.221446991,
-						"width": 30,
-						"height": 30,
+						"y": 22,
+						"width": 20,
+						"height": 20,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2199,8 +2199,8 @@
 					"world": {
 						"x": 24.983901978,
 						"y": 288.328857422,
-						"width": 30,
-						"height": 30,
+						"width": 20,
+						"height": 20,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2228,8 +2228,8 @@
 					"world": {
 						"x": 526.337585449,
 						"y": 286.830291748,
-						"width": 30,
-						"height": 30,
+						"width": 20,
+						"height": 20,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
