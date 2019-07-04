@@ -1,11 +1,16 @@
 {
 	"name": "LuzCircular",
 	"plugin-id": "Sprite",
-	"sid": 295099361174528,
+	"sid": 953369701667779,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "lighten",
+			"name": "Lighten"
+		}
+	],
 	"animations": {
 		"items": [
 			{
@@ -18,11 +23,11 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 12,
+						"imageSpriteId": 16,
 						"duration": 1
 					}
 				],
-				"sid": 218973215305100,
+				"sid": 734260077634090,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

@@ -120,6 +120,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r157",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
@@ -130,14 +138,6 @@
 			"type": "behavior",
 			"id": "Rotate",
 			"name": "Rotate",
-			"author": "Scirra",
-			"version": "r157",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Sin",
-			"name": "Sine",
 			"author": "Scirra",
 			"version": "r157",
 			"bundled": false
@@ -233,43 +233,7 @@
 	],
 	"uniqueId": "3sy6iiw7nd6ah",
 	"objectTypes": {
-		"items": [
-			"Camara",
-			"Sprite5",
-			"michaelbay640x",
-			"Sprite",
-			"asdad",
-			"Next",
-			"Text",
-			"NewGame",
-			"ContinueGame",
-			"Exit",
-			"FadeIn",
-			"FadeOut",
-			"Seleccion",
-			"IconoMuro",
-			"PlayerIcon1",
-			"PlayerIcon2",
-			"PlayerIcon3",
-			"PlayerIcon4",
-			"Minimap",
-			"Sprite2",
-			"Array",
-			"ArrayMp",
-			"Sprite3",
-			"LuzCircular",
-			"TextInput",
-			"pausa",
-			"salir",
-			"Continue",
-			"Sprite4",
-			"Text2",
-			"LOGO",
-			"LuzCircular2",
-			"Sprite6",
-			"RayosDeLuz",
-			"RayosDeLuz2"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -279,7 +243,8 @@
 					"Mouse",
 					"Audio",
 					"AJAX",
-					"Browser"
+					"Browser",
+					"Camera"
 				],
 				"subfolders": [],
 				"name": "Miscelaneos"
@@ -299,7 +264,14 @@
 					"INPUT",
 					"AnimationText",
 					"TextBox",
-					"FPSCPU"
+					"FPSCPU",
+					"Pausa",
+					"Salir",
+					"Next",
+					"Continue",
+					"TextInput",
+					"Minimap",
+					"IconoMuro"
 				],
 				"subfolders": [],
 				"name": "HUD"
@@ -339,7 +311,11 @@
 					"PortraitP1",
 					"PortraitP2",
 					"PortraitP3",
-					"PortraitP4"
+					"PortraitP4",
+					"PlayerIcon1",
+					"PlayerIcon3",
+					"PlayerIcon2",
+					"PlayerIcon4"
 				],
 				"subfolders": [],
 				"name": "Portraits"
@@ -348,7 +324,10 @@
 				"items": [
 					"CharacterID",
 					"CharacterInput",
-					"CharacterData"
+					"Array",
+					"ArrayMp",
+					"DataAngle",
+					"DataUIDS"
 				],
 				"subfolders": [],
 				"name": "Data"
@@ -396,15 +375,8 @@
 			},
 			{
 				"items": [
-					"TilemapBackground",
-					"Puas",
 					"SolidTestBox",
-					"TilemapSolid",
-					"TestBackground",
-					"TestSolid",
-					"TilemapEscenario1",
-					"TilemapSolid1",
-					"TilemapEscenario2"
+					"Ending"
 				],
 				"subfolders": [
 					{
@@ -413,10 +385,28 @@
 							"boxbot",
 							"boxleft",
 							"boxright",
-							"boxtop"
+							"boxtop",
+							"Puas"
 						],
 						"subfolders": [],
 						"name": "Objetos"
+					},
+					{
+						"items": [
+							"LuzCircular",
+							"RayosDeLuz"
+						],
+						"subfolders": [],
+						"name": "Iluminacion"
+					},
+					{
+						"items": [
+							"TilemapEscenario1",
+							"TilemapEscenario2",
+							"TilemapSolid1"
+						],
+						"subfolders": [],
+						"name": "Tilemaps"
 					}
 				],
 				"name": "Escenario"
@@ -441,6 +431,21 @@
 				],
 				"subfolders": [],
 				"name": "Rooms"
+			},
+			{
+				"items": [
+					"LOGO",
+					"ContinueGame",
+					"Text",
+					"Text2",
+					"Seleccion",
+					"FadeOut",
+					"FadeIn",
+					"Exit",
+					"NewGame"
+				],
+				"subfolders": [],
+				"name": "Menu"
 			}
 		]
 	},
@@ -557,6 +562,14 @@
 				{
 					"name": "RoomData.json",
 					"type": "application/json"
+				},
+				{
+					"name": "AnglePlayers.json",
+					"type": "application/json"
+				},
+				{
+					"name": "UIDSPlayers.json",
+					"type": "application/json"
 				}
 			],
 			"subfolders": []
@@ -579,7 +592,7 @@
 		"authorWebsite": "http://",
 		"appId": "com.chronosphere.myapp",
 		"pixelRounding": false,
-		"useLoaderLayout": false,
+		"useLoaderLayout": true,
 		"fullscreenMode": "letterbox-scale",
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
@@ -616,5 +629,5 @@
 	},
 	"viewportWidth": 560,
 	"viewportHeight": 315,
-	"firstLayout": "Intro"
+	"firstLayout": "Menu"
 }

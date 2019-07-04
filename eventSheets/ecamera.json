@@ -42,142 +42,9 @@
 			"sid": 497929341856117
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 872208451029072
-				}
-			],
-			"actions": [
-				{
-					"id": "pin-to-object",
-					"objectClass": "Sprite5",
-					"sid": 816962828981178,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "Camara",
-						"mode": "position-angle"
-					}
-				}
-			],
-			"sid": 440719570584330,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Players",
-					"sid": 294726900335274,
-					"parameters": {
-						"object": "Sprite5"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "Camara",
-					"sid": 364105002175917,
-					"parameters": {
-						"instance-variable": "SeguimientoCamara",
-						"value": "0"
-					}
-				}
-			],
-			"sid": 861990601244570,
-			"disabled": true
-		},
-		{
-			"eventType": "group",
-			"disabled": true,
-			"title": "Seguimiento",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Camara",
-							"sid": 967290809453622,
-							"parameters": {
-								"instance-variable": "SeguimientoCamara",
-								"comparison": 0,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 439592481933277,
-							"parameters": {
-								"group-name": "\"Seguimiento\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 875871731379592,
-							"parameters": {
-								"seconds": "0.1"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Camara",
-							"sid": 432100511343971,
-							"parameters": {
-								"instance-variable": "SeguimientoCamara",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 343961256511258,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Camara",
-							"sid": 664703196480920,
-							"parameters": {
-								"instance-variable": "SeguimientoCamara",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 288830133422601,
-							"parameters": {
-								"group-name": "\"Seguimiento\"",
-								"state": "activated"
-							}
-						}
-					],
-					"sid": 314789442357939,
-					"disabled": true
-				}
-			],
-			"sid": 105339761699348
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Camera/IA",
+			"title": "cameraPosition",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -270,14 +137,14 @@
 							"objectClass": "room",
 							"sid": 718036413530329,
 							"parameters": {
-								"object": "Camara"
+								"object": "Camera"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-position",
-							"objectClass": "Camara",
+							"objectClass": "Camera",
 							"sid": 115994991289919,
 							"parameters": {
 								"x": "CamaraX",
@@ -293,7 +160,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "asd",
+			"title": "cameraZone&Soft",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -310,7 +177,7 @@
 							"objectClass": "room",
 							"sid": 256010936082866,
 							"parameters": {
-								"object": "Camara"
+								"object": "Camera"
 							}
 						}
 					],
@@ -321,7 +188,7 @@
 							"sid": 671025450487217,
 							"parameters": {
 								"variable": "zoneX",
-								"value": "clamp(Camara.X,  room.X + mitadPantallaX, room.X + room.Width - mitadPantallaX)"
+								"value": "clamp(Camera.X,  room.X + mitadPantallaX, room.X + room.Width - mitadPantallaX)"
 							}
 						},
 						{
@@ -330,7 +197,7 @@
 							"sid": 288898250045673,
 							"parameters": {
 								"variable": "zoneY",
-								"value": "clamp(Camara.Y, room.Y + mitadPantallaY,  room.Y + room.Height - mitadPantallaY)"
+								"value": "clamp(Camera.Y, room.Y + mitadPantallaY,  room.Y + room.Height - mitadPantallaY)"
 							}
 						},
 						{

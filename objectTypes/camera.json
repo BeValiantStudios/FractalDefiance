@@ -1,21 +1,17 @@
 {
-	"name": "Sprite5",
+	"name": "Camera",
 	"plugin-id": "Sprite",
-	"sid": 980295486662830,
+	"sid": 868670560047614,
 	"isGlobal": false,
-	"instanceVariables": [],
-	"behaviorTypes": [
+	"instanceVariables": [
 		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 467374652413434
-		},
-		{
-			"behaviorId": "Pin",
-			"name": "Pin",
-			"sid": 386426677046945
+			"name": "SeguimientoCamara",
+			"type": "number",
+			"desc": "",
+			"sid": 249985387698693
 		}
 	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -29,11 +25,11 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 569,
+						"imageSpriteId": 570,
 						"duration": 1
 					}
 				],
-				"sid": 773689512930881,
+				"sid": 944684225629068,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

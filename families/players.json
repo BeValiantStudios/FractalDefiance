@@ -134,6 +134,12 @@
 			"type": "string",
 			"desc": "",
 			"sid": 556543042506240
+		},
+		{
+			"name": "TESTVAR3",
+			"type": "string",
+			"desc": "",
+			"sid": 212682842379633
 		}
 	],
 	"behaviorTypes": [

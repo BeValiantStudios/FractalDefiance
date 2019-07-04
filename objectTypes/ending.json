@@ -1,7 +1,7 @@
 {
-	"name": "Sprite2",
+	"name": "Ending",
 	"plugin-id": "Sprite",
-	"sid": 361429442004962,
+	"sid": 853825590133483,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,11 +18,11 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 633,
+						"imageSpriteId": 14,
 						"duration": 1
 					}
 				],
-				"sid": 610801427539197,
+				"sid": 966871551897739,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

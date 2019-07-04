@@ -127,6 +127,24 @@
 					}
 				},
 				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 358456725189099,
+					"parameters": {
+						"tag": "\"ReqAnglePlayers\"",
+						"file": "AnglePlayers.json"
+					}
+				},
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 305349629217357,
+					"parameters": {
+						"tag": "\"ReqUIDSPlayers\"",
+						"file": "UIDSPlayers.json"
+					}
+				},
+				{
 					"id": "load",
 					"objectClass": "CharacterID",
 					"sid": 883294184958814,
@@ -181,7 +199,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "pausa",
+					"objectClass": "Pausa",
 					"sid": 996755925390529,
 					"parameters": {
 						"visibility": "invisible"
@@ -256,6 +274,54 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 331305430828418,
+							"parameters": {
+								"tag": "\"ReqAnglePlayers\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "DataAngle",
+							"sid": 580015270385402,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						}
+					],
+					"sid": 511556279496774
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 338301295501943,
+							"parameters": {
+								"tag": "\"ReqUIDSPlayers\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "DataUIDS",
+							"sid": 421316415347820,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						}
+					],
+					"sid": 276256950340590
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-text-changed",
 							"objectClass": "TextBox",
 							"sid": 707600836273593
@@ -287,81 +353,156 @@
 			"sid": 544789076177150
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 533050972476940,
-					"parameters": {
-						"first-value": "timescale",
-						"comparison": 0,
-						"second-value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "pausa",
-					"sid": 526723971655955,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "salir",
-					"sid": 242458595301799,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Continue",
-					"sid": 525869619885517,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 878689232646050,
+			"eventType": "group",
+			"disabled": false,
+			"title": "PauseMenu",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 121072132176394,
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 640922172478514,
 							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "salir"
+								"first-value": "timescale",
+								"comparison": 0,
+								"second-value": "0"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "close",
-							"objectClass": "Browser",
-							"sid": 219483961786712
+							"id": "set-visible",
+							"objectClass": "Pausa",
+							"sid": 231309734752481,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Salir",
+							"sid": 638338961284304,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Continue",
+							"sid": 489174203476522,
+							"parameters": {
+								"visibility": "visible"
+							}
 						}
 					],
-					"sid": 348131646734064
+					"sid": 644138651865019,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 981188175842671,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "Salir"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "close",
+									"objectClass": "Browser",
+									"sid": 647834511200181
+								}
+							],
+							"sid": 466316468776961
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 776320112907386,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "Continue"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 147440763396752,
+									"parameters": {
+										"time-scale": "1 - timescale"
+									}
+								}
+							],
+							"sid": 616921423458406
+						}
+					]
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 507215496913219,
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 682306562741071,
 							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "Continue"
+								"first-value": "timescale",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Salir",
+							"sid": 925404047747241,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Pausa",
+							"sid": 590942193269340,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Continue",
+							"sid": 506112247937525,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 874635356758173
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "kb",
+							"sid": 796506002018950,
+							"parameters": {
+								"key": 13
 							}
 						}
 					],
@@ -369,109 +510,44 @@
 						{
 							"id": "set-time-scale",
 							"objectClass": "System",
-							"sid": 425006053806687,
+							"sid": 977013796507876,
 							"parameters": {
 								"time-scale": "1 - timescale"
 							}
 						}
 					],
-					"sid": 304452121098385
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 785944418330291,
-					"parameters": {
-						"first-value": "timescale",
-						"comparison": 0,
-						"second-value": "1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "salir",
-					"sid": 711989587696191,
-					"parameters": {
-						"visibility": "invisible"
-					}
+					"sid": 277841457923493
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "pausa",
-					"sid": 601043523440524,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Continue",
-					"sid": 959012165153377,
-					"parameters": {
-						"visibility": "invisible"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player1",
+							"sid": 396432545526479,
+							"parameters": {
+								"object": "Ending"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 516230834461813,
+							"parameters": {
+								"name": "\"Textbox\"",
+								"parameter-n": [
+									"0",
+									"\"Gracias por probar el Demo\""
+								]
+							}
+						}
+					],
+					"sid": 485273909292248
 				}
 			],
-			"sid": 168641341418962
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "kb",
-					"sid": 786763676800224,
-					"parameters": {
-						"key": 13
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-time-scale",
-					"objectClass": "System",
-					"sid": 430872437817099,
-					"parameters": {
-						"time-scale": "1 - timescale"
-					}
-				}
-			],
-			"sid": 270598924866783
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player1",
-					"sid": 651010773424822,
-					"parameters": {
-						"object": "Sprite4"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "call-function",
-					"objectClass": "f",
-					"sid": 643305464739692,
-					"parameters": {
-						"name": "\"Textbox\"",
-						"parameter-n": [
-							"0",
-							"\"Gracias por probar el Demo\""
-						]
-					}
-				}
-			],
-			"sid": 901639794131650
+			"sid": 153561275177381
 		}
 	],
 	"sid": 901481160981704

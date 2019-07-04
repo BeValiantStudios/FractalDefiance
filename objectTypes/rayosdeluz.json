@@ -1,11 +1,16 @@
 {
 	"name": "RayosDeLuz",
 	"plugin-id": "Sprite",
-	"sid": 994335992703574,
+	"sid": 565607934554273,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "lighten",
+			"name": "Lighten"
+		}
+	],
 	"animations": {
 		"items": [
 			{
@@ -18,11 +23,11 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 19,
+						"imageSpriteId": 20,
 						"duration": 1
 					}
 				],
-				"sid": 574032239678087,
+				"sid": 739504398070230,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

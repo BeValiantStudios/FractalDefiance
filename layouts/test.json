@@ -166,7 +166,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -201,7 +201,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -236,7 +236,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -271,7 +271,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -306,7 +306,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -341,7 +341,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -376,7 +376,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -411,7 +411,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -446,7 +446,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -481,7 +481,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -516,7 +516,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -551,7 +551,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -586,7 +586,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -621,7 +621,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -656,7 +656,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -691,7 +691,7 @@
 					}
 				},
 				{
-					"type": "LuzCircular2",
+					"type": "LuzCircular",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -726,7 +726,7 @@
 					}
 				},
 				{
-					"type": "RayosDeLuz2",
+					"type": "RayosDeLuz",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -821,7 +821,8 @@
 						"LastAngleY": 0,
 						"Dashing": false,
 						"DashTimer": 0,
-						"Direction": ""
+						"Direction": "",
+						"TESTVAR3": ""
 					},
 					"behaviors": {
 						"CustomMovement": {
@@ -886,7 +887,7 @@
 					}
 				},
 				{
-					"type": "Camara",
+					"type": "Camera",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Default",
@@ -2245,7 +2246,8 @@
 						"LastAngleY": 0,
 						"Dashing": false,
 						"DashTimer": 0,
-						"Direction": ""
+						"Direction": "",
+						"TESTVAR3": ""
 					},
 					"behaviors": {
 						"CustomMovement": {
@@ -2341,7 +2343,8 @@
 						"LastAngleY": 0,
 						"Dashing": false,
 						"DashTimer": 0,
-						"Direction": ""
+						"Direction": "",
+						"TESTVAR3": ""
 					},
 					"behaviors": {
 						"CustomMovement": {
@@ -2437,7 +2440,8 @@
 						"LastAngleY": 0,
 						"Dashing": false,
 						"DashTimer": 0,
-						"Direction": ""
+						"Direction": "",
+						"TESTVAR3": ""
 					},
 					"behaviors": {
 						"CustomMovement": {
@@ -4246,7 +4250,7 @@
 					}
 				},
 				{
-					"type": "pausa",
+					"type": "Pausa",
 					"properties": {
 						"text": "Menu Pause",
 						"enable-bbcode": true,
@@ -4288,7 +4292,7 @@
 					}
 				},
 				{
-					"type": "salir",
+					"type": "Salir",
 					"properties": {
 						"text": "Salir",
 						"enable-bbcode": true,
@@ -4864,7 +4868,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Sprite4",
+					"type": "Ending",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -4880,35 +4884,6 @@
 						"y": 1264,
 						"width": 48,
 						"height": 48,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite6",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 148,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 3360,
-						"y": 3216,
-						"width": 250,
-						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -4982,16 +4957,6 @@
 			"instanceVariables": {}
 		},
 		{
-			"type": "CharacterData",
-			"properties": {
-				"width": 4,
-				"height": 4,
-				"depth": 1
-			},
-			"uid": 92,
-			"instanceVariables": {}
-		},
-		{
 			"type": "Array",
 			"properties": {
 				"width": 4,
@@ -5019,6 +4984,18 @@
 				"depth": 1
 			},
 			"uid": 129,
+			"instanceVariables": {}
+		},
+		{
+			"type": "DataAngle",
+			"properties": {},
+			"uid": 148,
+			"instanceVariables": {}
+		},
+		{
+			"type": "DataUIDS",
+			"properties": {},
+			"uid": 162,
 			"instanceVariables": {}
 		}
 	],

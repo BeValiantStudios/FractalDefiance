@@ -1216,132 +1216,6 @@
 						}
 					],
 					"sid": 604252896961762
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-button-pressed",
-							"objectClass": "gp",
-							"sid": 788757443238304,
-							"parameters": {
-								"gamepad": "0",
-								"button": "button-x"
-							}
-						},
-						{
-							"id": "on-button-pressed",
-							"objectClass": "gp",
-							"sid": 455889236507334,
-							"parameters": {
-								"gamepad": "0",
-								"button": "right-shoulder-button"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "call-function",
-							"objectClass": "f",
-							"sid": 919685570007496,
-							"parameters": {
-								"name": "\"ButtonAttack\"",
-								"parameter-n": [
-									"1",
-									"1",
-									"0",
-									"1"
-								]
-							}
-						}
-					],
-					"sid": 108429215030673,
-					"disabled": true,
-					"isOrBlock": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-button-pressed",
-							"objectClass": "gp",
-							"sid": 922591193240609,
-							"parameters": {
-								"gamepad": "1",
-								"button": "button-x"
-							}
-						},
-						{
-							"id": "on-button-pressed",
-							"objectClass": "gp",
-							"sid": 625111390502322,
-							"parameters": {
-								"gamepad": "1",
-								"button": "right-shoulder-button"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "call-function",
-							"objectClass": "f",
-							"sid": 834471288983248,
-							"parameters": {
-								"name": "\"ButtonAttack\"",
-								"parameter-n": [
-									"2",
-									"1",
-									"1",
-									"2"
-								]
-							}
-						}
-					],
-					"sid": 752740554592634,
-					"disabled": true,
-					"isOrBlock": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-button-pressed",
-							"objectClass": "gp",
-							"sid": 419911347837647,
-							"parameters": {
-								"gamepad": "2",
-								"button": "button-x"
-							}
-						},
-						{
-							"id": "on-button-pressed",
-							"objectClass": "gp",
-							"sid": 308987647232134,
-							"parameters": {
-								"gamepad": "2",
-								"button": "right-shoulder-button"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "call-function",
-							"objectClass": "f",
-							"sid": 181065628002198,
-							"parameters": {
-								"name": "\"ButtonAttack\"",
-								"parameter-n": [
-									"3",
-									"1",
-									"2",
-									"3"
-								]
-							}
-						}
-					],
-					"sid": 654750711914356,
-					"disabled": true,
-					"isOrBlock": true
 				}
 			],
 			"sid": 442539690671937
@@ -1454,7 +1328,6 @@
 																	"id": "set-animation",
 																	"objectClass": "Players",
 																	"sid": 548610933927037,
-																	"disabled": true,
 																	"parameters": {
 																		"animation": "Self.Character & \"WalkTopLft\"",
 																		"from": "beginning"
@@ -1463,10 +1336,10 @@
 																{
 																	"id": "set-instvar-value",
 																	"objectClass": "Players",
-																	"sid": 869006560642430,
+																	"sid": 484939283008817,
 																	"parameters": {
 																		"instance-variable": "Direction",
-																		"value": "\"TopLeft\""
+																		"value": "\"TopLft\""
 																	}
 																}
 															],
@@ -1501,7 +1374,6 @@
 																	"id": "set-animation",
 																	"objectClass": "Players",
 																	"sid": 813641258364941,
-																	"disabled": true,
 																	"parameters": {
 																		"animation": "Self.Character & \"WalkTop\"",
 																		"from": "beginning"
@@ -1548,7 +1420,6 @@
 																	"id": "set-animation",
 																	"objectClass": "Players",
 																	"sid": 301233054430778,
-																	"disabled": true,
 																	"parameters": {
 																		"animation": "Self.Character & \"WalkTopRgt\"",
 																		"from": "beginning"
@@ -1557,10 +1428,10 @@
 																{
 																	"id": "set-instvar-value",
 																	"objectClass": "Players",
-																	"sid": 897784554320948,
+																	"sid": 571687651910240,
 																	"parameters": {
 																		"instance-variable": "Direction",
-																		"value": "\"TopRight\""
+																		"value": "\"TopRgt\""
 																	}
 																}
 															],
@@ -1609,7 +1480,6 @@
 																	"id": "set-animation",
 																	"objectClass": "Players",
 																	"sid": 246076181080482,
-																	"disabled": true,
 																	"parameters": {
 																		"animation": "Self.Character & \"WalkBotLft\"",
 																		"from": "beginning"
@@ -1618,10 +1488,10 @@
 																{
 																	"id": "set-instvar-value",
 																	"objectClass": "Players",
-																	"sid": 368918250110546,
+																	"sid": 222323348961688,
 																	"parameters": {
 																		"instance-variable": "Direction",
-																		"value": "\"BotLeft\""
+																		"value": "\"BotLft\""
 																	}
 																}
 															],
@@ -1656,7 +1526,6 @@
 																	"id": "set-animation",
 																	"objectClass": "Players",
 																	"sid": 998470347123300,
-																	"disabled": true,
 																	"parameters": {
 																		"animation": "Self.Character & \"WalkBot\"",
 																		"from": "beginning"
@@ -1703,7 +1572,6 @@
 																	"id": "set-animation",
 																	"objectClass": "Players",
 																	"sid": 929293380187047,
-																	"disabled": true,
 																	"parameters": {
 																		"animation": "Self.Character & \"WalkBotRgt\"",
 																		"from": "beginning"
@@ -1712,10 +1580,10 @@
 																{
 																	"id": "set-instvar-value",
 																	"objectClass": "Players",
-																	"sid": 690366158342326,
+																	"sid": 925986605201386,
 																	"parameters": {
 																		"instance-variable": "Direction",
-																		"value": "\"BotRight\""
+																		"value": "\"BotRgt\""
 																	}
 																}
 															],
@@ -1724,6 +1592,30 @@
 													]
 												}
 											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-moving",
+													"objectClass": "Players",
+													"sid": 478392047394325,
+													"behaviorType": "8Direcciones",
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Players",
+													"sid": 735948597752931,
+													"parameters": {
+														"animation": "Self.Character  & \"Idle\" & Self.Direction",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 994587223256872
 										}
 									]
 								},
@@ -1775,6 +1667,15 @@
 																"animation": "Self.Character & \"WalkBotRgt\"",
 																"from": "beginning"
 															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Players",
+															"sid": 598546697798559,
+															"parameters": {
+																"instance-variable": "Direction",
+																"value": "\"BotRgt\""
+															}
 														}
 													],
 													"sid": 492422169027314
@@ -1811,6 +1712,15 @@
 															"parameters": {
 																"animation": "Self.Character & \"WalkBot\"",
 																"from": "beginning"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Players",
+															"sid": 552812914372983,
+															"parameters": {
+																"instance-variable": "Direction",
+																"value": "\"Bot\""
 															}
 														}
 													],
@@ -1849,6 +1759,15 @@
 																"animation": "Self.Character & \"WalkBotLft\"",
 																"from": "beginning"
 															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Players",
+															"sid": 151146561433219,
+															"parameters": {
+																"instance-variable": "Direction",
+																"value": "\"BotLft\""
+															}
 														}
 													],
 													"sid": 674180295252563
@@ -1885,6 +1804,15 @@
 															"parameters": {
 																"animation": "Self.Character & \"WalkTopLft\"",
 																"from": "beginning"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Players",
+															"sid": 896383128870462,
+															"parameters": {
+																"instance-variable": "Direction",
+																"value": "\"TopLft\""
 															}
 														}
 													],
@@ -1923,6 +1851,15 @@
 																"animation": "Self.Character & \"WalkTop\"",
 																"from": "beginning"
 															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Players",
+															"sid": 764686798852426,
+															"parameters": {
+																"instance-variable": "Direction",
+																"value": "\"Top\""
+															}
 														}
 													],
 													"sid": 136293058744781
@@ -1950,11 +1887,44 @@
 																"animation": "Self.Character & \"WalkTopRgt\"",
 																"from": "beginning"
 															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Players",
+															"sid": 978979523790632,
+															"parameters": {
+																"instance-variable": "Direction",
+																"value": "\"TopRgt\""
+															}
 														}
 													],
 													"sid": 603049086910387
 												}
 											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-moving-along-path",
+													"objectClass": "Players",
+													"sid": 329534924384259,
+													"behaviorType": "Pathfinding",
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Players",
+													"sid": 275152973063479,
+													"parameters": {
+														"animation": "Self.Character  & \"Idle\" & Self.Direction",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 110192443496348
 										}
 									]
 								}
@@ -3171,7 +3141,17 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 530061570141549,
+							"parameters": {
+								"name": "\"ActDicUIDS\"",
+								"parameter-n": []
+							}
+						}
+					],
 					"sid": 665183854490097,
 					"children": [
 						{
@@ -3209,12 +3189,11 @@
 									],
 									"actions": [
 										{
-											"id": "set-at-xy",
-											"objectClass": "CharacterData",
-											"sid": 521928444099604,
+											"id": "set-key",
+											"objectClass": "DataAngle",
+											"sid": 324193310779315,
 											"parameters": {
-												"x": "f.Param(3)",
-												"y": "0",
+												"key": "Players.Character",
 												"value": "angle(Players.X,Players.Y,Mouse.X,Mouse.Y)"
 											}
 										}
@@ -3241,12 +3220,11 @@
 									],
 									"actions": [
 										{
-											"id": "set-at-xy",
-											"objectClass": "CharacterData",
-											"sid": 202755121913147,
+											"id": "set-key",
+											"objectClass": "DataAngle",
+											"sid": 681245398004169,
 											"parameters": {
-												"x": "f.Param(3)",
-												"y": "0",
+												"key": "Players.Character",
 												"value": "angle(0,0,gp.Axis(f.Param(2), 2), gp.Axis(f.Param(2), 3))"
 											}
 										}
@@ -3283,12 +3261,11 @@
 											],
 											"actions": [
 												{
-													"id": "set-at-xy",
-													"objectClass": "CharacterData",
-													"sid": 109451015871790,
+													"id": "set-key",
+													"objectClass": "DataAngle",
+													"sid": 718341250664008,
 													"parameters": {
-														"x": "f.Param(3)",
-														"y": "0",
+														"key": "Players.Character",
 														"value": "angle(Players.X,Players.Y,Enemy.X,Enemy.Y)"
 													}
 												}
@@ -3346,18 +3323,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeFuego",
-													"sid": 174171428941682,
+													"sid": 186578755203514,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Fuego\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeFuego",
-													"sid": 236911952485570,
+													"sid": 831559621246803,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Fuego\"))"
 													}
 												},
 												{
@@ -3425,18 +3402,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeFuego2",
-													"sid": 447987781616784,
+													"sid": 996845410084521,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Fuego\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeFuego2",
-													"sid": 363681220928338,
+													"sid": 975699944211693,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Fuego\"))"
 													}
 												},
 												{
@@ -3504,18 +3481,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeFuego3",
-													"sid": 227828558577995,
+													"sid": 618339844760683,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Fuego\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeFuego3",
-													"sid": 673588029924931,
+													"sid": 983759324243197,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Fuego\"))"
 													}
 												},
 												{
@@ -3648,10 +3625,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeMusical",
-													"sid": 505170250394503,
+													"sid": 526261612379754,
 													"parameters": {
 														"instance-variable": "LinkedUID",
-														"value": "f.Param(1)"
+														"value": "int(DataUIDS.Get(\"Musical\"))"
 													}
 												},
 												{
@@ -3684,10 +3661,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeMusical",
-													"sid": 264375862573904,
+													"sid": 996749705845268,
 													"parameters": {
 														"instance-variable": "LinkedUID",
-														"value": "f.Param(1)"
+														"value": "int(DataUIDS.Get(\"Musical\"))"
 													}
 												},
 												{
@@ -3711,10 +3688,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeMusical",
-													"sid": 639332858005823,
+													"sid": 233918099989695,
 													"parameters": {
 														"instance-variable": "LinkedUID",
-														"value": "f.Param(1)"
+														"value": "int(DataUIDS.Get(\"Musical\"))"
 													}
 												},
 												{
@@ -3738,10 +3715,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeMusical",
-													"sid": 975876953475328,
+													"sid": 898144917763817,
 													"parameters": {
 														"instance-variable": "LinkedUID",
-														"value": "f.Param(1)"
+														"value": "int(DataUIDS.Get(\"Musical\"))"
 													}
 												},
 												{
@@ -3765,10 +3742,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeMusical",
-													"sid": 607876832453353,
+													"sid": 751027276939358,
 													"parameters": {
 														"instance-variable": "LinkedUID",
-														"value": "f.Param(1)"
+														"value": "int(DataUIDS.Get(\"Musical\"))"
 													}
 												},
 												{
@@ -3792,10 +3769,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeMusical",
-													"sid": 305296416697183,
+													"sid": 269333867950797,
 													"parameters": {
 														"instance-variable": "LinkedUID",
-														"value": "f.Param(1)"
+														"value": "int(DataUIDS.Get(\"Musical\"))"
 													}
 												},
 												{
@@ -3924,18 +3901,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeTierra",
-													"sid": 901243374922341,
+													"sid": 154142812657442,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Tierra\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeTierra",
-													"sid": 539939549650380,
+													"sid": 659663649698305,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Tierra\"))"
 													}
 												},
 												{
@@ -3995,18 +3972,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeTierra2",
-													"sid": 407576843478394,
+													"sid": 604200276816593,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Tierra\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeTierra2",
-													"sid": 717147323305781,
+													"sid": 799499587710743,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Tierra\"))"
 													}
 												},
 												{
@@ -4066,18 +4043,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeTierra3",
-													"sid": 442637406186867,
+													"sid": 522609293099540,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Tierra\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeTierra3",
-													"sid": 304493493598498,
+													"sid": 716248460103526,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Tierra\"))"
 													}
 												},
 												{
@@ -4156,18 +4133,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeAire",
-													"sid": 923142928379928,
+													"sid": 435985607946794,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Aire\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeAire",
-													"sid": 588829568031602,
+													"sid": 926530805265421,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Aire\"))"
 													}
 												},
 												{
@@ -4227,18 +4204,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeAire",
-													"sid": 947324545582132,
+													"sid": 601524380805464,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Aire\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeAire",
-													"sid": 170526799453077,
+													"sid": 145102218003768,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Aire\"))"
 													}
 												},
 												{
@@ -4254,18 +4231,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeAire2",
-													"sid": 189155503627114,
+													"sid": 842869120637825,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Aire\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeAire2",
-													"sid": 853537439621405,
+													"sid": 755340813484082,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Aire\"))"
 													}
 												},
 												{
@@ -4289,18 +4266,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeAire3",
-													"sid": 424143115720533,
+													"sid": 627244634439225,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Aire\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeAire3",
-													"sid": 962655657081488,
+													"sid": 306986338077382,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Aire\"))"
 													}
 												},
 												{
@@ -4368,18 +4345,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeAire4",
-													"sid": 231790296492530,
+													"sid": 246874116267929,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Aire\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeAire4",
-													"sid": 449413016096406,
+													"sid": 471305520414288,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Aire\"))"
 													}
 												},
 												{
@@ -4458,18 +4435,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeAgua",
-													"sid": 612221570180464,
+													"sid": 317659460920642,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Agua\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeAgua",
-													"sid": 392173422227358,
+													"sid": 316662054619937,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Agua\"))"
 													}
 												},
 												{
@@ -4533,10 +4510,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeAgua2",
-													"sid": 718981667616639,
+													"sid": 745386190411693,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Agua\"))"
 													}
 												},
 												{
@@ -4596,18 +4573,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeAgua3",
-													"sid": 336594878609467,
+													"sid": 610321691629033,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Agua\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeAgua3",
-													"sid": 208938418159577,
+													"sid": 931912521999925,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Agua\"))"
 													}
 												},
 												{
@@ -4631,18 +4608,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeAgua4",
-													"sid": 967700746961358,
+													"sid": 324627404830257,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Agua\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeAgua4",
-													"sid": 771752187649299,
+													"sid": 839521443569609,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Agua\"))"
 													}
 												},
 												{
@@ -4729,18 +4706,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo",
-													"sid": 319797127942783,
+													"sid": 277660494695607,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeHielo",
-													"sid": 676921818017545,
+													"sid": 460665159141743,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
@@ -4773,18 +4750,18 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo",
-													"sid": 930072605475006,
+													"sid": 438081463650307,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeHielo",
-													"sid": 174749833379147,
+													"sid": 905078654339401,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
@@ -4835,18 +4812,18 @@
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeHielo",
-													"sid": 688638893032285,
+													"sid": 647374483755183,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo",
-													"sid": 927508405686904,
+													"sid": 439568133815870,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
@@ -4879,18 +4856,18 @@
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeHielo",
-													"sid": 343149839253837,
+													"sid": 192067656439724,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo",
-													"sid": 890200045743852,
+													"sid": 348126550174360,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
@@ -4914,18 +4891,18 @@
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeHielo",
-													"sid": 575163712083142,
+													"sid": 625212947265508,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo",
-													"sid": 753992659483858,
+													"sid": 545859912178294,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
@@ -4985,18 +4962,18 @@
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeHielo2",
-													"sid": 596059227575609,
+													"sid": 175806157717671,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo2",
-													"sid": 504756328053287,
+													"sid": 487884681608307,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
@@ -5028,18 +5005,18 @@
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeHielo2",
-													"sid": 125532259223665,
+													"sid": 219164287821785,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo2",
-													"sid": 378303687432376,
+													"sid": 425437902061207,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
@@ -5071,18 +5048,18 @@
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeHielo2",
-													"sid": 848365998090317,
+													"sid": 643448579949175,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo2",
-													"sid": 185339118248968,
+													"sid": 765568193124540,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
@@ -5114,18 +5091,18 @@
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeHielo2",
-													"sid": 713876530137210,
+													"sid": 795548454480321,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo2",
-													"sid": 597147133266560,
+													"sid": 355107447237880,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
@@ -5157,18 +5134,18 @@
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeHielo2",
-													"sid": 647164039909421,
+													"sid": 111568509309291,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo2",
-													"sid": 964904367356742,
+													"sid": 438738380005710,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
@@ -5200,18 +5177,18 @@
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeHielo2",
-													"sid": 294218253631724,
+													"sid": 422459062929349,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo2",
-													"sid": 823683142556540,
+													"sid": 185916486120333,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
@@ -5243,18 +5220,18 @@
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeHielo2",
-													"sid": 333696528363720,
+													"sid": 399815072099031,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo2",
-													"sid": 194704601234729,
+													"sid": 856310080801070,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
@@ -5286,18 +5263,18 @@
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeHielo2",
-													"sid": 432633776369659,
+													"sid": 759609523424536,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo2",
-													"sid": 512825937094976,
+													"sid": 455049405044863,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
@@ -5329,18 +5306,18 @@
 												{
 													"id": "set-angle",
 													"objectClass": "GolpeHielo2",
-													"sid": 510242034859586,
+													"sid": 832512019168094,
 													"parameters": {
-														"angle": "CharacterData.At(f.Param(3),0)"
+														"angle": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo2",
-													"sid": 141028117129079,
+													"sid": 499601626317511,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												},
 												{
@@ -5387,10 +5364,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeHielo2",
-													"sid": 569677745672796,
+													"sid": 814472805945223,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
-														"value": "CharacterData.At(f.Param(3),0)"
+														"value": "int(DataAngle.Get(\"Hielo\"))"
 													}
 												}
 											],
@@ -5504,6 +5481,52 @@
 									"sid": 987179091390456
 								}
 							]
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "// Actualiza DataUIDS para su uso en caso de necesitar las uids de los pj por su character"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "f",
+							"sid": 578059347853234,
+							"parameters": {
+								"name": "\"ActDicUIDS\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 440951369945402,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 208706578294567,
+									"parameters": {
+										"object": "Players"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "DataUIDS",
+									"sid": 377141976819352,
+									"parameters": {
+										"key": "Players.Character",
+										"value": "Players.UID"
+									}
+								}
+							],
+							"sid": 740497761361945
 						}
 					]
 				},
@@ -6224,557 +6247,567 @@
 					]
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "InputFunctions",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "on-function",
-							"objectClass": "f",
-							"sid": 760512513388845,
-							"parameters": {
-								"name": "\"P1TA\""
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "f",
+									"sid": 549037641414151,
+									"parameters": {
+										"name": "\"P1TA\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 265931685465752,
+									"parameters": {
+										"group-name": "\"Player2TecladoInactivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 956015831213012,
+									"parameters": {
+										"group-name": "\"Player2TecladoActivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 732497869347346,
+									"parameters": {
+										"variable": "Players",
+										"value": "1"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 986124583603421,
+									"parameters": {
+										"name": "\"ActPlayers\"",
+										"parameter-n": []
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 456327034776760,
+									"parameters": {
+										"group-name": "\"Input Player 1 GP\"",
+										"state": "activated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 393954283086619,
+									"parameters": {
+										"group-name": "\"Input Player 1 KB\"",
+										"state": "activated"
+									}
+								}
+							],
+							"sid": 674571316158915
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "f",
+									"sid": 356447140970067,
+									"parameters": {
+										"name": "\"P2TA\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 167830399804447,
+									"parameters": {
+										"group-name": "\"Player2TecladoInactivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 770639243982621,
+									"parameters": {
+										"group-name": "\"Player3TecladoInactivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 439642354240290,
+									"parameters": {
+										"group-name": "\"Player4TecladoInactivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 984756847960203,
+									"parameters": {
+										"variable": "Players",
+										"value": "2"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 491530643887275,
+									"parameters": {
+										"name": "\"ActPlayers\"",
+										"parameter-n": []
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 272967675988417,
+									"parameters": {
+										"group-name": "\"Input Player 1 GP\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 217295575728679,
+									"parameters": {
+										"group-name": "\"Input Player 2\"",
+										"state": "activated"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Players",
+									"sid": 780359406952386,
+									"parameters": {
+										"instance-variable": "KbActive",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 736959090306677
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "f",
+									"sid": 454723992996359,
+									"parameters": {
+										"name": "\"P2TI\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 652964878543903,
+									"parameters": {
+										"group-name": "\"Player2TecladoActivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 689972407381317,
+									"parameters": {
+										"group-name": "\"Player3TecladoActivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 530436410247201,
+									"parameters": {
+										"group-name": "\"Player4TecladoActivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 112939339618485,
+									"parameters": {
+										"variable": "Players",
+										"value": "2"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 991166778739713,
+									"parameters": {
+										"name": "\"ActPlayers\"",
+										"parameter-n": []
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 436779621340763,
+									"parameters": {
+										"group-name": "\"Input Player 2 2nd\"",
+										"state": "activated"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Players",
+									"sid": 182353909510748,
+									"parameters": {
+										"instance-variable": "KbActive",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 730644283536955
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "f",
+									"sid": 154479834654399,
+									"parameters": {
+										"name": "\"P3TA\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 501352677781026,
+									"parameters": {
+										"group-name": "\"Player2TecladoInactivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 987799716535203,
+									"parameters": {
+										"group-name": "\"Player3TecladoInactivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 815104757622710,
+									"parameters": {
+										"group-name": "\"Player4TecladoInactivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 593460159348847,
+									"parameters": {
+										"variable": "Players",
+										"value": "3"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 993719496933004,
+									"parameters": {
+										"name": "\"ActPlayers\"",
+										"parameter-n": []
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 680032144137235,
+									"parameters": {
+										"group-name": "\"Input Player 3\"",
+										"state": "activated"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Players",
+									"sid": 556184389079449,
+									"parameters": {
+										"instance-variable": "KbActive",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 327626702995131
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "f",
+									"sid": 421322933179457,
+									"parameters": {
+										"name": "\"P3TI\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 498371179003107,
+									"parameters": {
+										"group-name": "\"Player2TecladoActivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 878409262836180,
+									"parameters": {
+										"group-name": "\"Player3TecladoActivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 253161531069574,
+									"parameters": {
+										"group-name": "\"Player4TecladoActivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 332097971596269,
+									"parameters": {
+										"variable": "Players",
+										"value": "3"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 379249784577244,
+									"parameters": {
+										"group-name": "\"Input Player 3 2nd\"",
+										"state": "activated"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 186031636349258,
+									"parameters": {
+										"name": "\"ActPlayers\"",
+										"parameter-n": []
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Players",
+									"sid": 876556338161331,
+									"parameters": {
+										"instance-variable": "KbActive",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 601386706757337
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "f",
+									"sid": 564132413851512,
+									"parameters": {
+										"name": "\"P4TA\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 271478099372897,
+									"parameters": {
+										"group-name": "\"Player2TecladoInactivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 154143489272067,
+									"parameters": {
+										"group-name": "\"Player3TecladoInactivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 867833310696863,
+									"parameters": {
+										"group-name": "\"Player4TecladoInactivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 388071709600812,
+									"parameters": {
+										"variable": "Players",
+										"value": "4"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 317287558814410,
+									"parameters": {
+										"name": "\"ActPlayers\"",
+										"parameter-n": []
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 947336862181399,
+									"parameters": {
+										"group-name": "\"Input Player 3\"",
+										"state": "activated"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Players",
+									"sid": 190020038152084,
+									"parameters": {
+										"instance-variable": "KbActive",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 196723345933596
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "f",
+									"sid": 676835880909221,
+									"parameters": {
+										"name": "\"P4TI\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 381286502675216,
+									"parameters": {
+										"group-name": "\"Player2TecladoActivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 714190176217661,
+									"parameters": {
+										"group-name": "\"Player3TecladoActivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 531917387705555,
+									"parameters": {
+										"group-name": "\"Player4TecladoActivo\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 104051259775411,
+									"parameters": {
+										"variable": "Players",
+										"value": "4"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 607955160549548,
+									"parameters": {
+										"name": "\"ActPlayers\"",
+										"parameter-n": []
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 705702776200953,
+									"parameters": {
+										"group-name": "\"Input Player 3 2nd\"",
+										"state": "activated"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Players",
+									"sid": 958119983969051,
+									"parameters": {
+										"instance-variable": "KbActive",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 306129757846796
 						}
 					],
-					"actions": [
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 149536377440462,
-							"parameters": {
-								"group-name": "\"Player2TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 155915352872176,
-							"parameters": {
-								"group-name": "\"Player2TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 948048759442083,
-							"parameters": {
-								"variable": "Players",
-								"value": "1"
-							}
-						},
-						{
-							"id": "call-function",
-							"objectClass": "f",
-							"sid": 414466088982305,
-							"parameters": {
-								"name": "\"ActPlayers\"",
-								"parameter-n": []
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 560011640505727,
-							"parameters": {
-								"group-name": "\"Input Player 1 GP\"",
-								"state": "activated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 386700593091139,
-							"parameters": {
-								"group-name": "\"Input Player 1 KB\"",
-								"state": "activated"
-							}
-						}
-					],
-					"sid": 967475983444112
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-function",
-							"objectClass": "f",
-							"sid": 691594932383729,
-							"parameters": {
-								"name": "\"P2TA\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 459257630604867,
-							"parameters": {
-								"group-name": "\"Player2TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 594414709035371,
-							"parameters": {
-								"group-name": "\"Player3TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 230970304490594,
-							"parameters": {
-								"group-name": "\"Player4TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 307602931273188,
-							"parameters": {
-								"variable": "Players",
-								"value": "2"
-							}
-						},
-						{
-							"id": "call-function",
-							"objectClass": "f",
-							"sid": 987805710425158,
-							"parameters": {
-								"name": "\"ActPlayers\"",
-								"parameter-n": []
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 583012135123535,
-							"parameters": {
-								"group-name": "\"Input Player 1 GP\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 149254597593426,
-							"parameters": {
-								"group-name": "\"Input Player 2\"",
-								"state": "activated"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Players",
-							"sid": 994280769840282,
-							"parameters": {
-								"instance-variable": "KbActive",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 322367411398343
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-function",
-							"objectClass": "f",
-							"sid": 263500140426463,
-							"parameters": {
-								"name": "\"P2TI\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 849040913961334,
-							"parameters": {
-								"group-name": "\"Player2TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 857947098953392,
-							"parameters": {
-								"group-name": "\"Player3TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 657882509276348,
-							"parameters": {
-								"group-name": "\"Player4TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 421582178379168,
-							"parameters": {
-								"variable": "Players",
-								"value": "2"
-							}
-						},
-						{
-							"id": "call-function",
-							"objectClass": "f",
-							"sid": 965044410329605,
-							"parameters": {
-								"name": "\"ActPlayers\"",
-								"parameter-n": []
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 857367893293171,
-							"parameters": {
-								"group-name": "\"Input Player 2 2nd\"",
-								"state": "activated"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Players",
-							"sid": 395082504871552,
-							"parameters": {
-								"instance-variable": "KbActive",
-								"value": "0"
-							}
-						}
-					],
-					"sid": 455056446873888
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-function",
-							"objectClass": "f",
-							"sid": 353636583131042,
-							"parameters": {
-								"name": "\"P3TA\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 129111495196003,
-							"parameters": {
-								"group-name": "\"Player2TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 683924626658790,
-							"parameters": {
-								"group-name": "\"Player3TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 813275060609023,
-							"parameters": {
-								"group-name": "\"Player4TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 697350164067693,
-							"parameters": {
-								"variable": "Players",
-								"value": "3"
-							}
-						},
-						{
-							"id": "call-function",
-							"objectClass": "f",
-							"sid": 144660837013713,
-							"parameters": {
-								"name": "\"ActPlayers\"",
-								"parameter-n": []
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 568200255581287,
-							"parameters": {
-								"group-name": "\"Input Player 3\"",
-								"state": "activated"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Players",
-							"sid": 821825201607113,
-							"parameters": {
-								"instance-variable": "KbActive",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 385358858425212
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-function",
-							"objectClass": "f",
-							"sid": 600760567813852,
-							"parameters": {
-								"name": "\"P3TI\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 356924331219445,
-							"parameters": {
-								"group-name": "\"Player2TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 990413370527136,
-							"parameters": {
-								"group-name": "\"Player3TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 954724558619117,
-							"parameters": {
-								"group-name": "\"Player4TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 699998650463727,
-							"parameters": {
-								"variable": "Players",
-								"value": "3"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 968721952489349,
-							"parameters": {
-								"group-name": "\"Input Player 3 2nd\"",
-								"state": "activated"
-							}
-						},
-						{
-							"id": "call-function",
-							"objectClass": "f",
-							"sid": 795694937072962,
-							"parameters": {
-								"name": "\"ActPlayers\"",
-								"parameter-n": []
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Players",
-							"sid": 599112125547523,
-							"parameters": {
-								"instance-variable": "KbActive",
-								"value": "0"
-							}
-						}
-					],
-					"sid": 547150543745898
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-function",
-							"objectClass": "f",
-							"sid": 692524131867444,
-							"parameters": {
-								"name": "\"P4TA\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 550398690157998,
-							"parameters": {
-								"group-name": "\"Player2TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 568082957139813,
-							"parameters": {
-								"group-name": "\"Player3TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 681466674076738,
-							"parameters": {
-								"group-name": "\"Player4TecladoInactivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 131741562165285,
-							"parameters": {
-								"variable": "Players",
-								"value": "4"
-							}
-						},
-						{
-							"id": "call-function",
-							"objectClass": "f",
-							"sid": 978029527432582,
-							"parameters": {
-								"name": "\"ActPlayers\"",
-								"parameter-n": []
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 909999363013672,
-							"parameters": {
-								"group-name": "\"Input Player 3\"",
-								"state": "activated"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Players",
-							"sid": 725953195459015,
-							"parameters": {
-								"instance-variable": "KbActive",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 242003696282568
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-function",
-							"objectClass": "f",
-							"sid": 477489932021867,
-							"parameters": {
-								"name": "\"P4TI\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 835890423795191,
-							"parameters": {
-								"group-name": "\"Player2TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 650443741474200,
-							"parameters": {
-								"group-name": "\"Player3TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 849369930845077,
-							"parameters": {
-								"group-name": "\"Player4TecladoActivo\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 820832947910497,
-							"parameters": {
-								"variable": "Players",
-								"value": "4"
-							}
-						},
-						{
-							"id": "call-function",
-							"objectClass": "f",
-							"sid": 902009623640749,
-							"parameters": {
-								"name": "\"ActPlayers\"",
-								"parameter-n": []
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 171955224860502,
-							"parameters": {
-								"group-name": "\"Input Player 3 2nd\"",
-								"state": "activated"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Players",
-							"sid": 443038303934381,
-							"parameters": {
-								"instance-variable": "KbActive",
-								"value": "0"
-							}
-						}
-					],
-					"sid": 626032792435229
+					"sid": 171331654542610
 				}
 			],
 			"sid": 233340476483945
@@ -7390,418 +7423,6 @@
 				}
 			],
 			"sid": 305539509470047
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "animaciones que posiblemente borremos",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Players",
-							"sid": 718234539251950,
-							"parameters": {
-								"instance-variable": "Direction",
-								"comparison": 0,
-								"value": "\"TopLeft\""
-							}
-						},
-						{
-							"id": "is-moving",
-							"objectClass": "Players",
-							"sid": 844854455613479,
-							"behaviorType": "8Direcciones"
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Players",
-							"sid": 913041913144170,
-							"parameters": {
-								"animation": "Self.Character & \"WalkTopLft\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 834130240471492
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Players",
-							"sid": 872548470639439,
-							"parameters": {
-								"instance-variable": "Direction",
-								"comparison": 0,
-								"value": "\"Top\""
-							}
-						},
-						{
-							"id": "is-moving",
-							"objectClass": "Players",
-							"sid": 700910906294404,
-							"behaviorType": "8Direcciones"
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Players",
-							"sid": 804074618152632,
-							"parameters": {
-								"animation": "Self.Character & \"WalkTop\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 308916437599268
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Players",
-							"sid": 486276450476786,
-							"parameters": {
-								"instance-variable": "Direction",
-								"comparison": 0,
-								"value": "\"TopRight\""
-							}
-						},
-						{
-							"id": "is-moving",
-							"objectClass": "Players",
-							"sid": 326806866311016,
-							"behaviorType": "8Direcciones"
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Players",
-							"sid": 921545955115279,
-							"parameters": {
-								"animation": "Self.Character & \"WalkTopRgt\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 230999231664686
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Players",
-							"sid": 627125864236015,
-							"parameters": {
-								"instance-variable": "Direction",
-								"comparison": 0,
-								"value": "\"BotLeft\""
-							}
-						},
-						{
-							"id": "is-moving",
-							"objectClass": "Players",
-							"sid": 990074476676494,
-							"behaviorType": "8Direcciones"
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Players",
-							"sid": 847986402122385,
-							"parameters": {
-								"animation": "Self.Character & \"WalkBotLft\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 761071938348848
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Players",
-							"sid": 960338739732201,
-							"parameters": {
-								"instance-variable": "Direction",
-								"comparison": 0,
-								"value": "\"Bot\""
-							}
-						},
-						{
-							"id": "is-moving",
-							"objectClass": "Players",
-							"sid": 969569458767010,
-							"behaviorType": "8Direcciones"
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Players",
-							"sid": 563079297342645,
-							"parameters": {
-								"animation": "Self.Character & \"WalkBot\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 231866343550589
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Players",
-							"sid": 400899530835883,
-							"parameters": {
-								"instance-variable": "Direction",
-								"comparison": 0,
-								"value": "\"BotRight\""
-							}
-						},
-						{
-							"id": "is-moving",
-							"objectClass": "Players",
-							"sid": 469349028940689,
-							"behaviorType": "8Direcciones"
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Players",
-							"sid": 851544575994686,
-							"parameters": {
-								"animation": "Self.Character & \"WalkBotRgt\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 933717321246763
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Players",
-							"sid": 307598487783882,
-							"parameters": {
-								"instance-variable": "Direction",
-								"comparison": 0,
-								"value": "\"TopLeft\""
-							}
-						},
-						{
-							"id": "is-moving",
-							"objectClass": "Players",
-							"sid": 274280678428441,
-							"behaviorType": "8Direcciones",
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Players",
-							"sid": 246319930899319,
-							"parameters": {
-								"animation": "Self.Character & \"IdleTopLft\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 393385582382734
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Players",
-							"sid": 377910624952548,
-							"parameters": {
-								"instance-variable": "Direction",
-								"comparison": 0,
-								"value": "\"Top\""
-							}
-						},
-						{
-							"id": "is-moving",
-							"objectClass": "Players",
-							"sid": 866918875008343,
-							"behaviorType": "8Direcciones",
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Players",
-							"sid": 438896433185722,
-							"parameters": {
-								"animation": "Self.Character & \"IdleTop\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 506139886493084
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Players",
-							"sid": 278526909743307,
-							"parameters": {
-								"instance-variable": "Direction",
-								"comparison": 0,
-								"value": "\"TopRight\""
-							}
-						},
-						{
-							"id": "is-moving",
-							"objectClass": "Players",
-							"sid": 598182726538380,
-							"behaviorType": "8Direcciones",
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Players",
-							"sid": 548901106584620,
-							"parameters": {
-								"animation": "Self.Character & \"IdleTopRgt\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 577101877958889
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Players",
-							"sid": 613821215267780,
-							"parameters": {
-								"instance-variable": "Direction",
-								"comparison": 0,
-								"value": "\"BotLeft\""
-							}
-						},
-						{
-							"id": "is-moving",
-							"objectClass": "Players",
-							"sid": 605700613692182,
-							"behaviorType": "8Direcciones",
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Players",
-							"sid": 516529649212239,
-							"parameters": {
-								"animation": "Self.Character & \"IdleBotLft\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 838769247819946
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Players",
-							"sid": 258376662464626,
-							"parameters": {
-								"instance-variable": "Direction",
-								"comparison": 0,
-								"value": "\"Bot\""
-							}
-						},
-						{
-							"id": "is-moving",
-							"objectClass": "Players",
-							"sid": 227062630102848,
-							"behaviorType": "8Direcciones",
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Players",
-							"sid": 922428224484084,
-							"parameters": {
-								"animation": "Self.Character & \"IdleBot\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 812658612818308
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Players",
-							"sid": 355468861707553,
-							"parameters": {
-								"instance-variable": "Direction",
-								"comparison": 0,
-								"value": "\"BotRight\""
-							}
-						},
-						{
-							"id": "is-moving",
-							"objectClass": "Players",
-							"sid": 284220814024204,
-							"behaviorType": "8Direcciones",
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Players",
-							"sid": 781360857736139,
-							"parameters": {
-								"animation": "Self.Character & \"IdleBotRgt\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 562280955966594
-				}
-			],
-			"sid": 637166176750920
 		},
 		{
 			"eventType": "block",
