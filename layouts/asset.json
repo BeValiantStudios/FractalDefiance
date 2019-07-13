@@ -233,30 +233,30 @@
 						"Fade": {
 							"properties": {
 								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 0.3,
+								"wait-time": 0.15,
+								"fade-out-time": 0.15,
 								"destroy": true,
 								"enabled": true,
 								"live-preview": false
 							}
 						},
-						"Bullet": {
+						"Rotate": {
 							"properties": {
-								"speed": 600,
+								"speed": 1000,
 								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
+								"enabled": true,
+								"live-preview": false
 							}
+						},
+						"Pin": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 649,
-						"y": 116,
-						"width": 15,
-						"height": 80,
+						"x": 575,
+						"y": 129,
+						"width": 75,
+						"height": 14,
 						"originX": 0,
 						"originY": 0.5,
 						"color": [
@@ -287,31 +287,31 @@
 						"Fade": {
 							"properties": {
 								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 0.3,
+								"wait-time": 0.15,
+								"fade-out-time": 0.15,
 								"destroy": true,
 								"enabled": true,
 								"live-preview": false
 							}
 						},
-						"Bullet": {
+						"Rotate": {
 							"properties": {
-								"speed": -600,
+								"speed": 1000,
 								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
+								"enabled": true,
+								"live-preview": false
 							}
+						},
+						"Pin": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 814,
-						"y": 211,
-						"width": 15,
-						"height": 80,
-						"originX": 0,
+						"x": 575,
+						"y": 129,
+						"width": 75,
+						"height": 14,
+						"originX": 1,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -363,8 +363,8 @@
 					"world": {
 						"x": 901,
 						"y": 355,
-						"width": 20,
-						"height": 100,
+						"width": 60,
+						"height": 60,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -396,7 +396,7 @@
 							"properties": {
 								"fade-in-time": 0,
 								"wait-time": 0,
-								"fade-out-time": 0.3,
+								"fade-out-time": 1.7,
 								"destroy": true,
 								"enabled": true,
 								"live-preview": false
@@ -404,10 +404,10 @@
 						},
 						"Bullet": {
 							"properties": {
-								"speed": 100,
-								"acceleration": 0,
+								"speed": 400,
+								"acceleration": -320,
 								"gravity": 0,
-								"bounce-off-solids": false,
+								"bounce-off-solids": true,
 								"set-angle": true,
 								"step": false,
 								"enabled": true
@@ -417,8 +417,8 @@
 					"world": {
 						"x": 885,
 						"y": 475,
-						"width": 20,
-						"height": 100,
+						"width": 16,
+						"height": 16,
 						"originX": 0,
 						"originY": 1,
 						"color": [
@@ -2131,12 +2131,41 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 709,
-						"y": -3,
+						"x": 429,
+						"y": 395,
 						"width": 250,
 						"height": 250,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Humo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 2",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 113,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 240,
+						"y": 544,
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

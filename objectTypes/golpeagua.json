@@ -6,9 +6,14 @@
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Bullet",
-			"name": "Bullet",
-			"sid": 240983983127220
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 266760119186130
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 864758043245335
 		}
 	],
 	"effectTypes": [],

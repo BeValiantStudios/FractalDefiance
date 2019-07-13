@@ -128,16 +128,16 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Bullet",
-			"name": "Bullet",
+			"id": "Rotate",
+			"name": "Rotate",
 			"author": "Scirra",
 			"version": "r157",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "Rotate",
-			"name": "Rotate",
+			"id": "Bullet",
+			"name": "Bullet",
 			"author": "Scirra",
 			"version": "r157",
 			"bundled": false
@@ -233,7 +233,9 @@
 	],
 	"uniqueId": "3sy6iiw7nd6ah",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Humo"
+		],
 		"subfolders": [
 			{
 				"items": [

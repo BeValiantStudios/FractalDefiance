@@ -39,6 +39,37 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "on-key-pressed",
+									"objectClass": "kb",
+									"sid": 184354746775486,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 896336111689525,
+									"parameters": {
+										"name": "\"ButtonDash\"",
+										"parameter-n": [
+											"0",
+											"0",
+											"0",
+											"0"
+										]
+									}
+								}
+							],
+							"sid": 850449707440724,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "key-is-down",
 									"objectClass": "kb",
 									"sid": 737279826545454,
@@ -47,18 +78,225 @@
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 999951383525634,
+							"children": [
 								{
-									"id": "simulate-control",
-									"objectClass": "Player1",
-									"sid": 939106000499159,
-									"behaviorType": "8Direcciones",
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 729228739358080,
+											"parameters": {
+												"key": 83
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 580477127212277,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 173767389656778
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 344583888197616,
+											"parameters": {
+												"key": 65
+											},
+											"isInverted": true
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 474920311667590,
+											"parameters": {
+												"key": 68
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 825438184750788,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"Top\""
+											}
+										}
+									],
+									"sid": 596014971359524
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "kb",
+									"sid": 317170642442210,
 									"parameters": {
-										"control": "up"
+										"key": 87
 									}
 								}
 							],
-							"sid": 999951383525634
+							"actions": [],
+							"sid": 957944727619212,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 988149753640500,
+											"parameters": {
+												"key": 83
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 729371046251717,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 937665376356060
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 544677390139161,
+											"parameters": {
+												"key": 65
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 755862641216750,
+											"parameters": {
+												"key": 68
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 395303624365582,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"TopLft\""
+											}
+										}
+									],
+									"sid": 773509421679287
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "kb",
+									"sid": 125661473224075,
+									"parameters": {
+										"key": 87
+									}
+								}
+							],
+							"actions": [],
+							"sid": 830884187459173,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 450228458110007,
+											"parameters": {
+												"key": 83
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 341276358077953,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 552420641539112
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 132293710400180,
+											"parameters": {
+												"key": 65
+											},
+											"isInverted": true
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 206502070099330,
+											"parameters": {
+												"key": 68
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 739570529673119,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"TopRgt\""
+											}
+										}
+									],
+									"sid": 930211213899367
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -72,18 +310,71 @@
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 352451705489780,
+							"children": [
 								{
-									"id": "simulate-control",
-									"objectClass": "Player1",
-									"sid": 486900272226951,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"control": "down"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 552062411258847,
+											"parameters": {
+												"key": 87
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 139830803581307,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "down"
+											}
+										}
+									],
+									"sid": 998063102247538
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 894138155023090,
+											"parameters": {
+												"key": 65
+											},
+											"isInverted": true
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 963535454933936,
+											"parameters": {
+												"key": 68
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 370531755875771,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"Bot\""
+											}
+										}
+									],
+									"sid": 384963311952724
 								}
-							],
-							"sid": 352451705489780
+							]
 						},
 						{
 							"eventType": "block",
@@ -91,24 +382,231 @@
 								{
 									"id": "key-is-down",
 									"objectClass": "kb",
-									"sid": 401567727654461,
+									"sid": 390131753646587,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [],
+							"sid": 787542817993447,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 792918445626368,
+											"parameters": {
+												"key": 87
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 692256672653070,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "down"
+											}
+										}
+									],
+									"sid": 287849958942706
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 902604562965706,
+											"parameters": {
+												"key": 65
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 660856853495327,
+											"parameters": {
+												"key": 68
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 824827331041137,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotLft\""
+											}
+										}
+									],
+									"sid": 802619634024696
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "kb",
+									"sid": 223735945854589,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [],
+							"sid": 852437477995519,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 953670166800142,
+											"parameters": {
+												"key": 87
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 399845154243894,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "down"
+											}
+										}
+									],
+									"sid": 286679855980626
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 752501704137574,
+											"parameters": {
+												"key": 65
+											},
+											"isInverted": true
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 867892702407855,
+											"parameters": {
+												"key": 68
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 951987458667298,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotRgt\""
+											}
+										}
+									],
+									"sid": 493035120459756
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "kb",
+									"sid": 940826819576016,
 									"parameters": {
 										"key": 65
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 703891860249696,
+							"children": [
 								{
-									"id": "simulate-control",
-									"objectClass": "Player1",
-									"sid": 381409518470986,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"control": "left"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 274752882062054,
+											"parameters": {
+												"key": 68
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 989749672046398,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "left"
+											}
+										}
+									],
+									"sid": 853821238058478
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 177112987715286,
+											"parameters": {
+												"key": 87
+											},
+											"isInverted": true
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 198380790078510,
+											"parameters": {
+												"key": 83
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 355587275693662,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotLft\""
+											}
+										}
+									],
+									"sid": 397539139077535
 								}
-							],
-							"sid": 796199400493530
+							]
 						},
 						{
 							"eventType": "block",
@@ -116,24 +614,77 @@
 								{
 									"id": "key-is-down",
 									"objectClass": "kb",
-									"sid": 964504847427533,
+									"sid": 428069231768456,
 									"parameters": {
 										"key": 68
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 588236138743925,
+							"children": [
 								{
-									"id": "simulate-control",
-									"objectClass": "Player1",
-									"sid": 461345504294645,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"control": "right"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 132852436808489,
+											"parameters": {
+												"key": 65
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 611101226915186,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "right"
+											}
+										}
+									],
+									"sid": 815199190564622
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 471688760019234,
+											"parameters": {
+												"key": 87
+											},
+											"isInverted": true
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "kb",
+											"sid": 226906738107473,
+											"parameters": {
+												"key": 83
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 661403114171074,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotRgt\""
+											}
+										}
+									],
+									"sid": 184892000003787
 								}
-							],
-							"sid": 555672826608746
+							]
 						},
 						{
 							"eventType": "block",
@@ -266,42 +817,83 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-axis",
+									"id": "on-button-pressed",
 									"objectClass": "gp",
-									"sid": 751275001944090,
+									"sid": 923863150730747,
 									"parameters": {
-										"gamepad": "ArrayMp.At(0,1)",
-										"axis": "left-analog-x-axis",
-										"comparison": 4,
-										"value": "50"
+										"gamepad": "(ArrayMp.At(0,1))",
+										"button": "right-shoulder-button"
 									}
 								}
 							],
 							"actions": [
 								{
-									"id": "simulate-control",
-									"objectClass": "Player1",
-									"sid": 863192770704584,
-									"behaviorType": "8Direcciones",
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 309650338220583,
 									"parameters": {
-										"control": "right"
+										"name": "\"ButtonAttack\"",
+										"parameter-n": [
+											"0",
+											"1",
+											"(ArrayMp.At(0,1))",
+											"0"
+										]
 									}
 								}
 							],
-							"sid": 220729867647010,
+							"sid": 330300011082806,
 							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 139059579357938
+									"id": "on-button-pressed",
+									"objectClass": "gp",
+									"sid": 321628275365478,
+									"parameters": {
+										"gamepad": "(ArrayMp.At(0,1))",
+										"button": "button-a"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 265453932008416,
+									"parameters": {
+										"name": "\"ButtonDash\"",
+										"parameter-n": [
+											"0",
+											"1",
+											"(ArrayMp.At(0,1))",
+											"0"
+										]
+									}
+								}
+							],
+							"sid": 438820250146743,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 187707169580424,
+									"parameters": {
+										"gamepad": "ArrayMp.At(0,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 2,
+										"value": "-50"
+									}
 								}
 							],
 							"actions": [],
-							"sid": 177226783494855,
+							"sid": 246823119500378,
 							"children": [
 								{
 									"eventType": "block",
@@ -309,30 +901,72 @@
 										{
 											"id": "compare-axis",
 											"objectClass": "gp",
-											"sid": 243244451274286,
+											"sid": 162644674024008,
 											"parameters": {
 												"gamepad": "ArrayMp.At(0,1)",
-												"axis": "left-analog-x-axis",
-												"comparison": 2,
-												"value": "-50"
-											}
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
 										{
 											"id": "simulate-control",
 											"objectClass": "Player1",
-											"sid": 174275590355566,
+											"sid": 786337408121628,
 											"behaviorType": "8Direcciones",
 											"parameters": {
-												"control": "left"
+												"control": "up"
 											}
 										}
 									],
-									"sid": 620279164096362,
-									"isOrBlock": true
+									"sid": 635595116320935
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 344179713480292,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 209484477763970,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 842628470176731,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"Top\""
+											}
+										}
+									],
+									"sid": 942592880008056
 								}
-							]
+							],
+							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
@@ -340,7 +974,187 @@
 								{
 									"id": "compare-axis",
 									"objectClass": "gp",
-									"sid": 418284567368248,
+									"sid": 318702038427387,
+									"parameters": {
+										"gamepad": "ArrayMp.At(0,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 2,
+										"value": "-50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 374290761689762,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 928356426606697,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 209341239369592,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 489472232617267
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 328484789837178,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 609386000075992,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 911343673255201,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"TopLft\""
+											}
+										}
+									],
+									"sid": 833391622560502
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 402323635464347,
+									"parameters": {
+										"gamepad": "ArrayMp.At(0,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 2,
+										"value": "-50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 779116517130782,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 445689674880287,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 783849460626890,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 429527761925362
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 670993341851024,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 870361248226531,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 740384540841734,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"TopRgt\""
+											}
+										}
+									],
+									"sid": 433981734641757
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 970330217921083,
 									"parameters": {
 										"gamepad": "ArrayMp.At(0,1)",
 										"axis": "left-analog-y-axis",
@@ -349,31 +1163,8 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player1",
-									"sid": 486234202472768,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"control": "down"
-									}
-								}
-							],
-							"sid": 586514412782173,
-							"isOrBlock": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 224430022185421
-								}
-							],
 							"actions": [],
-							"sid": 921142393477113,
+							"sid": 243552656276624,
 							"children": [
 								{
 									"eventType": "block",
@@ -381,30 +1172,434 @@
 										{
 											"id": "compare-axis",
 											"objectClass": "gp",
-											"sid": 704746041713161,
+											"sid": 580137823343743,
 											"parameters": {
 												"gamepad": "ArrayMp.At(0,1)",
 												"axis": "left-analog-y-axis",
 												"comparison": 2,
 												"value": "-50"
-											}
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
 										{
 											"id": "simulate-control",
 											"objectClass": "Player1",
-											"sid": 188252042825481,
+											"sid": 867125794989275,
 											"behaviorType": "8Direcciones",
 											"parameters": {
-												"control": "up"
+												"control": "down"
 											}
 										}
 									],
-									"sid": 149274154589114,
-									"isOrBlock": true
+									"sid": 950826541284959
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 842041897908187,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 368570473751973,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 449334898684249,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"Bot\""
+											}
+										}
+									],
+									"sid": 592517877743991
 								}
-							]
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 187621429547700,
+									"parameters": {
+										"gamepad": "ArrayMp.At(0,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 256905213661530,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 426065991635516,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 151732400918036,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "down"
+											}
+										}
+									],
+									"sid": 587826865365725
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 125705436708913,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 289614185008187,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 199321371931072,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotLft\""
+											}
+										}
+									],
+									"sid": 437673935682504
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 722038162716294,
+									"parameters": {
+										"gamepad": "ArrayMp.At(0,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 918514595390014,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 886364805633348,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 413542960798166,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "down"
+											}
+										}
+									],
+									"sid": 401300972472600
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 274362863671258,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 494543989388163,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 772518640783698,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotRgt\""
+											}
+										}
+									],
+									"sid": 434172555370304
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 970569992557294,
+									"parameters": {
+										"gamepad": "ArrayMp.At(0,1)",
+										"axis": "left-analog-x-axis",
+										"comparison": 2,
+										"value": "-50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 928985523674678,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 575601877182861,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 866757460054656,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "left"
+											}
+										}
+									],
+									"sid": 216042499736748
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 883136881452684,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 504615702217999,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 779653562813727,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotLft\""
+											}
+										}
+									],
+									"sid": 392630859218547
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 499108986899721,
+									"parameters": {
+										"gamepad": "ArrayMp.At(0,1)",
+										"axis": "left-analog-x-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 565219310107848,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 331438777243691,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player1",
+											"sid": 743174780289038,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "right"
+											}
+										}
+									],
+									"sid": 617619736038916
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 199872490646238,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 691068178900372,
+											"parameters": {
+												"gamepad": "ArrayMp.At(0,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player1",
+											"sid": 261533573837714,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotRgt\""
+											}
+										}
+									],
+									"sid": 779955728193475
+								}
+							],
+							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
@@ -448,7 +1643,7 @@
 								{
 									"id": "on-button-pressed",
 									"objectClass": "gp",
-									"sid": 909499210177296,
+									"sid": 653824642854099,
 									"parameters": {
 										"gamepad": "(ArrayMp.At(1,1))",
 										"button": "right-shoulder-button"
@@ -459,7 +1654,7 @@
 								{
 									"id": "call-function",
 									"objectClass": "f",
-									"sid": 686433743742752,
+									"sid": 941428277863685,
 									"parameters": {
 										"name": "\"ButtonAttack\"",
 										"parameter-n": [
@@ -471,80 +1666,40 @@
 									}
 								}
 							],
-							"sid": 288670227279236,
+							"sid": 682155191206907,
 							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-axis",
+									"id": "on-button-pressed",
 									"objectClass": "gp",
-									"sid": 997988361210645,
+									"sid": 820009278285500,
 									"parameters": {
 										"gamepad": "(ArrayMp.At(1,1))",
-										"axis": "left-analog-x-axis",
-										"comparison": 4,
-										"value": "50"
+										"button": "button-a"
 									}
 								}
 							],
 							"actions": [
 								{
-									"id": "simulate-control",
-									"objectClass": "Player2",
-									"sid": 793779716483597,
-									"behaviorType": "8Direcciones",
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 492156976959754,
 									"parameters": {
-										"control": "right"
+										"name": "\"ButtonDash\"",
+										"parameter-n": [
+											"1",
+											"1",
+											"(ArrayMp.At(1,1))",
+											"1"
+										]
 									}
 								}
 							],
-							"sid": 615573406404090,
+							"sid": 784933711783322,
 							"isOrBlock": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 435432863816382
-								}
-							],
-							"actions": [],
-							"sid": 555359507623486,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-axis",
-											"objectClass": "gp",
-											"sid": 395564167019579,
-											"parameters": {
-												"gamepad": "(ArrayMp.At(1,1))",
-												"axis": "left-analog-x-axis",
-												"comparison": 2,
-												"value": "-50"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player2",
-											"sid": 140640675000401,
-											"behaviorType": "8Direcciones",
-											"parameters": {
-												"control": "left"
-											}
-										}
-									],
-									"sid": 174573274402851,
-									"isOrBlock": true
-								}
-							]
 						},
 						{
 							"eventType": "block",
@@ -552,40 +1707,17 @@
 								{
 									"id": "compare-axis",
 									"objectClass": "gp",
-									"sid": 989771641991654,
+									"sid": 518112115018588,
 									"parameters": {
-										"gamepad": "(ArrayMp.At(1,1))",
+										"gamepad": "ArrayMp.At(1,1)",
 										"axis": "left-analog-y-axis",
-										"comparison": 4,
-										"value": "50"
+										"comparison": 2,
+										"value": "-50"
 									}
-								}
-							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player2",
-									"sid": 151476142515800,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"control": "down"
-									}
-								}
-							],
-							"sid": 141207410124933,
-							"isOrBlock": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 355505143560811
 								}
 							],
 							"actions": [],
-							"sid": 532559779033617,
+							"sid": 220939509746184,
 							"children": [
 								{
 									"eventType": "block",
@@ -593,30 +1725,705 @@
 										{
 											"id": "compare-axis",
 											"objectClass": "gp",
-											"sid": 338866673260828,
+											"sid": 322915007002958,
 											"parameters": {
-												"gamepad": "(ArrayMp.At(1,1))",
+												"gamepad": "ArrayMp.At(1,1)",
 												"axis": "left-analog-y-axis",
-												"comparison": 2,
-												"value": "-50"
-											}
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
 										{
 											"id": "simulate-control",
 											"objectClass": "Player2",
-											"sid": 695255133075387,
+											"sid": 475575589771116,
 											"behaviorType": "8Direcciones",
 											"parameters": {
 												"control": "up"
 											}
 										}
 									],
-									"sid": 745627295529170,
-									"isOrBlock": true
+									"sid": 582518361458457
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 978581479593784,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 647531234916728,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player2",
+											"sid": 245467545750212,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"Top\""
+											}
+										}
+									],
+									"sid": 612218394773884
 								}
-							]
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 771197385744223,
+									"parameters": {
+										"gamepad": "ArrayMp.At(1,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 2,
+										"value": "-50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 434400434573134,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 624546438690372,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player2",
+											"sid": 835215915063880,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 738836355325807
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 334867438803229,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 869321300744656,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player2",
+											"sid": 751112950818739,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"TopLft\""
+											}
+										}
+									],
+									"sid": 405640316998793
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 504801086492363,
+									"parameters": {
+										"gamepad": "ArrayMp.At(1,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 2,
+										"value": "-50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 308491465227138,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 868639992983939,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player2",
+											"sid": 726797898500330,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 238263688141790
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 569548349601946,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 273966982158023,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player2",
+											"sid": 390417578478921,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"TopRgt\""
+											}
+										}
+									],
+									"sid": 417454861066297
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 741831641556776,
+									"parameters": {
+										"gamepad": "ArrayMp.At(1,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 341469310851379,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 627478506017222,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player2",
+											"sid": 817007510237611,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "down"
+											}
+										}
+									],
+									"sid": 281072412389877
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 503371750819518,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 249602287233175,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player2",
+											"sid": 167425035368478,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"Bot\""
+											}
+										}
+									],
+									"sid": 415132674443349
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 822844222190447,
+									"parameters": {
+										"gamepad": "ArrayMp.At(1,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 991710139746570,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 277156780597144,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player2",
+											"sid": 855133899924505,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "down"
+											}
+										}
+									],
+									"sid": 926896181985930
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 725237278039255,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 197585572231621,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player2",
+											"sid": 576735593994784,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotLft\""
+											}
+										}
+									],
+									"sid": 207054549757008
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 178832041707811,
+									"parameters": {
+										"gamepad": "ArrayMp.At(1,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 565456460322795,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 909932769684054,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player2",
+											"sid": 501154900817195,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "down"
+											}
+										}
+									],
+									"sid": 592220041158775
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 327627655310682,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 356593677441471,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player2",
+											"sid": 264631708465092,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotRgt\""
+											}
+										}
+									],
+									"sid": 745767770770644
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 403548896963798,
+									"parameters": {
+										"gamepad": "ArrayMp.At(1,1)",
+										"axis": "left-analog-x-axis",
+										"comparison": 2,
+										"value": "-50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 813639217367847,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 545481296557222,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player2",
+											"sid": 880207709966675,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "left"
+											}
+										}
+									],
+									"sid": 415316803130821
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 138650009222599,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 380810518554010,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player2",
+											"sid": 770356130278937,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotLft\""
+											}
+										}
+									],
+									"sid": 963468557052296
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 153525876423742,
+									"parameters": {
+										"gamepad": "ArrayMp.At(1,1)",
+										"axis": "left-analog-x-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 482866956643274,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 416631714771124,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player2",
+											"sid": 193133278087314,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "right"
+											}
+										}
+									],
+									"sid": 598602953876300
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 896087911895076,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 203926779050887,
+											"parameters": {
+												"gamepad": "ArrayMp.At(1,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player2",
+											"sid": 254869144182962,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotRgt\""
+											}
+										}
+									],
+									"sid": 859104285924116
+								}
+							],
+							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
@@ -660,7 +2467,7 @@
 								{
 									"id": "on-button-pressed",
 									"objectClass": "gp",
-									"sid": 920715263994003,
+									"sid": 584372798498122,
 									"parameters": {
 										"gamepad": "(ArrayMp.At(2,1))",
 										"button": "right-shoulder-button"
@@ -671,7 +2478,7 @@
 								{
 									"id": "call-function",
 									"objectClass": "f",
-									"sid": 765562078516208,
+									"sid": 815992114078314,
 									"parameters": {
 										"name": "\"ButtonAttack\"",
 										"parameter-n": [
@@ -683,7 +2490,39 @@
 									}
 								}
 							],
-							"sid": 199722067537802,
+							"sid": 384006303064683,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-button-pressed",
+									"objectClass": "gp",
+									"sid": 699087357492282,
+									"parameters": {
+										"gamepad": "(ArrayMp.At(1,1))",
+										"button": "button-a"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 502082569391955,
+									"parameters": {
+										"name": "\"ButtonDash\"",
+										"parameter-n": [
+											"2",
+											"1",
+											"(ArrayMp.At(2,1))",
+											"2"
+										]
+									}
+								}
+							],
+							"sid": 688943969383274,
 							"isOrBlock": true
 						},
 						{
@@ -692,40 +2531,17 @@
 								{
 									"id": "compare-axis",
 									"objectClass": "gp",
-									"sid": 483505873265867,
+									"sid": 730767484114166,
 									"parameters": {
 										"gamepad": "ArrayMp.At(2,1)",
-										"axis": "left-analog-x-axis",
-										"comparison": 4,
-										"value": "50"
+										"axis": "left-analog-y-axis",
+										"comparison": 2,
+										"value": "-50"
 									}
-								}
-							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player3",
-									"sid": 589592113003037,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"control": "right"
-									}
-								}
-							],
-							"sid": 721086195195748,
-							"isOrBlock": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 907801259220133
 								}
 							],
 							"actions": [],
-							"sid": 514992577687185,
+							"sid": 563904740397750,
 							"children": [
 								{
 									"eventType": "block",
@@ -733,30 +2549,72 @@
 										{
 											"id": "compare-axis",
 											"objectClass": "gp",
-											"sid": 321422077045666,
+											"sid": 226066357166737,
 											"parameters": {
 												"gamepad": "ArrayMp.At(2,1)",
-												"axis": "left-analog-x-axis",
-												"comparison": 2,
-												"value": "-50"
-											}
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
 										{
 											"id": "simulate-control",
 											"objectClass": "Player3",
-											"sid": 625384884500377,
+											"sid": 559433009612611,
 											"behaviorType": "8Direcciones",
 											"parameters": {
-												"control": "left"
+												"control": "up"
 											}
 										}
 									],
-									"sid": 114734085121741,
-									"isOrBlock": true
+									"sid": 853768499946630
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 321311990734384,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 947497121512334,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player3",
+											"sid": 296379567656344,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"Top\""
+											}
+										}
+									],
+									"sid": 801983031771724
 								}
-							]
+							],
+							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
@@ -764,7 +2622,187 @@
 								{
 									"id": "compare-axis",
 									"objectClass": "gp",
-									"sid": 398776753939570,
+									"sid": 915827077351967,
+									"parameters": {
+										"gamepad": "ArrayMp.At(2,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 2,
+										"value": "-50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 469975286483088,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 186228531056474,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player3",
+											"sid": 871874953112295,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 303750801622126
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 397237645996542,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 190689222091414,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player3",
+											"sid": 419756902166797,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"TopLft\""
+											}
+										}
+									],
+									"sid": 164212705379110
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 415597368085906,
+									"parameters": {
+										"gamepad": "ArrayMp.At(2,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 2,
+										"value": "-50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 620427548790316,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 353911233283575,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player3",
+											"sid": 339650286746046,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 367222685393647
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 710854289005962,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 387923654561083,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player3",
+											"sid": 884418876877274,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"TopRgt\""
+											}
+										}
+									],
+									"sid": 550419246591325
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 606524110825044,
 									"parameters": {
 										"gamepad": "ArrayMp.At(2,1)",
 										"axis": "left-analog-y-axis",
@@ -773,31 +2811,8 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player3",
-									"sid": 178820476945018,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"control": "down"
-									}
-								}
-							],
-							"sid": 651808403055722,
-							"isOrBlock": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 384278173230114
-								}
-							],
 							"actions": [],
-							"sid": 835843688980577,
+							"sid": 408476005603182,
 							"children": [
 								{
 									"eventType": "block",
@@ -805,30 +2820,434 @@
 										{
 											"id": "compare-axis",
 											"objectClass": "gp",
-											"sid": 940545352354604,
+											"sid": 482388154479616,
 											"parameters": {
 												"gamepad": "ArrayMp.At(2,1)",
 												"axis": "left-analog-y-axis",
 												"comparison": 2,
 												"value": "-50"
-											}
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
 										{
 											"id": "simulate-control",
 											"objectClass": "Player3",
-											"sid": 162084455780425,
+											"sid": 936762510368576,
 											"behaviorType": "8Direcciones",
 											"parameters": {
-												"control": "up"
+												"control": "down"
 											}
 										}
 									],
-									"sid": 161665072466951,
-									"isOrBlock": true
+									"sid": 714044742427688
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 560001222700330,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 980403988466106,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player3",
+											"sid": 351720408464223,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"Bot\""
+											}
+										}
+									],
+									"sid": 195924267441451
 								}
-							]
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 722415851628254,
+									"parameters": {
+										"gamepad": "ArrayMp.At(2,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 273485979087764,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 945874439585603,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player3",
+											"sid": 582433097573929,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "down"
+											}
+										}
+									],
+									"sid": 154653246425692
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 292202217172784,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 480406500458781,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player3",
+											"sid": 591235273429865,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotLft\""
+											}
+										}
+									],
+									"sid": 725177476232740
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 925674739090381,
+									"parameters": {
+										"gamepad": "ArrayMp.At(2,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 437455524557155,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 295004577445409,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player3",
+											"sid": 105029407759061,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "down"
+											}
+										}
+									],
+									"sid": 717394429266249
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 100557544749861,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 630439930010620,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player3",
+											"sid": 583925362507632,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotRgt\""
+											}
+										}
+									],
+									"sid": 817377573321941
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 153276270239122,
+									"parameters": {
+										"gamepad": "ArrayMp.At(2,1)",
+										"axis": "left-analog-x-axis",
+										"comparison": 2,
+										"value": "-50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 692656442711582,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 190874903593032,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player3",
+											"sid": 993129711478792,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "left"
+											}
+										}
+									],
+									"sid": 525338845216133
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 103013199872270,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 790324624038434,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player3",
+											"sid": 482788885947512,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotLft\""
+											}
+										}
+									],
+									"sid": 177114566793609
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 958909920417386,
+									"parameters": {
+										"gamepad": "ArrayMp.At(2,1)",
+										"axis": "left-analog-x-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 295442641961571,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 750414145104363,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player3",
+											"sid": 758792257361160,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "right"
+											}
+										}
+									],
+									"sid": 855768255725756
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 894449631419624,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 895641654191432,
+											"parameters": {
+												"gamepad": "ArrayMp.At(2,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player3",
+											"sid": 634301739334230,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotRgt\""
+											}
+										}
+									],
+									"sid": 307539698074946
+								}
+							],
+							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
@@ -870,42 +3289,83 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-axis",
+									"id": "on-button-pressed",
 									"objectClass": "gp",
-									"sid": 325379390798836,
+									"sid": 156330857862060,
 									"parameters": {
-										"gamepad": "ArrayMp.At(3,1)",
-										"axis": "left-analog-x-axis",
-										"comparison": 4,
-										"value": "50"
+										"gamepad": "(ArrayMp.At(3,1))",
+										"button": "right-shoulder-button"
 									}
 								}
 							],
 							"actions": [
 								{
-									"id": "simulate-control",
-									"objectClass": "Player4",
-									"sid": 935865083530505,
-									"behaviorType": "8Direcciones",
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 263088359248596,
 									"parameters": {
-										"control": "right"
+										"name": "\"ButtonAttack\"",
+										"parameter-n": [
+											"3",
+											"1",
+											"(ArrayMp.At(3,1))",
+											"3"
+										]
 									}
 								}
 							],
-							"sid": 917261753969214,
+							"sid": 562661167146705,
 							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 113301084703064
+									"id": "on-button-pressed",
+									"objectClass": "gp",
+									"sid": 828775300919624,
+									"parameters": {
+										"gamepad": "(ArrayMp.At(1,1))",
+										"button": "button-a"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "f",
+									"sid": 146011177612936,
+									"parameters": {
+										"name": "\"ButtonDash\"",
+										"parameter-n": [
+											"3",
+											"1",
+											"(ArrayMp.At(3,1))",
+											"3"
+										]
+									}
+								}
+							],
+							"sid": 268187394798961,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 837714145132706,
+									"parameters": {
+										"gamepad": "ArrayMp.At(3,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 2,
+										"value": "-50"
+									}
 								}
 							],
 							"actions": [],
-							"sid": 208850663496562,
+							"sid": 180935739750647,
 							"children": [
 								{
 									"eventType": "block",
@@ -913,30 +3373,72 @@
 										{
 											"id": "compare-axis",
 											"objectClass": "gp",
-											"sid": 992612307109458,
+											"sid": 903664529412222,
 											"parameters": {
 												"gamepad": "ArrayMp.At(3,1)",
-												"axis": "left-analog-x-axis",
-												"comparison": 2,
-												"value": "-50"
-											}
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
 										{
 											"id": "simulate-control",
 											"objectClass": "Player4",
-											"sid": 521247128812877,
+											"sid": 753658295524636,
 											"behaviorType": "8Direcciones",
 											"parameters": {
-												"control": "left"
+												"control": "up"
 											}
 										}
 									],
-									"sid": 675460463698861,
-									"isOrBlock": true
+									"sid": 774214637324879
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 806177962246824,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 677514065366554,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player4",
+											"sid": 357926040210358,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"Top\""
+											}
+										}
+									],
+									"sid": 965126452712390
 								}
-							]
+							],
+							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
@@ -944,7 +3446,187 @@
 								{
 									"id": "compare-axis",
 									"objectClass": "gp",
-									"sid": 977372225367499,
+									"sid": 543135173419992,
+									"parameters": {
+										"gamepad": "ArrayMp.At(3,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 2,
+										"value": "-50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 383226261120208,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 521146702580232,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player4",
+											"sid": 765699119030709,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 375675615488960
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 746863696529659,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 690564703315556,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player4",
+											"sid": 945956842361777,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"TopLft\""
+											}
+										}
+									],
+									"sid": 920555181759699
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 311365685579689,
+									"parameters": {
+										"gamepad": "ArrayMp.At(3,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 2,
+										"value": "-50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 502443383260731,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 104400616049393,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player4",
+											"sid": 573717060589216,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "up"
+											}
+										}
+									],
+									"sid": 799529793026179
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 640128333343229,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 157187287350018,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player4",
+											"sid": 300478861842836,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"TopRgt\""
+											}
+										}
+									],
+									"sid": 638237151952054
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 507198054421973,
 									"parameters": {
 										"gamepad": "ArrayMp.At(3,1)",
 										"axis": "left-analog-y-axis",
@@ -953,31 +3635,8 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Player4",
-									"sid": 430161306359269,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"control": "down"
-									}
-								}
-							],
-							"sid": 982982883530233,
-							"isOrBlock": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 262407805700235
-								}
-							],
 							"actions": [],
-							"sid": 885177706552263,
+							"sid": 418718814046095,
 							"children": [
 								{
 									"eventType": "block",
@@ -985,30 +3644,434 @@
 										{
 											"id": "compare-axis",
 											"objectClass": "gp",
-											"sid": 474990650176243,
+											"sid": 574698197533061,
 											"parameters": {
 												"gamepad": "ArrayMp.At(3,1)",
 												"axis": "left-analog-y-axis",
 												"comparison": 2,
 												"value": "-50"
-											}
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
 										{
 											"id": "simulate-control",
 											"objectClass": "Player4",
-											"sid": 151607938652283,
+											"sid": 488119628346265,
 											"behaviorType": "8Direcciones",
 											"parameters": {
-												"control": "up"
+												"control": "down"
 											}
 										}
 									],
-									"sid": 915250432947884,
-									"isOrBlock": true
+									"sid": 923084011559886
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 244250722504741,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 972969308853364,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player4",
+											"sid": 408898180459523,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"Bot\""
+											}
+										}
+									],
+									"sid": 392909773344320
 								}
-							]
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 287655241361848,
+									"parameters": {
+										"gamepad": "ArrayMp.At(3,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 926310143474769,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 650593074396486,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player4",
+											"sid": 339611977067079,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "down"
+											}
+										}
+									],
+									"sid": 403320923200334
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 852976100111593,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 232267778739635,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player4",
+											"sid": 521771274030466,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotLft\""
+											}
+										}
+									],
+									"sid": 972895553053629
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 751404389594787,
+									"parameters": {
+										"gamepad": "ArrayMp.At(3,1)",
+										"axis": "left-analog-y-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 616091445132568,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 606930827986252,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player4",
+											"sid": 374315104073076,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "down"
+											}
+										}
+									],
+									"sid": 133527901320932
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 405065404929952,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 565223833719337,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player4",
+											"sid": 972532748353125,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotRgt\""
+											}
+										}
+									],
+									"sid": 249510083914024
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 330892732192338,
+									"parameters": {
+										"gamepad": "ArrayMp.At(3,1)",
+										"axis": "left-analog-x-axis",
+										"comparison": 2,
+										"value": "-50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 687657763486974,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 772882333005053,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player4",
+											"sid": 428283052346966,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "left"
+											}
+										}
+									],
+									"sid": 357351226344191
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 427392967996864,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 722478335773754,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player4",
+											"sid": 985944559052181,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotLft\""
+											}
+										}
+									],
+									"sid": 395216481391305
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "gp",
+									"sid": 719523551586834,
+									"parameters": {
+										"gamepad": "ArrayMp.At(3,1)",
+										"axis": "left-analog-x-axis",
+										"comparison": 4,
+										"value": "50"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 324068662425965,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 149839846741308,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player4",
+											"sid": 726297921883014,
+											"behaviorType": "8Direcciones",
+											"parameters": {
+												"control": "right"
+											}
+										}
+									],
+									"sid": 630171744986305
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 595430465032909,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-50"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "gp",
+											"sid": 908666859117767,
+											"parameters": {
+												"gamepad": "ArrayMp.At(3,1)",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "50"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player4",
+											"sid": 940560485638047,
+											"parameters": {
+												"instance-variable": "Direction",
+												"value": "\"BotRgt\""
+											}
+										}
+									],
+									"sid": 769248234810360
+								}
+							],
+							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
@@ -1038,38 +4101,6 @@
 						}
 					],
 					"sid": 419244719073201
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-button-pressed",
-							"objectClass": "gp",
-							"sid": 804253213775119,
-							"parameters": {
-								"gamepad": "(ArrayMp.At(3,1))",
-								"button": "right-shoulder-button"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "call-function",
-							"objectClass": "f",
-							"sid": 138615392644295,
-							"parameters": {
-								"name": "\"ButtonAttack\"",
-								"parameter-n": [
-									"3",
-									"1",
-									"(ArrayMp.At(3,1))",
-									"3"
-								]
-							}
-						}
-					],
-					"sid": 892521048405186,
-					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -1238,6 +4269,7 @@
 					],
 					"actions": [],
 					"sid": 262322134077623,
+					"disabled": true,
 					"children": [
 						{
 							"eventType": "block",
@@ -1253,6 +4285,7 @@
 							],
 							"actions": [],
 							"sid": 726134599206568,
+							"disabled": true,
 							"children": [
 								{
 									"eventType": "block",
@@ -1268,6 +4301,7 @@
 									],
 									"actions": [],
 									"sid": 535381966522914,
+									"disabled": true,
 									"children": [
 										{
 											"eventType": "block",
@@ -1281,6 +4315,7 @@
 											],
 											"actions": [],
 											"sid": 480477306164463,
+											"disabled": true,
 											"children": [
 												{
 													"eventType": "block",
@@ -1298,6 +4333,7 @@
 													],
 													"actions": [],
 													"sid": 683393342218033,
+													"disabled": true,
 													"children": [
 														{
 															"eventType": "block",
@@ -1343,7 +4379,8 @@
 																	}
 																}
 															],
-															"sid": 774084593224932
+															"sid": 774084593224932,
+															"disabled": true
 														},
 														{
 															"eventType": "block",
@@ -1389,7 +4426,8 @@
 																	}
 																}
 															],
-															"sid": 972281699079259
+															"sid": 972281699079259,
+															"disabled": true
 														},
 														{
 															"eventType": "block",
@@ -1435,7 +4473,8 @@
 																	}
 																}
 															],
-															"sid": 689167345846816
+															"sid": 689167345846816,
+															"disabled": true
 														}
 													]
 												},
@@ -1450,6 +4489,7 @@
 													],
 													"actions": [],
 													"sid": 626276996067762,
+													"disabled": true,
 													"children": [
 														{
 															"eventType": "block",
@@ -1495,7 +4535,8 @@
 																	}
 																}
 															],
-															"sid": 491414761355025
+															"sid": 491414761355025,
+															"disabled": true
 														},
 														{
 															"eventType": "block",
@@ -1541,7 +4582,8 @@
 																	}
 																}
 															],
-															"sid": 748583147090931
+															"sid": 748583147090931,
+															"disabled": true
 														},
 														{
 															"eventType": "block",
@@ -1587,7 +4629,8 @@
 																	}
 																}
 															],
-															"sid": 114822697560823
+															"sid": 114822697560823,
+															"disabled": true
 														}
 													]
 												}
@@ -1615,7 +4658,8 @@
 													}
 												}
 											],
-											"sid": 994587223256872
+											"sid": 994587223256872,
+											"disabled": true
 										}
 									]
 								},
@@ -1630,6 +4674,7 @@
 									],
 									"actions": [],
 									"sid": 553377442072884,
+									"disabled": true,
 									"children": [
 										{
 											"eventType": "block",
@@ -1643,6 +4688,7 @@
 											],
 											"actions": [],
 											"sid": 118520155196262,
+											"disabled": true,
 											"children": [
 												{
 													"eventType": "block",
@@ -1678,7 +4724,8 @@
 															}
 														}
 													],
-													"sid": 492422169027314
+													"sid": 492422169027314,
+													"disabled": true
 												},
 												{
 													"eventType": "block",
@@ -1724,7 +4771,8 @@
 															}
 														}
 													],
-													"sid": 485881207349973
+													"sid": 485881207349973,
+													"disabled": true
 												},
 												{
 													"eventType": "block",
@@ -1770,7 +4818,8 @@
 															}
 														}
 													],
-													"sid": 674180295252563
+													"sid": 674180295252563,
+													"disabled": true
 												},
 												{
 													"eventType": "block",
@@ -1816,7 +4865,8 @@
 															}
 														}
 													],
-													"sid": 619714854943348
+													"sid": 619714854943348,
+													"disabled": true
 												},
 												{
 													"eventType": "block",
@@ -1862,7 +4912,8 @@
 															}
 														}
 													],
-													"sid": 136293058744781
+													"sid": 136293058744781,
+													"disabled": true
 												},
 												{
 													"eventType": "block",
@@ -1898,7 +4949,8 @@
 															}
 														}
 													],
-													"sid": 603049086910387
+													"sid": 603049086910387,
+													"disabled": true
 												}
 											]
 										},
@@ -1924,7 +4976,8 @@
 													}
 												}
 											],
-											"sid": 110192443496348
+											"sid": 110192443496348,
+											"disabled": true
 										}
 									]
 								}
@@ -2218,53 +5271,6 @@
 					"conditions": [
 						{
 							"id": "on-created",
-							"objectClass": "GolpeAgua2",
-							"sid": 795636136667131
-						}
-					],
-					"actions": [],
-					"sid": 974517626073656,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "pick-by-unique-id",
-									"objectClass": "Players",
-									"sid": 596612251696269,
-									"parameters": {
-										"unique-id": "GolpeAgua2.LinkedUID"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 893269060675415,
-									"parameters": {
-										"seconds": "dt"
-									}
-								},
-								{
-									"id": "set-angle-toward-position",
-									"objectClass": "GolpeAgua2",
-									"sid": 188317241420887,
-									"parameters": {
-										"x": "Players.X",
-										"y": "Players.Y"
-									}
-								}
-							],
-							"sid": 337319889668727
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-created",
 							"objectClass": "GolpeTierra3",
 							"sid": 277521343844076
 						}
@@ -2428,6 +5434,86 @@
 								}
 							],
 							"sid": 751046584221836
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "GolpeAgua",
+							"sid": 120917224220389
+						}
+					],
+					"actions": [],
+					"sid": 718638337251490,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Players",
+									"sid": 351570318348642,
+									"parameters": {
+										"unique-id": "GolpeAgua.LinkedUID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object",
+									"objectClass": "GolpeAgua",
+									"sid": 243679847570817,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "Players",
+										"mode": "position-angle"
+									}
+								}
+							],
+							"sid": 243613277250533
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "GolpeAgua2",
+							"sid": 181164737176581
+						}
+					],
+					"actions": [],
+					"sid": 310506027123685,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Players",
+									"sid": 508644583597254,
+									"parameters": {
+										"unique-id": "GolpeAgua2.LinkedUID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object",
+									"objectClass": "GolpeAgua2",
+									"sid": 115745990715480,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "Players",
+										"mode": "position-angle"
+									}
+								}
+							],
+							"sid": 849336697697212
 						}
 					]
 				}
@@ -2749,6 +5835,202 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "f",
+							"sid": 653681184329180,
+							"parameters": {
+								"name": "\"ButtonDash\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "f",
+							"sid": 412756218006881,
+							"parameters": {
+								"name": "\"ActDicUIDS\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 904200493582111,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Players",
+									"sid": 866520432426248,
+									"parameters": {
+										"unique-id": "f.Param(0)"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 389558570381583,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Mouse"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-parameter",
+											"objectClass": "f",
+											"sid": 800233592638103,
+											"parameters": {
+												"index": "1",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 676027544495740,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "Players",
+													"sid": 782328300681615,
+													"parameters": {
+														"instance-variable": "Dashing"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "Players",
+													"sid": 834819793727040,
+													"parameters": {
+														"instance-variable": "Dashing",
+														"value": "true"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "Players",
+													"sid": 434286978115536,
+													"parameters": {
+														"instance-variable": "DashTimer",
+														"value": "0.2"
+													}
+												},
+												{
+													"id": "set-ignoring-input",
+													"objectClass": "Players",
+													"sid": 526495745967601,
+													"behaviorType": "8Direcciones",
+													"parameters": {
+														"input": "start-ignoring"
+													}
+												},
+												{
+													"id": "set-max-speed",
+													"objectClass": "Players",
+													"sid": 869891923580053,
+													"behaviorType": "8Direcciones",
+													"parameters": {
+														"max-speed": "600"
+													}
+												}
+											],
+											"sid": 382536470177920
+										}
+									]
+								},
+								{
+									"eventType": "comment",
+									"text": "Control"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-parameter",
+											"objectClass": "f",
+											"sid": 998016890167185,
+											"parameters": {
+												"index": "1",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 166173247964954,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "Players",
+													"sid": 794996804940360,
+													"parameters": {
+														"instance-variable": "Dashing"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "Players",
+													"sid": 479845270865532,
+													"parameters": {
+														"instance-variable": "Dashing",
+														"value": "true"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "Players",
+													"sid": 776280485694205,
+													"parameters": {
+														"instance-variable": "DashTimer",
+														"value": "0.2"
+													}
+												},
+												{
+													"id": "set-ignoring-input",
+													"objectClass": "Players",
+													"sid": 924250913073226,
+													"behaviorType": "8Direcciones",
+													"parameters": {
+														"input": "start-ignoring"
+													}
+												},
+												{
+													"id": "set-max-speed",
+													"objectClass": "Players",
+													"sid": 129595773232385,
+													"behaviorType": "8Direcciones",
+													"parameters": {
+														"max-speed": "600"
+													}
+												}
+											],
+											"sid": 711310166156760
+										}
+									]
+								}
+							]
+						}
+					]
+				},
 				{
 					"eventType": "comment",
 					"text": "Get position between: f(0) x/y f(1) player and  f(2) enemy"
@@ -4433,6 +7715,16 @@
 													}
 												},
 												{
+													"id": "spawn-another-object",
+													"objectClass": "Players",
+													"sid": 407535305688300,
+													"parameters": {
+														"object": "GolpeAgua2",
+														"layer": "\"Game\"",
+														"image-point": "0"
+													}
+												},
+												{
 													"id": "set-instvar-value",
 													"objectClass": "GolpeAgua",
 													"sid": 317659460920642,
@@ -4442,11 +7734,46 @@
 													}
 												},
 												{
+													"id": "set-instvar-value",
+													"objectClass": "GolpeAgua",
+													"sid": 584905507846198,
+													"parameters": {
+														"instance-variable": "LinkedUID",
+														"value": "int(DataUIDS.Get(\"Agua\"))"
+													}
+												},
+												{
 													"id": "set-angle",
 													"objectClass": "GolpeAgua",
 													"sid": 316662054619937,
 													"parameters": {
 														"angle": "int(DataAngle.Get(\"Agua\"))"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "GolpeAgua2",
+													"sid": 623156385705341,
+													"parameters": {
+														"instance-variable": "LinkedAngle",
+														"value": "int(DataAngle.Get(\"Agua\"))"
+													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "GolpeAgua2",
+													"sid": 264116102400635,
+													"parameters": {
+														"angle": "int(DataAngle.Get(\"Agua\"))"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "GolpeAgua2",
+													"sid": 824218359292903,
+													"parameters": {
+														"instance-variable": "LinkedUID",
+														"value": "int(DataUIDS.Get(\"Agua\"))"
 													}
 												},
 												{
@@ -4499,21 +7826,29 @@
 											"actions": [
 												{
 													"id": "spawn-another-object",
-													"objectClass": "GolpeAgua",
-													"sid": 811784514616525,
+													"objectClass": "Players",
+													"sid": 721671121891740,
 													"parameters": {
-														"object": "GolpeAgua2",
+														"object": "GolpeAgua3",
 														"layer": "\"Game\"",
-														"image-point": "0"
+														"image-point": "1"
 													}
 												},
 												{
 													"id": "set-instvar-value",
-													"objectClass": "GolpeAgua2",
-													"sid": 745386190411693,
+													"objectClass": "GolpeAgua3",
+													"sid": 715474673858568,
 													"parameters": {
 														"instance-variable": "LinkedAngle",
 														"value": "int(DataAngle.Get(\"Agua\"))"
+													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "GolpeAgua3",
+													"sid": 343237884656929,
+													"parameters": {
+														"angle": "int(DataAngle.Get(\"Agua\"))"
 													}
 												},
 												{
@@ -4561,43 +7896,17 @@
 											],
 											"actions": [
 												{
-													"id": "spawn-another-object",
-													"objectClass": "GolpeAgua2",
-													"sid": 982160904282636,
-													"parameters": {
-														"object": "GolpeAgua3",
-														"layer": "\"Game\"",
-														"image-point": "1"
-													}
-												},
-												{
 													"id": "set-instvar-value",
-													"objectClass": "GolpeAgua3",
-													"sid": 610321691629033,
+													"objectClass": "Players",
+													"sid": 368087099661531,
 													"parameters": {
-														"instance-variable": "LinkedAngle",
-														"value": "int(DataAngle.Get(\"Agua\"))"
-													}
-												},
-												{
-													"id": "set-angle",
-													"objectClass": "GolpeAgua3",
-													"sid": 931912521999925,
-													"parameters": {
-														"angle": "int(DataAngle.Get(\"Agua\"))"
-													}
-												},
-												{
-													"id": "rotate-clockwise",
-													"objectClass": "GolpeAgua3",
-													"sid": 464999008130751,
-													"parameters": {
-														"degrees": "-90"
+														"instance-variable": "Combo",
+														"value": "0"
 													}
 												},
 												{
 													"id": "spawn-another-object",
-													"objectClass": "GolpeAgua2",
+													"objectClass": "Players",
 													"sid": 573554489242521,
 													"parameters": {
 														"object": "GolpeAgua4",
@@ -4625,26 +7934,197 @@
 												{
 													"id": "rotate-clockwise",
 													"objectClass": "GolpeAgua4",
-													"sid": 423266431868374,
+													"sid": 679611044543031,
 													"parameters": {
-														"degrees": "90"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "Players",
-													"sid": 609896634273583,
-													"parameters": {
-														"instance-variable": "Combo",
-														"value": "0"
+														"degrees": "random(-45,45)"
 													}
 												},
 												{
 													"id": "wait",
 													"objectClass": "System",
-													"sid": 381602257085399,
+													"sid": 414265192632603,
 													"parameters": {
-														"seconds": "1.0"
+														"seconds": "0.1"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Players",
+													"sid": 407078788561388,
+													"parameters": {
+														"object": "GolpeAgua4",
+														"layer": "\"Game\"",
+														"image-point": "2"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "GolpeAgua4",
+													"sid": 236985220859889,
+													"parameters": {
+														"instance-variable": "LinkedAngle",
+														"value": "int(DataAngle.Get(\"Agua\"))"
+													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "GolpeAgua4",
+													"sid": 899461256605489,
+													"parameters": {
+														"angle": "int(DataAngle.Get(\"Agua\"))"
+													}
+												},
+												{
+													"id": "rotate-clockwise",
+													"objectClass": "GolpeAgua4",
+													"sid": 372600887558907,
+													"parameters": {
+														"degrees": "random(-45,45)"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 428567948136215,
+													"parameters": {
+														"seconds": "0.1"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Players",
+													"sid": 444094107618075,
+													"parameters": {
+														"object": "GolpeAgua4",
+														"layer": "\"Game\"",
+														"image-point": "2"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "GolpeAgua4",
+													"sid": 390315503408868,
+													"parameters": {
+														"instance-variable": "LinkedAngle",
+														"value": "int(DataAngle.Get(\"Agua\"))"
+													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "GolpeAgua4",
+													"sid": 455858366288948,
+													"parameters": {
+														"angle": "int(DataAngle.Get(\"Agua\"))"
+													}
+												},
+												{
+													"id": "rotate-clockwise",
+													"objectClass": "GolpeAgua4",
+													"sid": 889323428972280,
+													"parameters": {
+														"degrees": "random(-45,45)"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 612515061282424,
+													"parameters": {
+														"seconds": "0.1"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Players",
+													"sid": 934369191256583,
+													"parameters": {
+														"object": "GolpeAgua4",
+														"layer": "\"Game\"",
+														"image-point": "2"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "GolpeAgua4",
+													"sid": 697917964346917,
+													"parameters": {
+														"instance-variable": "LinkedAngle",
+														"value": "int(DataAngle.Get(\"Agua\"))"
+													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "GolpeAgua4",
+													"sid": 854319427788423,
+													"parameters": {
+														"angle": "int(DataAngle.Get(\"Agua\"))"
+													}
+												},
+												{
+													"id": "rotate-clockwise",
+													"objectClass": "GolpeAgua4",
+													"sid": 483937233222318,
+													"parameters": {
+														"degrees": "random(-45,45)"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 712038099081003,
+													"parameters": {
+														"seconds": "0.1"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Players",
+													"sid": 147143010672304,
+													"parameters": {
+														"object": "GolpeAgua4",
+														"layer": "\"Game\"",
+														"image-point": "2"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "GolpeAgua4",
+													"sid": 506040137891920,
+													"parameters": {
+														"instance-variable": "LinkedAngle",
+														"value": "int(DataAngle.Get(\"Agua\"))"
+													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "GolpeAgua4",
+													"sid": 228129443214486,
+													"parameters": {
+														"angle": "int(DataAngle.Get(\"Agua\"))"
+													}
+												},
+												{
+													"id": "rotate-clockwise",
+													"objectClass": "GolpeAgua4",
+													"sid": 435974660747980,
+													"parameters": {
+														"degrees": "random(-45,45)"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 238485153879690,
+													"parameters": {
+														"seconds": "0.1"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 137940431931749,
+													"parameters": {
+														"seconds": "0.3"
 													}
 												},
 												{
@@ -7247,85 +10727,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-pressed",
-							"objectClass": "kb",
-							"sid": 768882679398285,
-							"parameters": {
-								"key": 32
-							}
-						}
-					],
-					"actions": [],
-					"sid": 844902290722098,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "Players",
-									"sid": 206958364889073,
-									"parameters": {
-										"instance-variable": "Dashing"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "Players",
-									"sid": 255300763234783,
-									"parameters": {
-										"instance-variable": "Dashing",
-										"value": "true"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "Players",
-									"sid": 557930260240109,
-									"parameters": {
-										"instance-variable": "DashTimer",
-										"value": "0.2"
-									}
-								},
-								{
-									"id": "set-group-active",
-									"objectClass": "System",
-									"sid": 562680433125526,
-									"parameters": {
-										"group-name": "\"Input Player 1 GP\"",
-										"state": "deactivated"
-									}
-								},
-								{
-									"id": "set-group-active",
-									"objectClass": "System",
-									"sid": 549068936300161,
-									"parameters": {
-										"group-name": "\"Input Player 1 KB\"",
-										"state": "deactivated"
-									}
-								},
-								{
-									"id": "set-max-speed",
-									"objectClass": "Players",
-									"sid": 752296853704599,
-									"behaviorType": "8Direcciones",
-									"parameters": {
-										"max-speed": "600"
-									}
-								}
-							],
-							"sid": 603641348025568
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "Players",
 							"sid": 340624998508356,
@@ -7383,41 +10784,94 @@
 								{
 									"id": "set-max-speed",
 									"objectClass": "Players",
-									"sid": 935724496420552,
+									"sid": 970103970051359,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"max-speed": "100"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 356185516471406,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Players",
+									"sid": 612305825438537,
 									"behaviorType": "8Direcciones",
 									"parameters": {
 										"max-speed": "200"
 									}
 								},
 								{
+									"id": "set-ignoring-input",
+									"objectClass": "Players",
+									"sid": 576830628611687,
+									"behaviorType": "8Direcciones",
+									"parameters": {
+										"input": "stop-ignoring"
+									}
+								},
+								{
 									"id": "set-boolean-instvar",
 									"objectClass": "Players",
-									"sid": 294359880166645,
+									"sid": 135677376708237,
 									"parameters": {
 										"instance-variable": "Dashing",
 										"value": "false"
 									}
-								},
-								{
-									"id": "set-group-active",
-									"objectClass": "System",
-									"sid": 236470260337175,
-									"parameters": {
-										"group-name": "\"Input Player 1 GP\"",
-										"state": "activated"
-									}
-								},
-								{
-									"id": "set-group-active",
-									"objectClass": "System",
-									"sid": 665829537183695,
-									"parameters": {
-										"group-name": "\"Input Player 1 KB\"",
-										"state": "activated"
-									}
 								}
 							],
 							"sid": 685539668631963
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Players",
+									"sid": 572806764153443,
+									"parameters": {
+										"instance-variable": "DashTimer",
+										"comparison": 5,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 283373191174591,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 162050753495744,
+											"parameters": {
+												"interval-seconds": "0.06"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Players",
+											"sid": 980255062186046,
+											"parameters": {
+												"object": "Humo",
+												"layer": "\"Game\"",
+												"image-point": "0"
+											}
+										}
+									],
+									"sid": 571346370304789
+								}
+							]
 						}
 					]
 				}
@@ -8907,6 +12361,397 @@
 				}
 			],
 			"sid": 843491719912705
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Players",
+					"sid": 672892615909539,
+					"behaviorType": "8Direcciones"
+				}
+			],
+			"actions": [],
+			"sid": 154434927697944,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Players",
+							"sid": 206956243518225,
+							"parameters": {
+								"instance-variable": "Direction",
+								"comparison": 0,
+								"value": "\"Top\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Players",
+							"sid": 111495252958073,
+							"parameters": {
+								"animation": "Self.Character & \"WalkTop\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 629269812246299
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Players",
+							"sid": 980960802447258,
+							"parameters": {
+								"instance-variable": "Direction",
+								"comparison": 0,
+								"value": "\"TopLft\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Players",
+							"sid": 627827410336042,
+							"parameters": {
+								"animation": "Self.Character & \"WalkTopLft\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 656420136796036
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Players",
+							"sid": 263909064919360,
+							"parameters": {
+								"instance-variable": "Direction",
+								"comparison": 0,
+								"value": "\"TopRgt\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Players",
+							"sid": 121162862749581,
+							"parameters": {
+								"animation": "Self.Character & \"WalkTopRgt\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 442827437387980
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Players",
+							"sid": 471504394335201,
+							"parameters": {
+								"instance-variable": "Direction",
+								"comparison": 0,
+								"value": "\"Bot\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Players",
+							"sid": 842432893981247,
+							"parameters": {
+								"animation": "Self.Character & \"WalkBot\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 796463852728912
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Players",
+							"sid": 548480560956086,
+							"parameters": {
+								"instance-variable": "Direction",
+								"comparison": 0,
+								"value": "\"BotLft\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Players",
+							"sid": 728273820899103,
+							"parameters": {
+								"animation": "Self.Character & \"WalkBotLft\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 729122175439459
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Players",
+							"sid": 683459139734276,
+							"parameters": {
+								"instance-variable": "Direction",
+								"comparison": 0,
+								"value": "\"BotRgt\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Players",
+							"sid": 583946775917253,
+							"parameters": {
+								"animation": "Self.Character & \"WalkBotRgt\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 372198434210007
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Players",
+					"sid": 413729783115338,
+					"behaviorType": "8Direcciones",
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 560466184027828,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Players",
+							"sid": 939108622798160,
+							"parameters": {
+								"instance-variable": "Direction",
+								"comparison": 0,
+								"value": "\"Top\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Players",
+							"sid": 466700665879200,
+							"parameters": {
+								"animation": "Self.Character & \"IdleTop\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 764143984916451
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Players",
+							"sid": 832994125840827,
+							"parameters": {
+								"instance-variable": "Direction",
+								"comparison": 0,
+								"value": "\"TopLft\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Players",
+							"sid": 587470528937786,
+							"parameters": {
+								"animation": "Self.Character & \"IdleTopLft\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 386719409908554
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Players",
+							"sid": 365402408977553,
+							"parameters": {
+								"instance-variable": "Direction",
+								"comparison": 0,
+								"value": "\"TopRgt\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Players",
+							"sid": 923957576981616,
+							"parameters": {
+								"animation": "Self.Character & \"IdleTopRgt\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 831587950792401
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Players",
+							"sid": 719659623555444,
+							"parameters": {
+								"instance-variable": "Direction",
+								"comparison": 0,
+								"value": "\"Bot\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Players",
+							"sid": 452610353434405,
+							"parameters": {
+								"animation": "Self.Character & \"IdleBot\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 971636966031096
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Players",
+							"sid": 594765487554483,
+							"parameters": {
+								"instance-variable": "Direction",
+								"comparison": 0,
+								"value": "\"BotLft\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Players",
+							"sid": 964781217379750,
+							"parameters": {
+								"animation": "Self.Character & \"IdleBotLft\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 557280235445786
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Players",
+							"sid": 385826944792745,
+							"parameters": {
+								"instance-variable": "Direction",
+								"comparison": 0,
+								"value": "\"BotRgt\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Players",
+							"sid": 921117035596337,
+							"parameters": {
+								"animation": "Self.Character & \"IdleBotRgt\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 566660999654097
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-animation-finished",
+					"objectClass": "Humo",
+					"sid": 350928383862573
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Humo",
+					"sid": 830149286593247
+				}
+			],
+			"sid": 622453811758202
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Humo",
+					"sid": 344794766667132
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-bottom",
+					"objectClass": "Humo",
+					"sid": 656490526149902
+				}
+			],
+			"sid": 144114673891789
 		}
 	],
 	"sid": 731626504774849

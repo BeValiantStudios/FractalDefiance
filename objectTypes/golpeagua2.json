@@ -6,9 +6,14 @@
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Bullet",
-			"name": "Bullet",
-			"sid": 847422799212076
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 393692043791028
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 303106038860727
 		}
 	],
 	"effectTypes": [],
@@ -19,24 +24,12 @@
 					{
 						"width": 250,
 						"height": 250,
-						"originX": 0,
+						"originX": 1,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 535,
-						"imagePoints": [
-							{
-								"name": "Imagepoint 1",
-								"x": 0,
-								"y": 0
-							},
-							{
-								"name": "Imagepoint 2",
-								"x": 0,
-								"y": 1
-							}
-						],
 						"duration": 1
 					}
 				],
